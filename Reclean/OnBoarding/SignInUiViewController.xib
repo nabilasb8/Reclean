@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInUiViewController" customModule="Reclean" customModuleProvider="target">
+            <connections>
+                <outlet property="continueSignin" destination="Ogu-zq-bCN" id="Y8G-Nv-SEL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogu-zq-bCN">
+                    <rect key="frame" x="38" y="751" width="354" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="rGf-HF-iLR"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="apple.logo" catalog="system" cornerStyle="capsule">
+                        <attributedString key="attributedSubtitle">
+                            <fragment content="  Continue with Apple">
+                                <attributes>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="16" name="SFPro-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseBackgroundColor" name="Brand Color"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="continueSign:" destination="-1" eventType="touchUpInside" id="U0g-Cw-28Y"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's easy your cleaning task" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bS-7e-OyW">
+                    <rect key="frame" x="38" y="238" width="227" height="106"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="106" id="1T7-uX-5iT"/>
+                        <constraint firstAttribute="width" constant="227" id="Vxt-2s-erh"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="32"/>
+                    <color key="textColor" name="Brand Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ogu-zq-bCN" secondAttribute="trailing" constant="38" id="99O-Ec-cSW"/>
+                <constraint firstItem="1bS-7e-OyW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="Akp-oy-Xqz"/>
+                <constraint firstItem="1bS-7e-OyW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="179" id="Kba-hQ-pzE"/>
+                <constraint firstItem="Ogu-zq-bCN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="eOU-Is-9IY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ogu-zq-bCN" secondAttribute="bottom" constant="87" id="fPd-Nw-BNk"/>
+                <constraint firstItem="Ogu-zq-bCN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sOu-7h-Gua"/>
+            </constraints>
+            <point key="canvasLocation" x="99.069767441860463" y="20.600858369098713"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple.logo" catalog="system" width="105" height="128"/>
+        <namedColor name="Brand Color">
+            <color red="0.11800000071525574" green="0.25099998712539673" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
