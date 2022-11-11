@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66402162291BAF94001442D2 /* TagAllAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66402160291BAF94001442D2 /* TagAllAreaTableViewCell.swift */; };
+		66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66402161291BAF94001442D2 /* TagAllAreaTableViewCell.xib */; };
+		66698757291D112700F865ED /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66698756291D112700F865ED /* Launch Screen.storyboard */; };
+		666C9072291D3E1D00AB065D /* AddAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C9070291D3E1D00AB065D /* AddAreaViewController.swift */; };
+		666C9073291D3E1D00AB065D /* AddAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666C9071291D3E1D00AB065D /* AddAreaViewController.xib */; };
+		66BCE379291A61E300021E8A /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BCE377291A61E300021E8A /* ScheduleViewController.swift */; };
+		66BCE37A291A61E300021E8A /* ScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BCE378291A61E300021E8A /* ScheduleViewController.xib */; };
+		66BCE37D291A64CB00021E8A /* TitleScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BCE37B291A64CB00021E8A /* TitleScheduleTableViewCell.swift */; };
+		66BCE37E291A64CB00021E8A /* TitleScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BCE37C291A64CB00021E8A /* TitleScheduleTableViewCell.xib */; };
+		66C6FD07291A35770068D08B /* SignInUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD05291A35770068D08B /* SignInUiViewController.swift */; };
+		66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD06291A35770068D08B /* SignInUiViewController.xib */; };
+		66C6FD0B291A36080068D08B /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD09291A36080068D08B /* FirstPageViewController.swift */; };
+		66C6FD0C291A36080068D08B /* FirstPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD0A291A36080068D08B /* FirstPageViewController.xib */; };
+		66C6FD0F291A36490068D08B /* AfterSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD0D291A36490068D08B /* AfterSignInViewController.swift */; };
+		66C6FD10291A36490068D08B /* AfterSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD0E291A36490068D08B /* AfterSignInViewController.xib */; };
+		66C6FD13291A38FE0068D08B /* TagScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD11291A38FE0068D08B /* TagScheduleTableViewCell.swift */; };
+		66C6FD14291A38FE0068D08B /* TagScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD12291A38FE0068D08B /* TagScheduleTableViewCell.xib */; };
+		66C6FD17291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD15291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift */; };
+		66C6FD18291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD16291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib */; };
+		66C6FD1B291A3C6E0068D08B /* TitleAllScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD19291A3C6E0068D08B /* TitleAllScheduleTableViewCell.swift */; };
+		66C6FD1C291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD1A291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib */; };
+		66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD1D291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift */; };
+		66C6FD20291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */; };
 		BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E831290FC437007DFCC0 /* AppDelegate.swift */; };
 		BD51E834290FC437007DFCC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E833290FC437007DFCC0 /* SceneDelegate.swift */; };
 		BD51E836290FC438007DFCC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E835290FC437007DFCC0 /* ViewController.swift */; };
@@ -18,6 +41,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66402160291BAF94001442D2 /* TagAllAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAllAreaTableViewCell.swift; sourceTree = "<group>"; };
+		66402161291BAF94001442D2 /* TagAllAreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAllAreaTableViewCell.xib; sourceTree = "<group>"; };
+		66698756291D112700F865ED /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		666C9070291D3E1D00AB065D /* AddAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaViewController.swift; sourceTree = "<group>"; };
+		666C9071291D3E1D00AB065D /* AddAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaViewController.xib; sourceTree = "<group>"; };
+		66BCE377291A61E300021E8A /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		66BCE378291A61E300021E8A /* ScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleViewController.xib; sourceTree = "<group>"; };
+		66BCE37B291A64CB00021E8A /* TitleScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		66BCE37C291A64CB00021E8A /* TitleScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		66C6FD05291A35770068D08B /* SignInUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUiViewController.swift; sourceTree = "<group>"; };
+		66C6FD06291A35770068D08B /* SignInUiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInUiViewController.xib; sourceTree = "<group>"; };
+		66C6FD09291A36080068D08B /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		66C6FD0A291A36080068D08B /* FirstPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPageViewController.xib; sourceTree = "<group>"; };
+		66C6FD0D291A36490068D08B /* AfterSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSignInViewController.swift; sourceTree = "<group>"; };
+		66C6FD0E291A36490068D08B /* AfterSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AfterSignInViewController.xib; sourceTree = "<group>"; };
+		66C6FD11291A38FE0068D08B /* TagScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		66C6FD12291A38FE0068D08B /* TagScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		66C6FD15291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAllAreaTableViewCell.swift; sourceTree = "<group>"; };
+		66C6FD16291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAllAreaTableViewCell.xib; sourceTree = "<group>"; };
+		66C6FD19291A3C6E0068D08B /* TitleAllScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAllScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		66C6FD1A291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAllScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		66C6FD1D291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAllScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAllScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		BD51E82E290FC437007DFCC0 /* Reclean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reclean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51E831290FC437007DFCC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD51E833290FC437007DFCC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +87,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66C6FD03291A32780068D08B /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				66C6FD0A291A36080068D08B /* FirstPageViewController.xib */,
+				66C6FD09291A36080068D08B /* FirstPageViewController.swift */,
+				66C6FD06291A35770068D08B /* SignInUiViewController.xib */,
+				66C6FD05291A35770068D08B /* SignInUiViewController.swift */,
+				66C6FD0E291A36490068D08B /* AfterSignInViewController.xib */,
+				66C6FD0D291A36490068D08B /* AfterSignInViewController.swift */,
+				666C9070291D3E1D00AB065D /* AddAreaViewController.swift */,
+				666C9071291D3E1D00AB065D /* AddAreaViewController.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		66C6FD04291A32C30068D08B /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				66BCE378291A61E300021E8A /* ScheduleViewController.xib */,
+				66BCE377291A61E300021E8A /* ScheduleViewController.swift */,
+				66BCE37C291A64CB00021E8A /* TitleScheduleTableViewCell.xib */,
+				66BCE37B291A64CB00021E8A /* TitleScheduleTableViewCell.swift */,
+				66C6FD12291A38FE0068D08B /* TagScheduleTableViewCell.xib */,
+				66C6FD11291A38FE0068D08B /* TagScheduleTableViewCell.swift */,
+				66C6FD16291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib */,
+				66C6FD15291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift */,
+				66402161291BAF94001442D2 /* TagAllAreaTableViewCell.xib */,
+				66402160291BAF94001442D2 /* TagAllAreaTableViewCell.swift */,
+				66C6FD1A291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib */,
+				66C6FD19291A3C6E0068D08B /* TitleAllScheduleTableViewCell.swift */,
+				66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */,
+				66C6FD1D291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
 		BD51E825290FC437007DFCC0 = {
 			isa = PBXGroup;
 			children = (
+				66698756291D112700F865ED /* Launch Screen.storyboard */,
 				BD51E830290FC437007DFCC0 /* Reclean */,
 				BD51E82F290FC437007DFCC0 /* Products */,
 			);
@@ -61,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				BDCDF6C7291A453E001BD533 /* CleaningItems */,
+				66C6FD04291A32C30068D08B /* Schedule */,
+				66C6FD03291A32780068D08B /* OnBoarding */,
 				BD51E831290FC437007DFCC0 /* AppDelegate.swift */,
 				BD51E833290FC437007DFCC0 /* SceneDelegate.swift */,
 				BD51E835290FC437007DFCC0 /* ViewController.swift */,
@@ -139,10 +224,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */,
+				66C6FD20291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib in Resources */,
 				BD51E83E290FC439007DFCC0 /* LaunchScreen.storyboard in Resources */,
 				BDCDF6CB291A457E001BD533 /* AllItemsViewController.xib in Resources */,
+				66BCE37A291A61E300021E8A /* ScheduleViewController.xib in Resources */,
+				66C6FD1C291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib in Resources */,
 				BD51E83B290FC439007DFCC0 /* Assets.xcassets in Resources */,
+				66698757291D112700F865ED /* Launch Screen.storyboard in Resources */,
+				66C6FD18291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib in Resources */,
+				66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */,
+				66C6FD0C291A36080068D08B /* FirstPageViewController.xib in Resources */,
 				BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */,
+				666C9073291D3E1D00AB065D /* AddAreaViewController.xib in Resources */,
+				66BCE37E291A64CB00021E8A /* TitleScheduleTableViewCell.xib in Resources */,
+				66C6FD10291A36490068D08B /* AfterSignInViewController.xib in Resources */,
+				66C6FD14291A38FE0068D08B /* TagScheduleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +252,18 @@
 			files = (
 				BD51E836290FC438007DFCC0 /* ViewController.swift in Sources */,
 				BDCDF6CA291A457E001BD533 /* AllItemsViewController.swift in Sources */,
+				66C6FD07291A35770068D08B /* SignInUiViewController.swift in Sources */,
+				66C6FD0F291A36490068D08B /* AfterSignInViewController.swift in Sources */,
+				666C9072291D3E1D00AB065D /* AddAreaViewController.swift in Sources */,
+				66BCE379291A61E300021E8A /* ScheduleViewController.swift in Sources */,
+				66C6FD0B291A36080068D08B /* FirstPageViewController.swift in Sources */,
 				BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */,
+				66C6FD17291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift in Sources */,
+				66C6FD1B291A3C6E0068D08B /* TitleAllScheduleTableViewCell.swift in Sources */,
+				66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */,
+				66C6FD13291A38FE0068D08B /* TagScheduleTableViewCell.swift in Sources */,
+				66BCE37D291A64CB00021E8A /* TitleScheduleTableViewCell.swift in Sources */,
+				66402162291BAF94001442D2 /* TagAllAreaTableViewCell.swift in Sources */,
 				BD51E834290FC437007DFCC0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -286,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -303,14 +411,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DFF5WS246X;
+				DEVELOPMENT_TEAM = 8FYVDX646G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,14 +439,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DFF5WS246X;
+				DEVELOPMENT_TEAM = 8FYVDX646G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
