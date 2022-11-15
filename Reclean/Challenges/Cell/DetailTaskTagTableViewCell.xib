@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DetailTaskTagTableViewCell" customModule="Reclean" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8my-NV-KNP">
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Zb-XW-q3q">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Q4h-3q-LhU"/>
+                                    <constraint firstAttribute="width" constant="90" id="z6E-PR-2Pw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X83-od-kHW">
+                                <rect key="frame" x="90" y="29.666666666666671" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="tHG-jE-A9E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2S-ls-MvS">
+                                <rect key="frame" x="232" y="22.666666666666671" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Zb-XW-q3q" firstAttribute="leading" secondItem="8my-NV-KNP" secondAttribute="leading" id="9aB-dr-v2z"/>
+                            <constraint firstAttribute="trailing" secondItem="T2S-ls-MvS" secondAttribute="trailing" constant="8" id="LfR-ug-t5P"/>
+                            <constraint firstAttribute="bottom" secondItem="4Zb-XW-q3q" secondAttribute="bottom" id="OfK-p9-FSk"/>
+                            <constraint firstItem="X83-od-kHW" firstAttribute="leading" secondItem="4Zb-XW-q3q" secondAttribute="trailing" id="P36-ae-62Y"/>
+                            <constraint firstItem="X83-od-kHW" firstAttribute="centerY" secondItem="8my-NV-KNP" secondAttribute="centerY" id="isH-Gy-fBn"/>
+                            <constraint firstItem="T2S-ls-MvS" firstAttribute="centerY" secondItem="8my-NV-KNP" secondAttribute="centerY" id="nib-CU-f7n"/>
+                            <constraint firstItem="4Zb-XW-q3q" firstAttribute="top" secondItem="8my-NV-KNP" secondAttribute="top" id="yuT-Xb-cgk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8my-NV-KNP" secondAttribute="bottom" id="8qd-Lv-F6E"/>
+                    <constraint firstAttribute="trailing" secondItem="8my-NV-KNP" secondAttribute="trailing" id="8tT-or-cNT"/>
+                    <constraint firstItem="8my-NV-KNP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JU7-Rt-lXi"/>
+                    <constraint firstItem="8my-NV-KNP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sNs-EE-R74"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="72" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

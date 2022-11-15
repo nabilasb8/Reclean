@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BranchAreaViewController" customModule="Reclean" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ia-rW-aGu">
+                    <rect key="frame" x="159" y="269.66666666666669" width="75" height="24"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Whoops">
+                            <attributes>
+                                <font key="NSFont" size="20" name="SFPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L13-it-Dbq">
+                    <rect key="frame" x="125" y="323.66666666666669" width="143" height="14"/>
+                    <attributedString key="attributedText">
+                        <fragment content="The cleaning task is empty">
+                            <attributes>
+                                <font key="NSFont" size="12" name="SFPro-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS4-wq-Y1T">
+                    <rect key="frame" x="96.000000000000014" y="342.66666666666669" width="201.33333333333337" height="13.333333333333314"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Looks like you haven't create any task yet">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="12"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ik-fK-l6h">
+                    <rect key="frame" x="38" y="396" width="317" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Gza-1B-Atj"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Add Item">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseBackgroundColor" name="Brand Color"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4Ik-fK-l6h" firstAttribute="top" secondItem="oS4-wq-Y1T" secondAttribute="bottom" constant="40" id="9S3-71-yyk"/>
+                <constraint firstItem="4Ik-fK-l6h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="DW4-Va-Ge4"/>
+                <constraint firstItem="L13-it-Dbq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LXh-8q-tgv"/>
+                <constraint firstItem="L13-it-Dbq" firstAttribute="top" secondItem="2Ia-rW-aGu" secondAttribute="bottom" constant="30" id="MWn-b3-dFa"/>
+                <constraint firstItem="2Ia-rW-aGu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PAG-qM-8Yx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Ik-fK-l6h" secondAttribute="trailing" constant="38" id="S4Z-4b-GL8"/>
+                <constraint firstItem="4Ik-fK-l6h" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cs2-iA-6za"/>
+                <constraint firstItem="oS4-wq-Y1T" firstAttribute="top" secondItem="L13-it-Dbq" secondAttribute="bottom" constant="5" id="hnp-s4-9eI"/>
+                <constraint firstItem="oS4-wq-Y1T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hsw-6X-qTn"/>
+                <constraint firstItem="4Ik-fK-l6h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sA5-Bp-JMR"/>
+            </constraints>
+            <point key="canvasLocation" x="69" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Brand Color">
+            <color red="0.11800000071525574" green="0.25099998712539673" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

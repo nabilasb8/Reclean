@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,14 +16,95 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaT-qw-mnF">
+                    <rect key="frame" x="38" y="798" width="354" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="w5s-kR-DdE"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Save">
+                                <attributes>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="16" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseBackgroundColor" name="Brand Color"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj8-Lx-xOw">
+                    <rect key="frame" x="38" y="107" width="67" height="19"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Add Area">
+                            <attributes>
+                                <font key="NSFont" size="16" name="SFPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-Tz-tw7">
+                    <rect key="frame" x="38" y="164" width="354" height="48"/>
+                    <color key="backgroundColor" name="Gray Color 3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="EDj-vp-aOi"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Input Area Name">
+                            <attributes>
+                                <color key="NSColor" name="Gray Color 1"/>
+                                <font key="NSFont" metaFont="system" size="11"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaR-MB-kJe">
+                    <rect key="frame" x="369" y="107" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="I8A-za-ED4"/>
+                        <constraint firstAttribute="width" constant="23" id="Vfe-q2-Lyp"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="Closeexit" imagePadding="0.0"/>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="-88" y="32"/>
+            <constraints>
+                <constraint firstItem="Dj8-Lx-xOw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="8yb-rg-wCn"/>
+                <constraint firstItem="Dj8-Lx-xOw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="48" id="AC6-M7-KUB"/>
+                <constraint firstItem="OaR-MB-kJe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="48" id="BEu-WF-DI8"/>
+                <constraint firstItem="bhK-Tz-tw7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="NDK-eg-hM4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JaT-qw-mnF" secondAttribute="trailing" constant="38" id="PVU-3Z-QpO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JaT-qw-mnF" secondAttribute="bottom" constant="40" id="cod-iY-C0I"/>
+                <constraint firstItem="bhK-Tz-tw7" firstAttribute="top" secondItem="Dj8-Lx-xOw" secondAttribute="bottom" constant="38" id="hmk-Jc-Qty"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OaR-MB-kJe" secondAttribute="trailing" constant="38" id="rsR-Xn-N6b"/>
+                <constraint firstItem="JaT-qw-mnF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="sds-tu-Gue"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bhK-Tz-tw7" secondAttribute="trailing" constant="38" id="zYY-R4-krM"/>
+            </constraints>
+            <point key="canvasLocation" x="-89.302325581395351" y="31.545064377682404"/>
         </view>
     </objects>
     <resources>
+        <image name="Closeexit" width="24" height="24"/>
+        <namedColor name="Brand Color">
+            <color red="0.11800000071525574" green="0.25099998712539673" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray Color 1">
+            <color red="0.48199999332427979" green="0.43500000238418579" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray Color 3">
+            <color red="0.86699998378753662" green="0.85500001907348633" blue="0.85500001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
