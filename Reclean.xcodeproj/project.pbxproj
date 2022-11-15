@@ -30,12 +30,28 @@
 		66C6FD1C291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD1A291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib */; };
 		66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD1D291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift */; };
 		66C6FD20291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */; };
+		BD1F4674292371CA00B646F1 /* AddAreaDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F4672292371CA00B646F1 /* AddAreaDetailsVC.swift */; };
+		BD1F4675292371CA00B646F1 /* AddAreaDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F4673292371CA00B646F1 /* AddAreaDetailsVC.xib */; };
+		BD1F46792923721900B646F1 /* AddAreaDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F46772923721900B646F1 /* AddAreaDetailsTableViewCell.swift */; };
+		BD1F467A2923721900B646F1 /* AddAreaDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F46782923721900B646F1 /* AddAreaDetailsTableViewCell.xib */; };
+		BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F467C2923727800B646F1 /* AllAreasVC.swift */; };
+		BD1F467F2923727800B646F1 /* AllAreasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F467D2923727800B646F1 /* AllAreasVC.xib */; };
+		BD1F4683292372F600B646F1 /* AddAreasListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F4681292372F600B646F1 /* AddAreasListVC.swift */; };
+		BD1F4684292372F600B646F1 /* AddAreasListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F4682292372F600B646F1 /* AddAreasListVC.xib */; };
+		BD1F46882923734E00B646F1 /* AddAreaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */; };
+		BD1F46892923734E00B646F1 /* AddAreaListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */; };
+		BD1F468D2923753000B646F1 /* ChallengesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F468B2923753000B646F1 /* ChallengesVC.swift */; };
+		BD1F468E2923753000B646F1 /* ChallengesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F468C2923753000B646F1 /* ChallengesVC.xib */; };
 		BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E831290FC437007DFCC0 /* AppDelegate.swift */; };
 		BD51E834290FC437007DFCC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E833290FC437007DFCC0 /* SceneDelegate.swift */; };
 		BD51E836290FC438007DFCC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E835290FC437007DFCC0 /* ViewController.swift */; };
 		BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51E837290FC438007DFCC0 /* Main.storyboard */; };
 		BD51E83B290FC439007DFCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD51E83A290FC439007DFCC0 /* Assets.xcassets */; };
 		BD51E83E290FC439007DFCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51E83C290FC439007DFCC0 /* LaunchScreen.storyboard */; };
+		BDC1AD3E2920A77C00481CB9 /* AreaDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1AD3C2920A77C00481CB9 /* AreaDetailsVC.swift */; };
+		BDC1AD3F2920A77C00481CB9 /* AreaDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC1AD3D2920A77C00481CB9 /* AreaDetailsVC.xib */; };
+		BDC1AD432920A87A00481CB9 /* ListItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1AD412920A87A00481CB9 /* ListItemsTableViewCell.swift */; };
+		BDC1AD442920A87A00481CB9 /* ListItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC1AD422920A87A00481CB9 /* ListItemsTableViewCell.xib */; };
 		BDCDF6CA291A457E001BD533 /* AllItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCDF6C8291A457E001BD533 /* AllItemsViewController.swift */; };
 		BDCDF6CB291A457E001BD533 /* AllItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDCDF6C9291A457E001BD533 /* AllItemsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -64,6 +80,18 @@
 		66C6FD1A291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAllScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		66C6FD1D291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAllScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAllScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		BD1F4672292371CA00B646F1 /* AddAreaDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaDetailsVC.swift; sourceTree = "<group>"; };
+		BD1F4673292371CA00B646F1 /* AddAreaDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaDetailsVC.xib; sourceTree = "<group>"; };
+		BD1F46772923721900B646F1 /* AddAreaDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		BD1F46782923721900B646F1 /* AddAreaDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		BD1F467C2923727800B646F1 /* AllAreasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAreasVC.swift; sourceTree = "<group>"; };
+		BD1F467D2923727800B646F1 /* AllAreasVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAreasVC.xib; sourceTree = "<group>"; };
+		BD1F4681292372F600B646F1 /* AddAreasListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreasListVC.swift; sourceTree = "<group>"; };
+		BD1F4682292372F600B646F1 /* AddAreasListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreasListVC.xib; sourceTree = "<group>"; };
+		BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaListTableViewCell.swift; sourceTree = "<group>"; };
+		BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaListTableViewCell.xib; sourceTree = "<group>"; };
+		BD1F468B2923753000B646F1 /* ChallengesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesVC.swift; sourceTree = "<group>"; };
+		BD1F468C2923753000B646F1 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
 		BD51E82E290FC437007DFCC0 /* Reclean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reclean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51E831290FC437007DFCC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD51E833290FC437007DFCC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +100,10 @@
 		BD51E83A290FC439007DFCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD51E83D290FC439007DFCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD51E83F290FC439007DFCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC1AD3C2920A77C00481CB9 /* AreaDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDetailsVC.swift; sourceTree = "<group>"; };
+		BDC1AD3D2920A77C00481CB9 /* AreaDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaDetailsVC.xib; sourceTree = "<group>"; };
+		BDC1AD412920A87A00481CB9 /* ListItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsTableViewCell.swift; sourceTree = "<group>"; };
+		BDC1AD422920A87A00481CB9 /* ListItemsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemsTableViewCell.xib; sourceTree = "<group>"; };
 		BDCDF6C8291A457E001BD533 /* AllItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemsViewController.swift; sourceTree = "<group>"; };
 		BDCDF6C9291A457E001BD533 /* AllItemsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllItemsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +155,63 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		BD1F46712923719500B646F1 /* AddAreaDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F4676292371F900B646F1 /* Cells */,
+				BD1F4672292371CA00B646F1 /* AddAreaDetailsVC.swift */,
+				BD1F4673292371CA00B646F1 /* AddAreaDetailsVC.xib */,
+			);
+			path = AddAreaDetails;
+			sourceTree = "<group>";
+		};
+		BD1F4676292371F900B646F1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F46772923721900B646F1 /* AddAreaDetailsTableViewCell.swift */,
+				BD1F46782923721900B646F1 /* AddAreaDetailsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BD1F467B2923725D00B646F1 /* AllAreas */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F4680292372D600B646F1 /* AddAreasList */,
+				BD1F467C2923727800B646F1 /* AllAreasVC.swift */,
+				BD1F467D2923727800B646F1 /* AllAreasVC.xib */,
+			);
+			path = AllAreas;
+			sourceTree = "<group>";
+		};
+		BD1F4680292372D600B646F1 /* AddAreasList */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F46852923732900B646F1 /* Cells */,
+				BD1F4681292372F600B646F1 /* AddAreasListVC.swift */,
+				BD1F4682292372F600B646F1 /* AddAreasListVC.xib */,
+			);
+			path = AddAreasList;
+			sourceTree = "<group>";
+		};
+		BD1F46852923732900B646F1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */,
+				BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BD1F468A292374E800B646F1 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F468B2923753000B646F1 /* ChallengesVC.swift */,
+				BD1F468C2923753000B646F1 /* ChallengesVC.xib */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
 		BD51E825290FC437007DFCC0 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +232,9 @@
 		BD51E830290FC437007DFCC0 /* Reclean */ = {
 			isa = PBXGroup;
 			children = (
+				BD1F468A292374E800B646F1 /* Challenges */,
+				BD1F467B2923725D00B646F1 /* AllAreas */,
+				BDC1AD3B2920A76100481CB9 /* AreaDetails */,
 				BDCDF6C7291A453E001BD533 /* CleaningItems */,
 				66C6FD04291A32C30068D08B /* Schedule */,
 				66C6FD03291A32780068D08B /* OnBoarding */,
@@ -155,6 +247,26 @@
 				BD51E83F290FC439007DFCC0 /* Info.plist */,
 			);
 			path = Reclean;
+			sourceTree = "<group>";
+		};
+		BDC1AD3B2920A76100481CB9 /* AreaDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F46712923719500B646F1 /* AddAreaDetails */,
+				BDC1AD402920A85400481CB9 /* Cells */,
+				BDC1AD3C2920A77C00481CB9 /* AreaDetailsVC.swift */,
+				BDC1AD3D2920A77C00481CB9 /* AreaDetailsVC.xib */,
+			);
+			path = AreaDetails;
+			sourceTree = "<group>";
+		};
+		BDC1AD402920A85400481CB9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BDC1AD412920A87A00481CB9 /* ListItemsTableViewCell.swift */,
+				BDC1AD422920A87A00481CB9 /* ListItemsTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		BDCDF6C7291A453E001BD533 /* CleaningItems */ = {
@@ -225,21 +337,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */,
+				BD1F4684292372F600B646F1 /* AddAreasListVC.xib in Resources */,
 				66C6FD20291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib in Resources */,
 				BD51E83E290FC439007DFCC0 /* LaunchScreen.storyboard in Resources */,
 				BDCDF6CB291A457E001BD533 /* AllItemsViewController.xib in Resources */,
+				BDC1AD442920A87A00481CB9 /* ListItemsTableViewCell.xib in Resources */,
+				BDC1AD3F2920A77C00481CB9 /* AreaDetailsVC.xib in Resources */,
+				BD1F4675292371CA00B646F1 /* AddAreaDetailsVC.xib in Resources */,
 				66BCE37A291A61E300021E8A /* ScheduleViewController.xib in Resources */,
+				BD1F467F2923727800B646F1 /* AllAreasVC.xib in Resources */,
 				66C6FD1C291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib in Resources */,
 				BD51E83B290FC439007DFCC0 /* Assets.xcassets in Resources */,
 				66698757291D112700F865ED /* Launch Screen.storyboard in Resources */,
 				66C6FD18291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib in Resources */,
+				BD1F46892923734E00B646F1 /* AddAreaListTableViewCell.xib in Resources */,
 				66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */,
+				BD1F468E2923753000B646F1 /* ChallengesVC.xib in Resources */,
 				66C6FD0C291A36080068D08B /* FirstPageViewController.xib in Resources */,
 				BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */,
 				666C9073291D3E1D00AB065D /* AddAreaViewController.xib in Resources */,
 				66BCE37E291A64CB00021E8A /* TitleScheduleTableViewCell.xib in Resources */,
 				66C6FD10291A36490068D08B /* AfterSignInViewController.xib in Resources */,
 				66C6FD14291A38FE0068D08B /* TagScheduleTableViewCell.xib in Resources */,
+				BD1F467A2923721900B646F1 /* AddAreaDetailsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,18 +370,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1F46882923734E00B646F1 /* AddAreaListTableViewCell.swift in Sources */,
 				BD51E836290FC438007DFCC0 /* ViewController.swift in Sources */,
 				BDCDF6CA291A457E001BD533 /* AllItemsViewController.swift in Sources */,
 				66C6FD07291A35770068D08B /* SignInUiViewController.swift in Sources */,
 				66C6FD0F291A36490068D08B /* AfterSignInViewController.swift in Sources */,
 				666C9072291D3E1D00AB065D /* AddAreaViewController.swift in Sources */,
 				66BCE379291A61E300021E8A /* ScheduleViewController.swift in Sources */,
+				BDC1AD3E2920A77C00481CB9 /* AreaDetailsVC.swift in Sources */,
 				66C6FD0B291A36080068D08B /* FirstPageViewController.swift in Sources */,
 				BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */,
+				BD1F4683292372F600B646F1 /* AddAreasListVC.swift in Sources */,
+				BDC1AD432920A87A00481CB9 /* ListItemsTableViewCell.swift in Sources */,
+				BD1F4674292371CA00B646F1 /* AddAreaDetailsVC.swift in Sources */,
 				66C6FD17291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift in Sources */,
 				66C6FD1B291A3C6E0068D08B /* TitleAllScheduleTableViewCell.swift in Sources */,
+				BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */,
 				66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */,
 				66C6FD13291A38FE0068D08B /* TagScheduleTableViewCell.swift in Sources */,
+				BD1F468D2923753000B646F1 /* ChallengesVC.swift in Sources */,
+				BD1F46792923721900B646F1 /* AddAreaDetailsTableViewCell.swift in Sources */,
 				66BCE37D291A64CB00021E8A /* TitleScheduleTableViewCell.swift in Sources */,
 				66402162291BAF94001442D2 /* TagAllAreaTableViewCell.swift in Sources */,
 				BD51E834290FC437007DFCC0 /* SceneDelegate.swift in Sources */,
@@ -411,7 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FYVDX646G;
+				DEVELOPMENT_TEAM = DFF5WS246X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ReClean;
@@ -440,7 +568,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FYVDX646G;
+				DEVELOPMENT_TEAM = DFF5WS246X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ReClean;
