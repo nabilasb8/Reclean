@@ -50,8 +50,6 @@
 		66BCE37E291A64CB00021E8A /* TitleScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BCE37C291A64CB00021E8A /* TitleScheduleTableViewCell.xib */; };
 		66C6FD07291A35770068D08B /* SignInUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD05291A35770068D08B /* SignInUiViewController.swift */; };
 		66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD06291A35770068D08B /* SignInUiViewController.xib */; };
-		66C6FD0B291A36080068D08B /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD09291A36080068D08B /* FirstPageViewController.swift */; };
-		66C6FD0C291A36080068D08B /* FirstPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD0A291A36080068D08B /* FirstPageViewController.xib */; };
 		66C6FD0F291A36490068D08B /* AfterSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD0D291A36490068D08B /* AfterSignInViewController.swift */; };
 		66C6FD10291A36490068D08B /* AfterSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD0E291A36490068D08B /* AfterSignInViewController.xib */; };
 		66C6FD13291A38FE0068D08B /* TagScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD11291A38FE0068D08B /* TagScheduleTableViewCell.swift */; };
@@ -122,8 +120,6 @@
 		66BCE37C291A64CB00021E8A /* TitleScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		66C6FD05291A35770068D08B /* SignInUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUiViewController.swift; sourceTree = "<group>"; };
 		66C6FD06291A35770068D08B /* SignInUiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInUiViewController.xib; sourceTree = "<group>"; };
-		66C6FD09291A36080068D08B /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
-		66C6FD0A291A36080068D08B /* FirstPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPageViewController.xib; sourceTree = "<group>"; };
 		66C6FD0D291A36490068D08B /* AfterSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSignInViewController.swift; sourceTree = "<group>"; };
 		66C6FD0E291A36490068D08B /* AfterSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AfterSignInViewController.xib; sourceTree = "<group>"; };
 		66C6FD11291A38FE0068D08B /* TagScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagScheduleTableViewCell.swift; sourceTree = "<group>"; };
@@ -244,8 +240,6 @@
 		66C6FD03291A32780068D08B /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
-				66C6FD0A291A36080068D08B /* FirstPageViewController.xib */,
-				66C6FD09291A36080068D08B /* FirstPageViewController.swift */,
 				66C6FD06291A35770068D08B /* SignInUiViewController.xib */,
 				66C6FD05291A35770068D08B /* SignInUiViewController.swift */,
 				66C6FD0E291A36490068D08B /* AfterSignInViewController.xib */,
@@ -406,7 +400,6 @@
 				66CE2C642921F3DA007BD8E1 /* EmptyScheduleViewController.xib in Resources */,
 				663A3F46292123FB0059C2F3 /* BadgesFinishedViewController.xib in Resources */,
 				663A3F54292136FF0059C2F3 /* AboutTableViewCell.xib in Resources */,
-				66C6FD0C291A36080068D08B /* FirstPageViewController.xib in Resources */,
 				BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */,
 				663A3F4F292135E70059C2F3 /* ActivitesTableViewCell.xib in Resources */,
 				668F264829228C4E00412735 /* DescriptionTableViewCell.xib in Resources */,
@@ -440,7 +433,6 @@
 				666C9072291D3E1D00AB065D /* AddAreaViewController.swift in Sources */,
 				66BCE379291A61E300021E8A /* ScheduleViewController.swift in Sources */,
 				66CE2C672921F484007BD8E1 /* TagEmptyScheduleTableViewCell.swift in Sources */,
-				66C6FD0B291A36080068D08B /* FirstPageViewController.swift in Sources */,
 				BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */,
 				66C6FD17291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift in Sources */,
 				663A3F4A292126C50059C2F3 /* ProfileViewController.swift in Sources */,
