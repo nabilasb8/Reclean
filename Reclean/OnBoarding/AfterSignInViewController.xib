@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -117,6 +116,18 @@
                         <constraint firstItem="88B-50-WJr" firstAttribute="leading" secondItem="VWr-ez-JAv" secondAttribute="trailing" id="ziz-CT-B2J"/>
                     </constraints>
                 </view>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmy-vZ-agI">
+                    <rect key="frame" x="0.0" y="842" width="430" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="HA7-AH-T35"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Schedule" image="schedule" id="Cub-4y-eaD"/>
+                        <tabBarItem title="Challenges" image="challenges" id="SIU-tN-1IG"/>
+                        <tabBarItem title="Profile" id="ICv-F3-6dO"/>
+                    </items>
+                </tabBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -124,12 +135,15 @@
                 <constraint firstItem="HRx-jE-aVS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="0vn-mw-lfn"/>
                 <constraint firstItem="zCr-7G-vni" firstAttribute="top" secondItem="uoy-j1-6e6" secondAttribute="bottom" constant="50" id="5B2-Vs-Jkx"/>
                 <constraint firstItem="uoy-j1-6e6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="65V-Rp-anP"/>
+                <constraint firstItem="tmy-vZ-agI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GlM-W0-Xl1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SlF-bz-WSb" secondAttribute="trailing" constant="40" id="LNf-Tk-HKA"/>
+                <constraint firstAttribute="bottom" secondItem="tmy-vZ-agI" secondAttribute="bottom" id="UnO-6f-uBg"/>
                 <constraint firstItem="HRx-jE-aVS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yun-Md-yhp"/>
                 <constraint firstItem="SlF-bz-WSb" firstAttribute="top" secondItem="zCr-7G-vni" secondAttribute="bottom" constant="20" id="a9T-of-C8i"/>
                 <constraint firstItem="zCr-7G-vni" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dnJ-Vc-oFh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HRx-jE-aVS" secondAttribute="trailing" constant="38" id="i59-dE-3d9"/>
                 <constraint firstItem="HRx-jE-aVS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="j8A-aj-o5V"/>
+                <constraint firstItem="tmy-vZ-agI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="px4-uc-D75"/>
                 <constraint firstItem="HRx-jE-aVS" firstAttribute="top" secondItem="SlF-bz-WSb" secondAttribute="bottom" constant="30" id="uhJ-Hf-eZ7"/>
                 <constraint firstItem="SlF-bz-WSb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="yuc-bf-alu"/>
             </constraints>
@@ -137,6 +151,8 @@
         </view>
     </objects>
     <resources>
+        <image name="challenges" width="24" height="24"/>
+        <image name="schedule" width="24" height="24"/>
         <namedColor name="Black Color">
             <color red="0.11400000005960464" green="0.086000002920627594" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

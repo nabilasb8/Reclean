@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EndYearViewController" customModule="Reclean" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gw0-Bv-bdl">
+                    <rect key="frame" x="0.0" y="111" width="390" height="699"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tqW-Ly-WV5">
+                    <rect key="frame" x="38" y="77" width="314" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="7Mr-RB-aNg"/>
+                    </constraints>
+                    <segments>
+                        <segment title="LEADERBOARD"/>
+                        <segment title="DETAIL"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Gw0-Bv-bdl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4gT-Or-mC6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gw0-Bv-bdl" secondAttribute="trailing" id="Cb7-nd-GwA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Gw0-Bv-bdl" secondAttribute="bottom" id="DsG-L8-DFz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tqW-Ly-WV5" secondAttribute="trailing" constant="38" id="Sms-1N-ATq"/>
+                <constraint firstItem="Gw0-Bv-bdl" firstAttribute="top" secondItem="tqW-Ly-WV5" secondAttribute="bottom" id="Zut-z3-rTb"/>
+                <constraint firstItem="tqW-Ly-WV5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="qHS-cm-3A6"/>
+                <constraint firstItem="tqW-Ly-WV5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="vUz-QU-Knw"/>
+            </constraints>
+            <point key="canvasLocation" x="70.769230769230774" y="19.90521327014218"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
