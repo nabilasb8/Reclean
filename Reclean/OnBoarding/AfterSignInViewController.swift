@@ -16,8 +16,15 @@ class AfterSignInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
     @IBAction func addAreaa(_ sender: Any) {
+        let vc = AddAreaViewController()
+        let navVc = UINavigationController(rootViewController: vc)
+        
+        if let sheet = navVc.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.preferredCornerRadius = 40
+        }
+        navigationController?.present(navVc, animated: true)
     }
     /*
     // MARK: - Navigation

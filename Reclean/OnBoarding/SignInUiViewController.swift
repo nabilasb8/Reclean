@@ -17,6 +17,10 @@ class SignInUiViewController: UIViewController {
     }
 
     @IBAction func continueSign(_ sender: Any) {
+        if let navigationController = navigationController {
+            let viewController = AfterSignInViewController()
+            navigationController.pushViewController(viewController,animated:true)
+        }
     }
     
     /*

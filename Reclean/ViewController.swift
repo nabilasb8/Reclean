@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     @IBAction func buttonStarted(_ sender: Any) {
         if let navigationController = navigationController {
             let viewController = SignInUiViewController()
-            navigationController.pushViewController(viewController,animated:true)}
+            navigationController.pushViewController(viewController,animated:true)
+        }
     }
     
 }

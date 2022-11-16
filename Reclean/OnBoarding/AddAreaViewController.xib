@@ -39,7 +39,7 @@
                     </buttonConfiguration>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj8-Lx-xOw">
-                    <rect key="frame" x="38" y="107" width="67" height="19"/>
+                    <rect key="frame" x="38" y="59" width="67" height="19"/>
                     <attributedString key="attributedText">
                         <fragment content="Add Area">
                             <attributes>
@@ -51,7 +51,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-Tz-tw7">
-                    <rect key="frame" x="38" y="164" width="354" height="48"/>
+                    <rect key="frame" x="38" y="116" width="354" height="48"/>
                     <color key="backgroundColor" name="Gray Color 3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="EDj-vp-aOi"/>
@@ -60,14 +60,14 @@
                         <fragment content="Input Area Name">
                             <attributes>
                                 <color key="NSColor" name="Gray Color 1"/>
-                                <font key="NSFont" metaFont="system" size="11"/>
+                                <font key="NSFont" metaFont="smallSystem"/>
                             </attributes>
                         </fragment>
                     </attributedString>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaR-MB-kJe">
-                    <rect key="frame" x="369" y="107" width="23" height="23"/>
+                    <rect key="frame" x="369" y="59" width="23" height="23"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="23" id="I8A-za-ED4"/>
                         <constraint firstAttribute="width" constant="23" id="Vfe-q2-Lyp"/>
@@ -81,8 +81,8 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Dj8-Lx-xOw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="8yb-rg-wCn"/>
-                <constraint firstItem="Dj8-Lx-xOw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="48" id="AC6-M7-KUB"/>
-                <constraint firstItem="OaR-MB-kJe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="48" id="BEu-WF-DI8"/>
+                <constraint firstItem="Dj8-Lx-xOw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AC6-M7-KUB"/>
+                <constraint firstItem="OaR-MB-kJe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BEu-WF-DI8"/>
                 <constraint firstItem="bhK-Tz-tw7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="NDK-eg-hM4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JaT-qw-mnF" secondAttribute="trailing" constant="38" id="PVU-3Z-QpO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JaT-qw-mnF" secondAttribute="bottom" constant="40" id="cod-iY-C0I"/>

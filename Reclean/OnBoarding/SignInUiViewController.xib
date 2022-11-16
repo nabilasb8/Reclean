@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -27,16 +26,8 @@
                         <constraint firstAttribute="height" constant="60" id="rGf-HF-iLR"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" image="apple.logo" catalog="system" cornerStyle="capsule">
-                        <attributedString key="attributedSubtitle">
-                            <fragment content="  Continue with Apple">
-                                <attributes>
-                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <font key="NSFont" size="16" name="SFPro-Regular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                    <buttonConfiguration key="configuration" style="filled" image="apple.logo" catalog="system" subtitle="  Continue with Apple" cornerStyle="capsule">
+                        <fontDescription key="subtitleFontDescription" style="UICTFontTextStyleSubhead"/>
                         <color key="baseBackgroundColor" name="Brand Color"/>
                     </buttonConfiguration>
                     <connections>

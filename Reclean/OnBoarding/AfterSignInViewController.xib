@@ -16,7 +16,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="After">
             <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -38,8 +38,7 @@
                         <color key="baseBackgroundColor" name="Brand Color"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="addArea:" destination="-1" eventType="touchUpInside" id="oH1-W8-4To"/>
-                        <action selector="addAreaa:" destination="-1" eventType="touchUpInside" id="28H-7e-1w2"/>
+                        <action selector="addAreaa:" destination="-1" eventType="touchUpInside" id="MzZ-sW-EqS"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-j1-6e6">
