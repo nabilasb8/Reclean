@@ -7,8 +7,14 @@
 
 import UIKit
 
+struct Item {
+    let image: UIImage
+    let title: String
+}
+
 class ProfileViewController: UIViewController {
 
+//    let activities: [Item] = [Item(image: <#T##UIImage#>, title: <#T##String#>)]
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -67,7 +67,7 @@
                                     <color key="baseBackgroundColor" name="Brand Color"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akE-kU-J1y"/>
+                                    <action selector="getStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4h-Y2-2XY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,9 +86,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vyz-dl-Dp9"/>
-                    <connections>
-                        <outlet property="buttonStart" destination="hkE-Yy-6Gg" id="Gbw-FC-dNN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

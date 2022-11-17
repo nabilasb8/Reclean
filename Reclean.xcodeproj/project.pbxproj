@@ -253,10 +253,10 @@
 		66C6FD04291A32C30068D08B /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				66CE2C622921F3DA007BD8E1 /* EmptyScheduleViewController.xib */,
-				66CE2C612921F3DA007BD8E1 /* EmptyScheduleViewController.swift */,
 				66BCE378291A61E300021E8A /* ScheduleViewController.xib */,
 				66BCE377291A61E300021E8A /* ScheduleViewController.swift */,
+				66CE2C622921F3DA007BD8E1 /* EmptyScheduleViewController.xib */,
+				66CE2C612921F3DA007BD8E1 /* EmptyScheduleViewController.swift */,
 				663A3F3A29211B0B0059C2F3 /* BranchAreaViewController.xib */,
 				663A3F3929211B0B0059C2F3 /* BranchAreaViewController.swift */,
 				663A3F3E29211FED0059C2F3 /* TodaysScheduleViewController.xib */,
