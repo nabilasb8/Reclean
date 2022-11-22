@@ -47,6 +47,7 @@
                 <constraint firstItem="t7P-tj-2w3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jns-XT-3Jm"/>
                 <constraint firstItem="t7P-tj-2w3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="snp-ky-oTX"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="4.615384615384615" y="20.616113744075829"/>
         </view>
     </objects>

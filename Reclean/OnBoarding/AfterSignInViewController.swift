@@ -9,16 +9,32 @@ import UIKit
 
 class AfterSignInViewController: UIViewController {
 
-    @IBOutlet weak var addArea: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
     }
 
-
     @IBAction func addAreaa(_ sender: Any) {
+        if let navigationController = navigationController {
+            let viewController = AddAreaViewController()
+            navigationController.pushViewController(viewController,animated:true)
+        }
+//
+//        let vc = AddAreaViewController()
+//        let navVc = UINavigationController(rootViewController: vc)
+//        if let sheet = navVc.sheetPresentationController {
+//            sheet.detents = [.large()]
+//            sheet.preferredCornerRadius = 40
+//        }
+//        navigationController?.present(navVc, animated: true)
     }
+    
+    @IBAction func joinButtonFamily(_ sender: Any) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 
