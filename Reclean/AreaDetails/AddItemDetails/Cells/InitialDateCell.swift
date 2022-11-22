@@ -8,16 +8,39 @@
 import UIKit
 
 class InitialDateCell: UITableViewCell {
+    
+    @IBOutlet weak var labelDate: UILabel!
+    @IBOutlet weak var viewDatePicker: UIView!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var needUpdateTableView: (() -> Void)?
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        selectionStyle = .none
+        datePicker.isHidden = true
+        datePicker.addTarget(self, action: #selector(didDatePickerValueChanged), for: .valueChanged)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didClickView))
+        viewDatePicker.addGestureRecognizer(tap)
+    }
+    
+    @objc func didClickView() {
+        datePicker.isHidden = !datePicker.isHidden
+        needUpdateTableView?()
+        
+        datePicker.date = Date()
+        needUpdateTableView?()
+    }
+    
+    @objc func didDatePickerValueChanged() {
+        needUpdateTableView?()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

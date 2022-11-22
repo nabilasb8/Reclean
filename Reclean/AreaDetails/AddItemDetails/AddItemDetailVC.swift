@@ -18,7 +18,7 @@ class AddItemDetailVC: UIViewController {
         title = "Add Item"
         
         tableView.separatorStyle = .none
-        tableView.register(UINib(nibName: "SelectItemCell", bundle: nil), forCellReuseIdentifier: "SelectItemCell")
+        tableView.register(UINib(nibName: "InitialDateCell", bundle: nil), forCellReuseIdentifier: "InitialDateCell")
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -30,7 +30,12 @@ extension AddItemDetailVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SelectItemCell", for: indexPath) as! SelectItemCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "InitialDateCell", for: indexPath) as! InitialDateCell
+        
+        cell.needUpdateTableView = {
+            self.tableView.beginUpdates()
+            self.tableView.endUpdates()
+        }
         
         return cell
         
