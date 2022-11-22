@@ -1,5 +1,5 @@
 //
-//  AddAreaDetailsVC.swift
+//  ChallengesVC.swift
 //  Reclean
 //
 //  Created by Nabila on 15/11/22.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class AddAreaDetailsVC: UIViewController {
+class ChallengesVC: UIViewController {
 
-    @IBOutlet weak var addAAreaTableView: UITableView!
+    @IBOutlet weak var listChallengesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

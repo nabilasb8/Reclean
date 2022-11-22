@@ -1,13 +1,13 @@
 //
-//  AddAreaDetailsTableViewCell.swift
+//  SetTimeCellCell.swift
 //  Reclean
 //
-//  Created by Nabila on 15/11/22.
+//  Created by Nabila on 21/11/22.
 //
 
 import UIKit
 
-class AddAreaDetailsTableViewCell: UITableViewCell {
+class SetTimeCellCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

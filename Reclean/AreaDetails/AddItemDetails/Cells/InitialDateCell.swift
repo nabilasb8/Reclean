@@ -1,13 +1,13 @@
 //
-//  ListItemsTableViewCell.swift
+//  InitialDateCell.swift
 //  Reclean
 //
-//  Created by Nabila on 13/11/22.
+//  Created by Nabila on 21/11/22.
 //
 
 import UIKit
 
-class ListItemsTableViewCell: UITableViewCell {
+class InitialDateCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
