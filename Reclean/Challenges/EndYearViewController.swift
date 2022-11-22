@@ -1,20 +1,16 @@
 //
-//  ScheduleViewController.swift
+//  EndYearViewController.swift
 //  Reclean
 //
-//  Created by Hastomi Riduan Munthe on 08/11/22.
+//  Created by Hastomi Riduan Munthe on 14/11/22.
 //
 
 import UIKit
 
-class ScheduleViewController: UIViewController {
-    @IBOutlet weak var ScheduleTable: UITableView!
-    
-    
-    override func viewDidLoad() {
+class EndYearViewController: UIViewController {
 
+    override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true)
 
         // Do any additional setup after loading the view.
     }

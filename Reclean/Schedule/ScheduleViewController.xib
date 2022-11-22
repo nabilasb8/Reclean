@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,22 +20,41 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t7P-tj-2w3">
-                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <rect key="frame" x="0.0" y="47" width="390" height="707"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oP0-nS-dkC">
+                    <rect key="frame" x="0.0" y="754" width="390" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="12D-Ge-mEc"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Schedule" image="schedule" id="V6k-xb-pqD"/>
+                        <tabBarItem title="Challenges" image="challenges" id="AyI-4F-Ym5"/>
+                        <tabBarItem title="Profile" image="profile" id="qcb-b4-p02"/>
+                    </items>
+                </tabBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="t7P-tj-2w3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GFR-YP-MLW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="t7P-tj-2w3" secondAttribute="bottom" id="d3O-Kt-oqz"/>
-                <constraint firstItem="t7P-tj-2w3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="noF-5u-Ixn"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t7P-tj-2w3" secondAttribute="trailing" id="tH8-F2-k3L"/>
+                <constraint firstAttribute="bottom" secondItem="oP0-nS-dkC" secondAttribute="bottom" id="HaB-eU-yXx"/>
+                <constraint firstItem="oP0-nS-dkC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ix3-Nd-u2v"/>
+                <constraint firstItem="oP0-nS-dkC" firstAttribute="top" secondItem="t7P-tj-2w3" secondAttribute="bottom" id="Qeh-G1-SyV"/>
+                <constraint firstItem="oP0-nS-dkC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Tgy-nW-pOE"/>
+                <constraint firstItem="t7P-tj-2w3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZFr-zF-Q03"/>
+                <constraint firstItem="t7P-tj-2w3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jns-XT-3Jm"/>
+                <constraint firstItem="t7P-tj-2w3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="snp-ky-oTX"/>
             </constraints>
-            <point key="canvasLocation" x="6" y="21"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="4.615384615384615" y="20.616113744075829"/>
         </view>
     </objects>
     <resources>
+        <image name="challenges" width="24" height="24"/>
+        <image name="profile" width="24" height="24"/>
+        <image name="schedule" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyScheduleViewController" customModule="Reclean" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NE1-CZ-bqI">
+                    <rect key="frame" x="0.0" y="754" width="390" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="4eC-a5-KHe"/>
+                        <constraint firstAttribute="height" constant="90" id="B9A-z1-oP9"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Schedule" image="schedule" id="pDJ-HS-IKX"/>
+                        <tabBarItem title="Challenges" image="challenges" id="GF8-u4-VdU"/>
+                        <tabBarItem title="Profile" image="profile" id="B9x-Od-HFf"/>
+                    </items>
+                </tabBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NE1-CZ-bqI" secondAttribute="bottom" id="aqA-ss-ye0"/>
+                <constraint firstItem="NE1-CZ-bqI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="swn-JO-x5E"/>
+                <constraint firstItem="NE1-CZ-bqI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tvn-mQ-CZ7"/>
+            </constraints>
+            <point key="canvasLocation" x="71" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="challenges" width="24" height="24"/>
+        <image name="profile" width="24" height="24"/>
+        <image name="schedule" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

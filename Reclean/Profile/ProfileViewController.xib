@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="Reclean" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tkD-18-0Bv">
+                    <rect key="frame" x="160" y="87" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Wqs-TP-4Mw"/>
+                        <constraint firstAttribute="width" constant="70" id="tfJ-vF-vQC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNa-Ch-oje">
+                    <rect key="frame" x="175" y="167" width="40" height="19"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Label">
+                            <attributes>
+                                <font key="NSFont" size="16" name="SFPro-Semibold"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ttd-HR-jfB">
+                    <rect key="frame" x="38" y="196" width="314" height="32"/>
+                    <segments>
+                        <segment title="ACTIVITIES"/>
+                        <segment title="ABOUT"/>
+                    </segments>
+                </segmentedControl>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bud-qm-Nij">
+                    <rect key="frame" x="0.0" y="754" width="390" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="yOc-Is-W97"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Schedule" image="schedule" id="bdl-6A-FUn"/>
+                        <tabBarItem title="Challenges" image="challenges" id="SYD-p6-NpT"/>
+                        <tabBarItem title="Profile" image="profile" id="Gig-Tx-ghs"/>
+                    </items>
+                </tabBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Hg-Ort">
+                    <rect key="frame" x="38" y="227" width="314" height="527"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4cJ-Hg-Ort" secondAttribute="trailing" constant="38" id="15C-Om-wDw"/>
+                <constraint firstItem="RNa-Ch-oje" firstAttribute="top" secondItem="tkD-18-0Bv" secondAttribute="bottom" constant="10" id="9OJ-j1-tMb"/>
+                <constraint firstItem="ttd-HR-jfB" firstAttribute="top" secondItem="RNa-Ch-oje" secondAttribute="bottom" constant="10" id="DF5-q9-K0b"/>
+                <constraint firstItem="ttd-HR-jfB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="TWS-7G-jH2"/>
+                <constraint firstItem="4cJ-Hg-Ort" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="Uhz-AR-rT2"/>
+                <constraint firstItem="4cJ-Hg-Ort" firstAttribute="top" secondItem="ttd-HR-jfB" secondAttribute="bottom" id="Wd9-kZ-Fdz"/>
+                <constraint firstItem="tkD-18-0Bv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="WzU-BG-0ce"/>
+                <constraint firstAttribute="bottom" secondItem="bud-qm-Nij" secondAttribute="bottom" id="YoU-8D-LJo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ttd-HR-jfB" secondAttribute="trailing" constant="38" id="e9k-F6-H4g"/>
+                <constraint firstItem="bud-qm-Nij" firstAttribute="top" secondItem="4cJ-Hg-Ort" secondAttribute="bottom" id="qPJ-mZ-a6K"/>
+                <constraint firstItem="bud-qm-Nij" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r7R-X4-1BD"/>
+                <constraint firstItem="bud-qm-Nij" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sMS-eY-tBq"/>
+                <constraint firstItem="tkD-18-0Bv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t3E-yc-a1C"/>
+                <constraint firstItem="RNa-Ch-oje" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x3e-sd-PYY"/>
+            </constraints>
+            <point key="canvasLocation" x="67.692307692307693" y="19.90521327014218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="challenges" width="24" height="24"/>
+        <image name="profile" width="24" height="24"/>
+        <image name="schedule" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

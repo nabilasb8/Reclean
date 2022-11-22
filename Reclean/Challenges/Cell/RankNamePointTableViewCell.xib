@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="RankNamePointTableViewCell" customModule="Reclean" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZf-sI-JbM">
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntM-A2-YTZ">
+                                <rect key="frame" x="0.0" y="13.333333333333334" width="37" height="18.666666666666664"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rank">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFPro-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-NL-x0a">
+                                <rect key="frame" x="97" y="13" width="42.666666666666657" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Name">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFPro-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKw-Uk-sh4">
+                                <rect key="frame" x="245.66666666666666" y="13.333333333333334" width="39.333333333333343" height="18.666666666666664"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFPro-Semibold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IKw-Uk-sh4" firstAttribute="centerY" secondItem="GZf-sI-JbM" secondAttribute="centerY" id="Bzv-3c-6Mu"/>
+                            <constraint firstItem="ntM-A2-YTZ" firstAttribute="leading" secondItem="GZf-sI-JbM" secondAttribute="leading" id="ZYo-Ht-jl2"/>
+                            <constraint firstItem="R3u-NL-x0a" firstAttribute="centerY" secondItem="GZf-sI-JbM" secondAttribute="centerY" id="eKf-6Q-lNt"/>
+                            <constraint firstItem="ntM-A2-YTZ" firstAttribute="centerY" secondItem="GZf-sI-JbM" secondAttribute="centerY" id="mrO-R1-dwO"/>
+                            <constraint firstAttribute="trailing" secondItem="IKw-Uk-sh4" secondAttribute="trailing" constant="30" id="rkp-fF-LeG"/>
+                            <constraint firstItem="R3u-NL-x0a" firstAttribute="leading" secondItem="ntM-A2-YTZ" secondAttribute="trailing" constant="60" id="rp5-Pr-c1A"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GZf-sI-JbM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0t7-Pv-fM6"/>
+                    <constraint firstAttribute="bottom" secondItem="GZf-sI-JbM" secondAttribute="bottom" id="8ys-xt-DbX"/>
+                    <constraint firstAttribute="trailing" secondItem="GZf-sI-JbM" secondAttribute="trailing" id="PNS-Rm-GUb"/>
+                    <constraint firstItem="GZf-sI-JbM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="c5K-3D-gNp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="67.938931297709928" y="19.366197183098592"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
