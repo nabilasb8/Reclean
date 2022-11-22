@@ -60,6 +60,14 @@
 		66C6FD1C291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD1A291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib */; };
 		66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD1D291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift */; };
 		66C6FD20291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */; };
+		BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F467C2923727800B646F1 /* AllAreasVC.swift */; };
+		BD1F467F2923727800B646F1 /* AllAreasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F467D2923727800B646F1 /* AllAreasVC.xib */; };
+		BD1F4683292372F600B646F1 /* AddAreasListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F4681292372F600B646F1 /* AddAreasListVC.swift */; };
+		BD1F4684292372F600B646F1 /* AddAreasListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F4682292372F600B646F1 /* AddAreasListVC.xib */; };
+		BD1F46882923734E00B646F1 /* AddAreaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */; };
+		BD1F46892923734E00B646F1 /* AddAreaListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */; };
+		BD1F468D2923753000B646F1 /* ChallengesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F468B2923753000B646F1 /* ChallengesVC.swift */; };
+		BD1F468E2923753000B646F1 /* ChallengesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F468C2923753000B646F1 /* ChallengesVC.xib */; };
 		66CE2C5F2921D1C8007BD8E1 /* EndYearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE2C5D2921D1C8007BD8E1 /* EndYearViewController.swift */; };
 		66CE2C602921D1C8007BD8E1 /* EndYearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE2C5E2921D1C8007BD8E1 /* EndYearViewController.xib */; };
 		66CE2C632921F3DA007BD8E1 /* EmptyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE2C612921F3DA007BD8E1 /* EmptyScheduleViewController.swift */; };
@@ -72,6 +80,18 @@
 		BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51E837290FC438007DFCC0 /* Main.storyboard */; };
 		BD51E83B290FC439007DFCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD51E83A290FC439007DFCC0 /* Assets.xcassets */; };
 		BD51E83E290FC439007DFCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51E83C290FC439007DFCC0 /* LaunchScreen.storyboard */; };
+		BD64AAF7292B6E76001653A1 /* AddItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64AAF5292B6E76001653A1 /* AddItemDetailVC.swift */; };
+		BD64AAF8292B6E76001653A1 /* AddItemDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD64AAF6292B6E76001653A1 /* AddItemDetailVC.xib */; };
+		BD64AAFB292B6EEF001653A1 /* SelectItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64AAF9292B6EEF001653A1 /* SelectItemCell.swift */; };
+		BD64AAFC292B6EEF001653A1 /* SelectItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD64AAFA292B6EEF001653A1 /* SelectItemCell.xib */; };
+		BD64AAFF292B6F6E001653A1 /* ItemNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64AAFD292B6F6E001653A1 /* ItemNameCell.swift */; };
+		BD64AB00292B6F6E001653A1 /* ItemNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD64AAFE292B6F6E001653A1 /* ItemNameCell.xib */; };
+		BD64AB03292B6F83001653A1 /* InitialDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64AB01292B6F83001653A1 /* InitialDateCell.swift */; };
+		BD64AB04292B6F83001653A1 /* InitialDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD64AB02292B6F83001653A1 /* InitialDateCell.xib */; };
+		BD64AB07292B6FA3001653A1 /* IntervalTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64AB05292B6FA3001653A1 /* IntervalTimeCell.swift */; };
+		BD64AB08292B6FA3001653A1 /* IntervalTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD64AB06292B6FA3001653A1 /* IntervalTimeCell.xib */; };
+		BDCA3F1E292BA2DD00BA573C /* SetTimeCellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA3F1C292BA2DD00BA573C /* SetTimeCellCell.swift */; };
+		BDCA3F1F292BA2DD00BA573C /* SetTimeCellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDCA3F1D292BA2DD00BA573C /* SetTimeCellCell.xib */; };
 		BDCDF6CA291A457E001BD533 /* AllItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCDF6C8291A457E001BD533 /* AllItemsViewController.swift */; };
 		BDCDF6CB291A457E001BD533 /* AllItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDCDF6C9291A457E001BD533 /* AllItemsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -130,6 +150,14 @@
 		66C6FD1A291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleAllScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		66C6FD1D291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAllScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAllScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		BD1F467C2923727800B646F1 /* AllAreasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAreasVC.swift; sourceTree = "<group>"; };
+		BD1F467D2923727800B646F1 /* AllAreasVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAreasVC.xib; sourceTree = "<group>"; };
+		BD1F4681292372F600B646F1 /* AddAreasListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreasListVC.swift; sourceTree = "<group>"; };
+		BD1F4682292372F600B646F1 /* AddAreasListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreasListVC.xib; sourceTree = "<group>"; };
+		BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaListTableViewCell.swift; sourceTree = "<group>"; };
+		BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaListTableViewCell.xib; sourceTree = "<group>"; };
+		BD1F468B2923753000B646F1 /* ChallengesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesVC.swift; sourceTree = "<group>"; };
+		BD1F468C2923753000B646F1 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
 		66CE2C5D2921D1C8007BD8E1 /* EndYearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndYearViewController.swift; sourceTree = "<group>"; };
 		66CE2C5E2921D1C8007BD8E1 /* EndYearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndYearViewController.xib; sourceTree = "<group>"; };
 		66CE2C612921F3DA007BD8E1 /* EmptyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyScheduleViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +172,18 @@
 		BD51E83A290FC439007DFCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD51E83D290FC439007DFCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD51E83F290FC439007DFCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD64AAF5292B6E76001653A1 /* AddItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemDetailVC.swift; sourceTree = "<group>"; };
+		BD64AAF6292B6E76001653A1 /* AddItemDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemDetailVC.xib; sourceTree = "<group>"; };
+		BD64AAF9292B6EEF001653A1 /* SelectItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectItemCell.swift; sourceTree = "<group>"; };
+		BD64AAFA292B6EEF001653A1 /* SelectItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectItemCell.xib; sourceTree = "<group>"; };
+		BD64AAFD292B6F6E001653A1 /* ItemNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemNameCell.swift; sourceTree = "<group>"; };
+		BD64AAFE292B6F6E001653A1 /* ItemNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemNameCell.xib; sourceTree = "<group>"; };
+		BD64AB01292B6F83001653A1 /* InitialDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialDateCell.swift; sourceTree = "<group>"; };
+		BD64AB02292B6F83001653A1 /* InitialDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialDateCell.xib; sourceTree = "<group>"; };
+		BD64AB05292B6FA3001653A1 /* IntervalTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimeCell.swift; sourceTree = "<group>"; };
+		BD64AB06292B6FA3001653A1 /* IntervalTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntervalTimeCell.xib; sourceTree = "<group>"; };
+		BDCA3F1C292BA2DD00BA573C /* SetTimeCellCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeCellCell.swift; sourceTree = "<group>"; };
+		BDCA3F1D292BA2DD00BA573C /* SetTimeCellCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetTimeCellCell.xib; sourceTree = "<group>"; };
 		BDCDF6C8291A457E001BD533 /* AllItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemsViewController.swift; sourceTree = "<group>"; };
 		BDCDF6C9291A457E001BD533 /* AllItemsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllItemsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -266,6 +306,72 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		BD1F46712923719500B646F1 /* AddItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F4676292371F900B646F1 /* Cells */,
+				BD64AAF5292B6E76001653A1 /* AddItemDetailVC.swift */,
+				BD64AAF6292B6E76001653A1 /* AddItemDetailVC.xib */,
+			);
+			path = AddItemDetails;
+			sourceTree = "<group>";
+		};
+		BD1F4676292371F900B646F1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BD64AAF9292B6EEF001653A1 /* SelectItemCell.swift */,
+				BD64AAFA292B6EEF001653A1 /* SelectItemCell.xib */,
+				BD64AAFD292B6F6E001653A1 /* ItemNameCell.swift */,
+				BD64AAFE292B6F6E001653A1 /* ItemNameCell.xib */,
+				BD64AB01292B6F83001653A1 /* InitialDateCell.swift */,
+				BD64AB02292B6F83001653A1 /* InitialDateCell.xib */,
+				BD64AB05292B6FA3001653A1 /* IntervalTimeCell.swift */,
+				BD64AB06292B6FA3001653A1 /* IntervalTimeCell.xib */,
+				BDCA3F1C292BA2DD00BA573C /* SetTimeCellCell.swift */,
+				BDCA3F1D292BA2DD00BA573C /* SetTimeCellCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BD1F467B2923725D00B646F1 /* AllAreas */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F4680292372D600B646F1 /* AddAreasList */,
+				BD1F467C2923727800B646F1 /* AllAreasVC.swift */,
+				BD1F467D2923727800B646F1 /* AllAreasVC.xib */,
+			);
+			path = AllAreas;
+			sourceTree = "<group>";
+		};
+		BD1F4680292372D600B646F1 /* AddAreasList */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F46852923732900B646F1 /* Cells */,
+				BD1F4681292372F600B646F1 /* AddAreasListVC.swift */,
+				BD1F4682292372F600B646F1 /* AddAreasListVC.xib */,
+			);
+			path = AddAreasList;
+			sourceTree = "<group>";
+		};
+		BD1F46852923732900B646F1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */,
+				BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BD1F468A292374E800B646F1 /* TabChallenges */ = {
+			isa = PBXGroup;
+			children = (
+				BDDCAAFB2924CE2700A28325 /* Cells */,
+				BD1F468B2923753000B646F1 /* ChallengesVC.swift */,
+				BD1F468C2923753000B646F1 /* ChallengesVC.xib */,
+			);
+			path = TabChallenges;
+			sourceTree = "<group>";
+		};
 		66CE2C5C2921D19F007BD8E1 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +402,9 @@
 		BD51E830290FC437007DFCC0 /* Reclean */ = {
 			isa = PBXGroup;
 			children = (
+				BD1F468A292374E800B646F1 /* TabChallenges */,
+				BD1F467B2923725D00B646F1 /* AllAreas */,
+				BDC1AD3B2920A76100481CB9 /* AreaDetails */,
 				66CE2C5C2921D19F007BD8E1 /* Challenges */,
 				663A3F47292126B40059C2F3 /* Profile */,
 				BDCDF6C7291A453E001BD533 /* CleaningItems */,
@@ -313,6 +422,14 @@
 			path = Reclean;
 			sourceTree = "<group>";
 		};
+		BDC1AD3B2920A76100481CB9 /* AreaDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F46712923719500B646F1 /* AddItemDetails */,
+			);
+			path = AreaDetails;
+			sourceTree = "<group>";
+		};
 		BDCDF6C7291A453E001BD533 /* CleaningItems */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +437,13 @@
 				BDCDF6C9291A457E001BD533 /* AllItemsViewController.xib */,
 			);
 			path = CleaningItems;
+			sourceTree = "<group>";
+		};
+		BDDCAAFB2924CE2700A28325 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,18 +504,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD64AAF8292B6E76001653A1 /* AddItemDetailVC.xib in Resources */,
 				66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */,
+				BD64AAFC292B6EEF001653A1 /* SelectItemCell.xib in Resources */,
+				BD1F4684292372F600B646F1 /* AddAreasListVC.xib in Resources */,
+				BD64AB04292B6F83001653A1 /* InitialDateCell.xib in Resources */,
 				66C6FD20291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib in Resources */,
 				663A3F3C29211B0B0059C2F3 /* BranchAreaViewController.xib in Resources */,
 				BD51E83E290FC439007DFCC0 /* LaunchScreen.storyboard in Resources */,
+				BDCA3F1F292BA2DD00BA573C /* SetTimeCellCell.xib in Resources */,
 				BDCDF6CB291A457E001BD533 /* AllItemsViewController.xib in Resources */,
 				66BCE37A291A61E300021E8A /* ScheduleViewController.xib in Resources */,
+				BD1F467F2923727800B646F1 /* AllAreasVC.xib in Resources */,
 				66C6FD1C291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib in Resources */,
 				66280C422921456D00C63CC6 /* BadgesCreateViewController.xib in Resources */,
 				BD51E83B290FC439007DFCC0 /* Assets.xcassets in Resources */,
 				663A3F4029211FED0059C2F3 /* TodaysScheduleViewController.xib in Resources */,
 				668F264C29228D2B00412735 /* RewardTableViewCell.xib in Resources */,
 				66698757291D112700F865ED /* Launch Screen.storyboard in Resources */,
+				BD64AB08292B6FA3001653A1 /* IntervalTimeCell.xib in Resources */,
+				66C6FD18291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib in Resources */,
+				BD1F46892923734E00B646F1 /* AddAreaListTableViewCell.xib in Resources */,
+				66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */,
+				BD1F468E2923753000B646F1 /* ChallengesVC.xib in Resources */,
+				66C6FD0C291A36080068D08B /* FirstPageViewController.xib in Resources */,
+				BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */,
+				BD64AB00292B6F6E001653A1 /* ItemNameCell.xib in Resources */,
 				660E078A29213E7E002201A3 /* ThrophyTableViewCell.xib in Resources */,
 				668F264429228BB500412735 /* DetailTaskTagTableViewCell.xib in Resources */,
 				66C6FD18291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib in Resources */,
@@ -424,16 +562,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD64AAFB292B6EEF001653A1 /* SelectItemCell.swift in Sources */,
+				BD1F46882923734E00B646F1 /* AddAreaListTableViewCell.swift in Sources */,
+				BD64AB03292B6F83001653A1 /* InitialDateCell.swift in Sources */,
 				668F264329228BB500412735 /* DetailTaskTagTableViewCell.swift in Sources */,
 				BD51E836290FC438007DFCC0 /* ViewController.swift in Sources */,
 				BDCDF6CA291A457E001BD533 /* AllItemsViewController.swift in Sources */,
 				668F263F29228A4900412735 /* DetailTaskTableViewCell.swift in Sources */,
 				66C6FD07291A35770068D08B /* SignInUiViewController.swift in Sources */,
+				BD64AAFF292B6F6E001653A1 /* ItemNameCell.swift in Sources */,
 				66C6FD0F291A36490068D08B /* AfterSignInViewController.swift in Sources */,
 				666C9072291D3E1D00AB065D /* AddAreaViewController.swift in Sources */,
+				BDCA3F1E292BA2DD00BA573C /* SetTimeCellCell.swift in Sources */,
 				66BCE379291A61E300021E8A /* ScheduleViewController.swift in Sources */,
+				66C6FD0B291A36080068D08B /* FirstPageViewController.swift in Sources */,
+				BD64AAF7292B6E76001653A1 /* AddItemDetailVC.swift in Sources */,
 				66CE2C672921F484007BD8E1 /* TagEmptyScheduleTableViewCell.swift in Sources */,
 				BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */,
+				BD1F4683292372F600B646F1 /* AddAreasListVC.swift in Sources */,
 				66C6FD17291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift in Sources */,
 				663A3F4A292126C50059C2F3 /* ProfileViewController.swift in Sources */,
 				668F264729228C4E00412735 /* DescriptionTableViewCell.swift in Sources */,
@@ -441,6 +587,7 @@
 				66CE2C5F2921D1C8007BD8E1 /* EndYearViewController.swift in Sources */,
 				663A3F45292123FB0059C2F3 /* BadgesFinishedViewController.swift in Sources */,
 				66C6FD1B291A3C6E0068D08B /* TitleAllScheduleTableViewCell.swift in Sources */,
+				BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */,
 				66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */,
 				66280C3D2921444400C63CC6 /* ThropiesTableViewCell.swift in Sources */,
 				663A3F4E292135E70059C2F3 /* ActivitesTableViewCell.swift in Sources */,
@@ -449,7 +596,9 @@
 				663A3F53292136FF0059C2F3 /* AboutTableViewCell.swift in Sources */,
 				66CE2C632921F3DA007BD8E1 /* EmptyScheduleViewController.swift in Sources */,
 				66C6FD13291A38FE0068D08B /* TagScheduleTableViewCell.swift in Sources */,
+				BD1F468D2923753000B646F1 /* ChallengesVC.swift in Sources */,
 				66BCE37D291A64CB00021E8A /* TitleScheduleTableViewCell.swift in Sources */,
+				BD64AB07292B6FA3001653A1 /* IntervalTimeCell.swift in Sources */,
 				660E078929213E7E002201A3 /* ThrophyTableViewCell.swift in Sources */,
 				668F2633292276ED00412735 /* LearderBoardInfoTableViewCell.swift in Sources */,
 				66402162291BAF94001442D2 /* TagAllAreaTableViewCell.swift in Sources */,
@@ -603,15 +752,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FYVDX646G;
+				DEVELOPMENT_TEAM = DFF5WS246X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ReClean;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -632,15 +781,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FYVDX646G;
+				DEVELOPMENT_TEAM = DFF5WS246X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ReClean;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
