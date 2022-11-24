@@ -11,10 +11,12 @@ class SelectItemCell: UITableViewCell {
     
     @IBOutlet weak var selectButton: UIButton!
     var activities = ["Sweeping floor", "Vacuum carpet", "Vacuum sofa"]
-
+    @IBOutlet weak var labelActivity: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        selectionStyle = .none
         let actions = generateMenus()
         let menu = UIMenu(title: "", options: .displayInline, children: actions)
         
@@ -32,7 +34,8 @@ class SelectItemCell: UITableViewCell {
         
         for activity in activities {
             let action = UIAction(title: activity) { (action) in
-                
+                self.labelActivity.text = activity
+                self.labelActivity.textColor = .label
             }
             actions.append(action)
         }

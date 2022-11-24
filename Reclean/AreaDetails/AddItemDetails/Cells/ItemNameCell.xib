@@ -13,25 +13,50 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="292" id="KGk-i7-Jjw" customClass="ItemNameCell" customModule="Reclean" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="501" height="292"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="501" height="292"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input item name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmh-zv-gR1">
-                        <rect key="frame" x="20" y="8" width="461" height="276"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-k5-bfs">
+                        <rect key="frame" x="20" y="8" width="461" height="48"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input item name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmh-zv-gR1">
+                                <rect key="frame" x="16" y="8" width="429" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" name="gray2"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Qmh-zv-gR1" secondAttribute="trailing" constant="16" id="7Wh-bh-kB1"/>
+                            <constraint firstAttribute="bottom" secondItem="Qmh-zv-gR1" secondAttribute="bottom" constant="8" id="8xe-Wf-fht"/>
+                            <constraint firstAttribute="height" constant="48" id="NhA-GN-Mz4"/>
+                            <constraint firstItem="Qmh-zv-gR1" firstAttribute="top" secondItem="4D2-k5-bfs" secondAttribute="top" constant="8" id="Ude-Df-kqf"/>
+                            <constraint firstItem="Qmh-zv-gR1" firstAttribute="leading" secondItem="4D2-k5-bfs" secondAttribute="leading" constant="16" id="laJ-eU-L1F"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Qmh-zv-gR1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1hQ-UL-Xep"/>
-                    <constraint firstAttribute="trailing" secondItem="Qmh-zv-gR1" secondAttribute="trailing" constant="20" id="9yl-Iq-AQ7"/>
-                    <constraint firstAttribute="bottom" secondItem="Qmh-zv-gR1" secondAttribute="bottom" constant="8" id="aWJ-na-WT0"/>
-                    <constraint firstItem="Qmh-zv-gR1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gId-am-uhT"/>
+                    <constraint firstItem="4D2-k5-bfs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="LQJ-dR-pgT"/>
+                    <constraint firstAttribute="bottom" secondItem="4D2-k5-bfs" secondAttribute="bottom" constant="8" id="Uxu-25-T9Z"/>
+                    <constraint firstItem="4D2-k5-bfs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="W1C-aC-LVw"/>
+                    <constraint firstAttribute="trailing" secondItem="4D2-k5-bfs" secondAttribute="trailing" constant="20" id="vwK-yH-0aL"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textField" destination="Qmh-zv-gR1" id="Ocb-RK-fav"/>
+            </connections>
             <point key="canvasLocation" x="263.04347826086956" y="101.78571428571428"/>
         </tableViewCell>
     </objects>

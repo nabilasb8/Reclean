@@ -9,21 +9,28 @@ import UIKit
 
 class BranchAreaViewController: UIViewController {
 
+    @IBOutlet weak var btnAddItem: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        btnAddItem.addTarget(self, action: #selector(didClickButtonAdd), for: .touchUpInside)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setTitle(text: String) {
+        title = text
     }
-    */
-
+    
+    @objc func didClickButtonAdd() {
+        let addItemDetailVC = AddItemDetailVC()
+        
+        let nav = UINavigationController(rootViewController: addItemDetailVC)
+//        nav.modalPresentationStyle = .pageSheet
+//
+//        if let sheet = nav.sheetPresentationController {
+//            sheet.detents = [.medium(), .large()]
+//            sheet.preferredCornerRadius = 40
+//        }
+        present(nav, animated: true, completion: nil)
+        
+    }
 }

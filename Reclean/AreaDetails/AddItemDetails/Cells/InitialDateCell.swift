@@ -35,6 +35,8 @@ class InitialDateCell: UITableViewCell {
     }
     
     @objc func didDatePickerValueChanged() {
+        labelDate.text = "\(datePicker.date.getFormattedDate(format: "MMM d, h:mm a"))"
+        labelDate.textColor = .label
         needUpdateTableView?()
     }
 
