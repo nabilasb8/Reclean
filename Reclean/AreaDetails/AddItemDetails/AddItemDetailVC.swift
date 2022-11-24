@@ -24,6 +24,22 @@ class AddItemDetailVC: UIViewController {
         tableView.register(UINib(nibName: "IntervalTimeCell", bundle: nil), forCellReuseIdentifier: "IntervalTimeCell")
         tableView.dataSource = self
         tableView.delegate = self
+        
+        btnSave.addTarget(self, action: #selector(didClickButtonSave), for: .touchUpInside)
+        
+    }
+    
+    @objc func didClickButtonSave() {
+        let listItemVC = ListItemVC()
+        
+        let nav = UINavigationController(rootViewController: listItemVC)
+//        nav.modalPresentationStyle = .pageSheet
+//
+//        if let sheet = nav.sheetPresentationController {
+//            sheet.detents = [.medium(), .large()]
+//            sheet.preferredCornerRadius = 40
+//        }
+        present(nav, animated: true, completion: nil)
     }
 }
 

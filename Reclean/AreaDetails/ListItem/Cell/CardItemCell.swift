@@ -24,8 +24,9 @@ class CardItemCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(activity: String) {
+    func configure(activity: String, area: String, date: String) {
         labelActivity.text = activity
+        labelArea.text = area
+        labelDate.text = date
     }
-    
 }

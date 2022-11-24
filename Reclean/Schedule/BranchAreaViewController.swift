@@ -12,7 +12,6 @@ class BranchAreaViewController: UIViewController {
     @IBOutlet weak var btnAddItem: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         btnAddItem.addTarget(self, action: #selector(didClickButtonAdd), for: .touchUpInside)
     }
     
@@ -31,6 +30,5 @@ class BranchAreaViewController: UIViewController {
 //            sheet.preferredCornerRadius = 40
 //        }
         present(nav, animated: true, completion: nil)
-        
     }
 }
