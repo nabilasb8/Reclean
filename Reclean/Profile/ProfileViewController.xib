@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="Reclean" customModuleProvider="target">
             <connections>
+                <outlet property="imgProfile" destination="tkD-18-0Bv" id="WuM-4p-EoO"/>
+                <outlet property="labelName" destination="RNa-Ch-oje" id="gMV-yc-6Re"/>
+                <outlet property="segmentedControl" destination="ttd-HR-jfB" id="cFv-gb-zs5"/>
+                <outlet property="tableView" destination="4cJ-Hg-Ort" id="bDG-XP-0kk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,30 +23,34 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tkD-18-0Bv">
-                    <rect key="frame" x="160" y="87" width="70" height="70"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man 3" translatesAutoresizingMaskIntoConstraints="NO" id="tkD-18-0Bv">
+                    <rect key="frame" x="160" y="47" width="70" height="70"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="70" id="Wqs-TP-4Mw"/>
                         <constraint firstAttribute="width" constant="70" id="tfJ-vF-vQC"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNa-Ch-oje">
-                    <rect key="frame" x="175" y="167" width="40" height="19"/>
+                    <rect key="frame" x="169.66666666666666" y="127" width="50.666666666666657" height="19"/>
                     <attributedString key="attributedText">
-                        <fragment content="Label">
+                        <fragment content="Cleano">
                             <attributes>
                                 <font key="NSFont" size="16" name="SFPro-Semibold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ttd-HR-jfB">
-                    <rect key="frame" x="38" y="196" width="314" height="32"/>
+                    <rect key="frame" x="20" y="176" width="350" height="32"/>
                     <segments>
                         <segment title="ACTIVITIES"/>
                         <segment title="ABOUT"/>
                     </segments>
+                    <connections>
+                        <action selector="controlSegment:" destination="-1" eventType="valueChanged" id="DBc-XZ-jUW"/>
+                    </connections>
                 </segmentedControl>
                 <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bud-qm-Nij">
                     <rect key="frame" x="0.0" y="754" width="390" height="90"/>
@@ -56,22 +65,22 @@
                     </items>
                 </tabBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-Hg-Ort">
-                    <rect key="frame" x="38" y="227" width="314" height="527"/>
+                    <rect key="frame" x="0.0" y="237" width="390" height="517"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4cJ-Hg-Ort" secondAttribute="trailing" constant="38" id="15C-Om-wDw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4cJ-Hg-Ort" secondAttribute="trailing" id="15C-Om-wDw"/>
                 <constraint firstItem="RNa-Ch-oje" firstAttribute="top" secondItem="tkD-18-0Bv" secondAttribute="bottom" constant="10" id="9OJ-j1-tMb"/>
-                <constraint firstItem="ttd-HR-jfB" firstAttribute="top" secondItem="RNa-Ch-oje" secondAttribute="bottom" constant="10" id="DF5-q9-K0b"/>
-                <constraint firstItem="ttd-HR-jfB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="TWS-7G-jH2"/>
-                <constraint firstItem="4cJ-Hg-Ort" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="Uhz-AR-rT2"/>
-                <constraint firstItem="4cJ-Hg-Ort" firstAttribute="top" secondItem="ttd-HR-jfB" secondAttribute="bottom" id="Wd9-kZ-Fdz"/>
-                <constraint firstItem="tkD-18-0Bv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="WzU-BG-0ce"/>
+                <constraint firstItem="ttd-HR-jfB" firstAttribute="top" secondItem="RNa-Ch-oje" secondAttribute="bottom" constant="30" id="DF5-q9-K0b"/>
+                <constraint firstItem="ttd-HR-jfB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="TWS-7G-jH2"/>
+                <constraint firstItem="4cJ-Hg-Ort" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Uhz-AR-rT2"/>
+                <constraint firstItem="4cJ-Hg-Ort" firstAttribute="top" secondItem="ttd-HR-jfB" secondAttribute="bottom" constant="30" id="Wd9-kZ-Fdz"/>
+                <constraint firstItem="tkD-18-0Bv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WzU-BG-0ce"/>
                 <constraint firstAttribute="bottom" secondItem="bud-qm-Nij" secondAttribute="bottom" id="YoU-8D-LJo"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ttd-HR-jfB" secondAttribute="trailing" constant="38" id="e9k-F6-H4g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ttd-HR-jfB" secondAttribute="trailing" constant="20" id="e9k-F6-H4g"/>
                 <constraint firstItem="bud-qm-Nij" firstAttribute="top" secondItem="4cJ-Hg-Ort" secondAttribute="bottom" id="qPJ-mZ-a6K"/>
                 <constraint firstItem="bud-qm-Nij" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r7R-X4-1BD"/>
                 <constraint firstItem="bud-qm-Nij" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sMS-eY-tBq"/>
@@ -83,6 +92,7 @@
     </objects>
     <resources>
         <image name="challenges" width="24" height="24"/>
+        <image name="man 3" width="70" height="70"/>
         <image name="profile" width="24" height="24"/>
         <image name="schedule" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">

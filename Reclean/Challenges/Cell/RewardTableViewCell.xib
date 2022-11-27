@@ -2,7 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,38 +20,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxF-lG-hGc">
-                        <rect key="frame" x="0.0" y="0.0" width="315" height="42"/>
+                        <rect key="frame" x="40" y="0.0" width="275" height="42"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkO-r3-wNB">
-                                <rect key="frame" x="0.0" y="0.0" width="55" height="19"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Reward">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="SFPro-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkO-r3-wNB">
+                                <rect key="frame" x="0.0" y="4" width="57" height="19"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIk-KU-fjU">
-                                <rect key="frame" x="0.0" y="24" width="315" height="14"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="SFPro-Regular"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yummy pizza fot the winner everyday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIk-KU-fjU">
+                                <rect key="frame" x="0.0" y="27" width="275" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="grayfont"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MkO-r3-wNB" firstAttribute="top" secondItem="cxF-lG-hGc" secondAttribute="top" id="BsR-Fg-Ycc"/>
-                            <constraint firstAttribute="bottom" secondItem="tIk-KU-fjU" secondAttribute="bottom" constant="4" id="PzP-hT-sTo"/>
+                            <constraint firstItem="MkO-r3-wNB" firstAttribute="top" secondItem="cxF-lG-hGc" secondAttribute="top" constant="4" id="BsR-Fg-Ycc"/>
+                            <constraint firstAttribute="height" constant="42" id="GWB-8n-4s0"/>
                             <constraint firstItem="tIk-KU-fjU" firstAttribute="leading" secondItem="cxF-lG-hGc" secondAttribute="leading" id="Q1K-ZT-jMw"/>
                             <constraint firstAttribute="trailing" secondItem="tIk-KU-fjU" secondAttribute="trailing" id="dOF-Wj-bN3"/>
+                            <constraint firstItem="MkO-r3-wNB" firstAttribute="leading" secondItem="cxF-lG-hGc" secondAttribute="leading" id="sl9-mT-n8k"/>
+                            <constraint firstItem="tIk-KU-fjU" firstAttribute="top" secondItem="MkO-r3-wNB" secondAttribute="bottom" constant="4" id="tjc-1b-GKy"/>
                             <constraint firstItem="MkO-r3-wNB" firstAttribute="leading" secondItem="cxF-lG-hGc" secondAttribute="leading" id="yKT-c0-0Cq"/>
                         </constraints>
                     </view>
@@ -58,7 +51,7 @@
                     <constraint firstItem="cxF-lG-hGc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6Nk-vp-1n0"/>
                     <constraint firstAttribute="bottom" secondItem="cxF-lG-hGc" secondAttribute="bottom" id="BVX-M9-A61"/>
                     <constraint firstAttribute="trailing" secondItem="cxF-lG-hGc" secondAttribute="trailing" id="evb-iJ-8zO"/>
-                    <constraint firstItem="cxF-lG-hGc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tZx-49-OSr"/>
+                    <constraint firstItem="cxF-lG-hGc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="pev-93-Rku"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -66,6 +59,9 @@
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="grayfont">
+            <color red="0.67843137254901964" green="0.64313725490196083" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
