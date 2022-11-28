@@ -68,6 +68,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="labelInterval" destination="uJq-Ky-j8h" id="zzx-bg-7KC"/>
                 <outlet property="selectButton" destination="AlV-9n-fPp" id="Ng0-Z6-Ecn"/>
             </connections>
             <point key="canvasLocation" x="236.23188405797103" y="120.87053571428571"/>

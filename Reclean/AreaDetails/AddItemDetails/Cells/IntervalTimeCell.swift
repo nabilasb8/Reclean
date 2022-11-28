@@ -9,12 +9,14 @@ import UIKit
 
 class IntervalTimeCell: UITableViewCell {
 
+    @IBOutlet weak var labelInterval: UILabel!
     @IBOutlet weak var selectButton: UIButton!
-    var intervals = ["Daily", "Weekly", "Monthly", "Yearly", "Custom"]
+    var intervals = ["Daily", "Weekly", "Monthly", "Yearly"]
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        selectionStyle = .none
         let actions = generateMenus()
         let menu = UIMenu(title: "", options: .displayInline, children: actions)
         
@@ -34,7 +36,8 @@ class IntervalTimeCell: UITableViewCell {
         
         for interval in intervals {
             let action = UIAction(title: interval) { (action) in
-                
+                self.labelInterval.text = interval
+                self.labelInterval.textColor = .label
             }
             actions.append(action)
         }

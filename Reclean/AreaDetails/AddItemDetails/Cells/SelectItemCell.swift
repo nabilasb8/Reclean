@@ -10,15 +10,13 @@ import UIKit
 class SelectItemCell: UITableViewCell {
     
     @IBOutlet weak var selectButton: UIButton!
-    var activities = ["Sweeping floor", "Vacuum carpet", "Vacuum sofa"]
-
+    var activities: [MasterActivity] = []
+    @IBOutlet weak var labelActivity: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let actions = generateMenus()
-        let menu = UIMenu(title: "", options: .displayInline, children: actions)
-        
-        selectButton.menu = menu
+        selectionStyle = .none
         selectButton.showsMenuAsPrimaryAction = true
     }
 
@@ -27,12 +25,22 @@ class SelectItemCell: UITableViewCell {
         
     }
     
+    func configure(activities: [MasterActivity]) {
+        self.activities = activities
+        let actions = generateMenus()
+        let menu = UIMenu(title: "", options: .displayInline, children: actions)
+        
+        selectButton.menu = menu
+    }
+    
     func generateMenus() -> [UIAction] {
         var actions = [UIAction]()
         
         for activity in activities {
-            let action = UIAction(title: activity) { (action) in
-                
+            print(activity.name)
+            let action = UIAction(title: activity.name) { (action) in
+                self.labelActivity.text = activity.name
+                self.labelActivity.textColor = .label
             }
             actions.append(action)
         }
