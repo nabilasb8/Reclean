@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -40,16 +41,10 @@
                         <action selector="addAreaa:" destination="-1" eventType="touchUpInside" id="20m-G8-L81"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-j1-6e6">
-                    <rect key="frame" x="152" y="239" width="86" height="24"/>
-                    <attributedString key="attributedText">
-                        <fragment content="Hi There !">
-                            <attributes>
-                                <color key="NSColor" name="Black Color"/>
-                                <font key="NSFont" size="20" name="SFPro-Bold"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi There !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-j1-6e6">
+                    <rect key="frame" x="125.00000000000001" y="222.33333333333334" width="140.33333333333337" height="40.666666666666657"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <color key="textColor" name="Black Color"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlF-bz-WSb">
@@ -83,16 +78,10 @@
                             <color key="textColor" name="Brand Color"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEv-56-fac">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEv-56-fac">
                             <rect key="frame" x="0.0" y="1" width="67" height="14"/>
-                            <attributedString key="attributedText">
-                                <fragment content="Welcome to ">
-                                    <attributes>
-                                        <color key="NSColor" name="Gray Color 1"/>
-                                        <font key="NSFont" size="12" name="SFPro-Regular"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
+                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="12"/>
+                            <color key="textColor" name="Gray Color 1"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,49 +21,32 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZf-sI-JbM">
                         <rect key="frame" x="0.0" y="0.0" width="315" height="45"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntM-A2-YTZ">
-                                <rect key="frame" x="0.0" y="13.333333333333334" width="37" height="18.666666666666664"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Rank">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="SFPro-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntM-A2-YTZ">
+                                <rect key="frame" x="30" y="13.333333333333334" width="38" height="18.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-NL-x0a">
-                                <rect key="frame" x="97" y="13" width="42.666666666666657" height="19"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Name">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="SFPro-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-NL-x0a">
+                                <rect key="frame" x="127.99999999999999" y="13" width="44.333333333333329" height="19"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKw-Uk-sh4">
-                                <rect key="frame" x="245.66666666666666" y="13.333333333333334" width="39.333333333333343" height="18.666666666666664"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="SFPro-Semibold"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKw-Uk-sh4">
+                                <rect key="frame" x="217.33333333333334" y="13" width="47.666666666666657" height="19"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IKw-Uk-sh4" firstAttribute="centerY" secondItem="GZf-sI-JbM" secondAttribute="centerY" id="Bzv-3c-6Mu"/>
-                            <constraint firstItem="ntM-A2-YTZ" firstAttribute="leading" secondItem="GZf-sI-JbM" secondAttribute="leading" id="ZYo-Ht-jl2"/>
+                            <constraint firstItem="ntM-A2-YTZ" firstAttribute="leading" secondItem="GZf-sI-JbM" secondAttribute="leading" constant="30" id="ZYo-Ht-jl2"/>
                             <constraint firstItem="R3u-NL-x0a" firstAttribute="centerY" secondItem="GZf-sI-JbM" secondAttribute="centerY" id="eKf-6Q-lNt"/>
                             <constraint firstItem="ntM-A2-YTZ" firstAttribute="centerY" secondItem="GZf-sI-JbM" secondAttribute="centerY" id="mrO-R1-dwO"/>
-                            <constraint firstAttribute="trailing" secondItem="IKw-Uk-sh4" secondAttribute="trailing" constant="30" id="rkp-fF-LeG"/>
+                            <constraint firstAttribute="trailing" secondItem="IKw-Uk-sh4" secondAttribute="trailing" constant="50" id="rkp-fF-LeG"/>
                             <constraint firstItem="R3u-NL-x0a" firstAttribute="leading" secondItem="ntM-A2-YTZ" secondAttribute="trailing" constant="60" id="rp5-Pr-c1A"/>
                         </constraints>
                     </view>

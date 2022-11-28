@@ -1,17 +1,17 @@
 //
-//  ActivitesTableViewCell.swift
+//  ActivitiesTableViewCell.swift
 //  Reclean
 //
-//  Created by Hastomi Riduan Munthe on 13/11/22.
+//  Created by Hastomi Riduan Munthe on 24/11/22.
 //
 
 import UIKit
 
-class ActivitesTableViewCell: UITableViewCell {
+class ActivitiesTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

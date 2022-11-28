@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EndYearViewController" customModule="Reclean" customModuleProvider="target">
             <connections>
+                <outlet property="segmentedControl" destination="tqW-Ly-WV5" id="MMe-dZ-4af"/>
+                <outlet property="tableView" destination="Gw0-Bv-bdl" id="VTE-sz-hX0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,11 +22,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gw0-Bv-bdl">
-                    <rect key="frame" x="0.0" y="181" width="390" height="629"/>
+                    <rect key="frame" x="0.0" y="101" width="390" height="709"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tqW-Ly-WV5">
-                    <rect key="frame" x="38" y="147" width="314" height="35"/>
+                    <rect key="frame" x="38" y="47" width="314" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="7Mr-RB-aNg"/>
                     </constraints>
@@ -31,18 +34,21 @@
                         <segment title="LEADERBOARD"/>
                         <segment title="DETAIL"/>
                     </segments>
+                    <connections>
+                        <action selector="controlSegmented:" destination="-1" eventType="valueChanged" id="mih-Bb-jUw"/>
+                    </connections>
                 </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Gw0-Bv-bdl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4gT-Or-mC6"/>
+                <constraint firstItem="Gw0-Bv-bdl" firstAttribute="top" secondItem="tqW-Ly-WV5" secondAttribute="bottom" constant="20" id="A8c-O8-R4c"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gw0-Bv-bdl" secondAttribute="trailing" id="Cb7-nd-GwA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Gw0-Bv-bdl" secondAttribute="bottom" id="DsG-L8-DFz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tqW-Ly-WV5" secondAttribute="trailing" constant="38" id="Sms-1N-ATq"/>
-                <constraint firstItem="Gw0-Bv-bdl" firstAttribute="top" secondItem="tqW-Ly-WV5" secondAttribute="bottom" id="Zut-z3-rTb"/>
                 <constraint firstItem="tqW-Ly-WV5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="qHS-cm-3A6"/>
-                <constraint firstItem="tqW-Ly-WV5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="vUz-QU-Knw"/>
+                <constraint firstItem="tqW-Ly-WV5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vUz-QU-Knw"/>
             </constraints>
             <point key="canvasLocation" x="70.769230769230774" y="19.90521327014218"/>
         </view>

@@ -21,8 +21,6 @@
 		663A3F46292123FB0059C2F3 /* BadgesFinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663A3F44292123FB0059C2F3 /* BadgesFinishedViewController.xib */; };
 		663A3F4A292126C50059C2F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663A3F48292126C50059C2F3 /* ProfileViewController.swift */; };
 		663A3F4B292126C50059C2F3 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663A3F49292126C50059C2F3 /* ProfileViewController.xib */; };
-		663A3F4E292135E70059C2F3 /* ActivitesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663A3F4C292135E70059C2F3 /* ActivitesTableViewCell.swift */; };
-		663A3F4F292135E70059C2F3 /* ActivitesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663A3F4D292135E70059C2F3 /* ActivitesTableViewCell.xib */; };
 		663A3F53292136FF0059C2F3 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663A3F51292136FF0059C2F3 /* AboutTableViewCell.swift */; };
 		663A3F54292136FF0059C2F3 /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663A3F52292136FF0059C2F3 /* AboutTableViewCell.xib */; };
 		66402162291BAF94001442D2 /* TagAllAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66402160291BAF94001442D2 /* TagAllAreaTableViewCell.swift */; };
@@ -44,6 +42,8 @@
 		668F264829228C4E00412735 /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F264629228C4E00412735 /* DescriptionTableViewCell.xib */; };
 		668F264B29228D2B00412735 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668F264929228D2B00412735 /* RewardTableViewCell.swift */; };
 		668F264C29228D2B00412735 /* RewardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F264A29228D2B00412735 /* RewardTableViewCell.xib */; };
+		66BA514B292E050400014473 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BA5149292E050400014473 /* MainViewController.swift */; };
+		66BA514C292E050400014473 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BA514A292E050400014473 /* MainViewController.xib */; };
 		66BCE379291A61E300021E8A /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BCE377291A61E300021E8A /* ScheduleViewController.swift */; };
 		66BCE37A291A61E300021E8A /* ScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BCE378291A61E300021E8A /* ScheduleViewController.xib */; };
 		66BCE37D291A64CB00021E8A /* TitleScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BCE37B291A64CB00021E8A /* TitleScheduleTableViewCell.swift */; };
@@ -62,23 +62,25 @@
 		66C6FD20291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */; };
 		66CE2C5F2921D1C8007BD8E1 /* EndYearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE2C5D2921D1C8007BD8E1 /* EndYearViewController.swift */; };
 		66CE2C602921D1C8007BD8E1 /* EndYearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE2C5E2921D1C8007BD8E1 /* EndYearViewController.xib */; };
-		66CE2C632921F3DA007BD8E1 /* EmptyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE2C612921F3DA007BD8E1 /* EmptyScheduleViewController.swift */; };
-		66CE2C642921F3DA007BD8E1 /* EmptyScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE2C622921F3DA007BD8E1 /* EmptyScheduleViewController.xib */; };
 		66CE2C672921F484007BD8E1 /* TagEmptyScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE2C652921F484007BD8E1 /* TagEmptyScheduleTableViewCell.swift */; };
 		66CE2C682921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE2C662921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib */; };
+		66F4BE72292FC569004CF4A6 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4BE70292FC569004CF4A6 /* ActivitiesTableViewCell.swift */; };
+		66F4BE73292FC569004CF4A6 /* ActivitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66F4BE71292FC569004CF4A6 /* ActivitiesTableViewCell.xib */; };
+		BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F467C2923727800B646F1 /* AllAreasVC.swift */; };
+		BD1F467F2923727800B646F1 /* AllAreasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F467D2923727800B646F1 /* AllAreasVC.xib */; };
+		BD1F4683292372F600B646F1 /* AddAreasListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F4681292372F600B646F1 /* AddAreasListVC.swift */; };
+		BD1F4684292372F600B646F1 /* AddAreasListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F4682292372F600B646F1 /* AddAreasListVC.xib */; };
+		BD1F46882923734E00B646F1 /* AddAreaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */; };
+		BD1F46892923734E00B646F1 /* AddAreaListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */; };
 		BD102B54292E0C9C00A29811 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD102B53292E0C9C00A29811 /* Date+Extension.swift */; };
 		BD102B58292E1C1000A29811 /* ListItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD102B56292E1C1000A29811 /* ListItemVC.swift */; };
 		BD102B59292E1C1000A29811 /* ListItemVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD102B57292E1C1000A29811 /* ListItemVC.xib */; };
 		BD102B5D292E1C5400A29811 /* CardItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD102B5B292E1C5400A29811 /* CardItemCell.swift */; };
 		BD102B5E292E1C5400A29811 /* CardItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD102B5C292E1C5400A29811 /* CardItemCell.xib */; };
-		BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F467C2923727800B646F1 /* AllAreasVC.swift */; };
-		BD1F467F2923727800B646F1 /* AllAreasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F467D2923727800B646F1 /* AllAreasVC.xib */; };
 		BD1F468D2923753000B646F1 /* ChallengesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F468B2923753000B646F1 /* ChallengesVC.swift */; };
 		BD1F468E2923753000B646F1 /* ChallengesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F468C2923753000B646F1 /* ChallengesVC.xib */; };
 		BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E831290FC437007DFCC0 /* AppDelegate.swift */; };
 		BD51E834290FC437007DFCC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E833290FC437007DFCC0 /* SceneDelegate.swift */; };
-		BD51E836290FC438007DFCC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E835290FC437007DFCC0 /* ViewController.swift */; };
-		BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51E837290FC438007DFCC0 /* Main.storyboard */; };
 		BD51E83B290FC439007DFCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD51E83A290FC439007DFCC0 /* Assets.xcassets */; };
 		BD51E83E290FC439007DFCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51E83C290FC439007DFCC0 /* LaunchScreen.storyboard */; };
 		BD64AAF7292B6E76001653A1 /* AddItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64AAF5292B6E76001653A1 /* AddItemDetailVC.swift */; };
@@ -124,8 +126,6 @@
 		663A3F44292123FB0059C2F3 /* BadgesFinishedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgesFinishedViewController.xib; sourceTree = "<group>"; };
 		663A3F48292126C50059C2F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		663A3F49292126C50059C2F3 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		663A3F4C292135E70059C2F3 /* ActivitesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitesTableViewCell.swift; sourceTree = "<group>"; };
-		663A3F4D292135E70059C2F3 /* ActivitesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitesTableViewCell.xib; sourceTree = "<group>"; };
 		663A3F51292136FF0059C2F3 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
 		663A3F52292136FF0059C2F3 /* AboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
 		66402160291BAF94001442D2 /* TagAllAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAllAreaTableViewCell.swift; sourceTree = "<group>"; };
@@ -147,6 +147,8 @@
 		668F264629228C4E00412735 /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		668F264929228D2B00412735 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		668F264A29228D2B00412735 /* RewardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardTableViewCell.xib; sourceTree = "<group>"; };
+		66BA5149292E050400014473 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		66BA514A292E050400014473 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		66BCE377291A61E300021E8A /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		66BCE378291A61E300021E8A /* ScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleViewController.xib; sourceTree = "<group>"; };
 		66BCE37B291A64CB00021E8A /* TitleScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScheduleTableViewCell.swift; sourceTree = "<group>"; };
@@ -165,24 +167,26 @@
 		66C6FD1E291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAllScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		66CE2C5D2921D1C8007BD8E1 /* EndYearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndYearViewController.swift; sourceTree = "<group>"; };
 		66CE2C5E2921D1C8007BD8E1 /* EndYearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndYearViewController.xib; sourceTree = "<group>"; };
-		66CE2C612921F3DA007BD8E1 /* EmptyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyScheduleViewController.swift; sourceTree = "<group>"; };
-		66CE2C622921F3DA007BD8E1 /* EmptyScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyScheduleViewController.xib; sourceTree = "<group>"; };
 		66CE2C652921F484007BD8E1 /* TagEmptyScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEmptyScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		66CE2C662921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagEmptyScheduleTableViewCell.xib; sourceTree = "<group>"; };
-		BD102B53292E0C9C00A29811 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		BD102B56292E1C1000A29811 /* ListItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemVC.swift; sourceTree = "<group>"; };
-		BD102B57292E1C1000A29811 /* ListItemVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemVC.xib; sourceTree = "<group>"; };
-		BD102B5B292E1C5400A29811 /* CardItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemCell.swift; sourceTree = "<group>"; };
-		BD102B5C292E1C5400A29811 /* CardItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardItemCell.xib; sourceTree = "<group>"; };
+		66F4BE70292FC569004CF4A6 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
+		66F4BE71292FC569004CF4A6 /* ActivitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesTableViewCell.xib; sourceTree = "<group>"; };
 		BD1F467C2923727800B646F1 /* AllAreasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAreasVC.swift; sourceTree = "<group>"; };
 		BD1F467D2923727800B646F1 /* AllAreasVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAreasVC.xib; sourceTree = "<group>"; };
+		BD1F4681292372F600B646F1 /* AddAreasListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreasListVC.swift; sourceTree = "<group>"; };
+		BD1F4682292372F600B646F1 /* AddAreasListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreasListVC.xib; sourceTree = "<group>"; };
+		BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaListTableViewCell.swift; sourceTree = "<group>"; };
+		BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaListTableViewCell.xib; sourceTree = "<group>"; };
+		BD102B53292E0C9C00A29811 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		BD102B5B292E1C5400A29811 /* CardItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemCell.swift; sourceTree = "<group>"; };
+		BD102B5C292E1C5400A29811 /* CardItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardItemCell.xib; sourceTree = "<group>"; };
+		BD102B56292E1C1000A29811 /* ListItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemVC.swift; sourceTree = "<group>"; };
+		BD102B57292E1C1000A29811 /* ListItemVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemVC.xib; sourceTree = "<group>"; };
 		BD1F468B2923753000B646F1 /* ChallengesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesVC.swift; sourceTree = "<group>"; };
 		BD1F468C2923753000B646F1 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
 		BD51E82E290FC437007DFCC0 /* Reclean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reclean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51E831290FC437007DFCC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD51E833290FC437007DFCC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD51E835290FC437007DFCC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD51E838290FC438007DFCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD51E83A290FC439007DFCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD51E83D290FC439007DFCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD51E83F290FC439007DFCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -270,14 +274,14 @@
 		663A3F50292135EC0059C2F3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				663A3F4D292135E70059C2F3 /* ActivitesTableViewCell.xib */,
-				663A3F4C292135E70059C2F3 /* ActivitesTableViewCell.swift */,
 				663A3F52292136FF0059C2F3 /* AboutTableViewCell.xib */,
 				663A3F51292136FF0059C2F3 /* AboutTableViewCell.swift */,
 				660E078829213E7E002201A3 /* ThrophyTableViewCell.xib */,
 				660E078729213E7E002201A3 /* ThrophyTableViewCell.swift */,
 				66280C3C2921444400C63CC6 /* ThropiesTableViewCell.xib */,
 				66280C3B2921444400C63CC6 /* ThropiesTableViewCell.swift */,
+				66F4BE71292FC569004CF4A6 /* ActivitiesTableViewCell.xib */,
+				66F4BE70292FC569004CF4A6 /* ActivitiesTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -312,6 +316,8 @@
 				66C6FD0D291A36490068D08B /* AfterSignInViewController.swift */,
 				666C9071291D3E1D00AB065D /* AddAreaViewController.xib */,
 				666C9070291D3E1D00AB065D /* AddAreaViewController.swift */,
+				66BA514A292E050400014473 /* MainViewController.xib */,
+				66BA5149292E050400014473 /* MainViewController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -322,8 +328,8 @@
 				BDF69A182930DC7B00AC594C /* BranchArea */,
 				66BCE378291A61E300021E8A /* ScheduleViewController.xib */,
 				66BCE377291A61E300021E8A /* ScheduleViewController.swift */,
-				66CE2C622921F3DA007BD8E1 /* EmptyScheduleViewController.xib */,
-				66CE2C612921F3DA007BD8E1 /* EmptyScheduleViewController.swift */,
+				663A3F3A29211B0B0059C2F3 /* BranchAreaViewController.xib */,
+				663A3F3929211B0B0059C2F3 /* BranchAreaViewController.swift */,
 				663A3F3E29211FED0059C2F3 /* TodaysScheduleViewController.xib */,
 				663A3F3D29211FED0059C2F3 /* TodaysScheduleViewController.swift */,
 				663A3F332920F6C30059C2F3 /* Cell */,
@@ -465,8 +471,6 @@
 				663A3F412921230B0059C2F3 /* Badges */,
 				BD51E831290FC437007DFCC0 /* AppDelegate.swift */,
 				BD51E833290FC437007DFCC0 /* SceneDelegate.swift */,
-				BD51E835290FC437007DFCC0 /* ViewController.swift */,
-				BD51E837290FC438007DFCC0 /* Main.storyboard */,
 				BD51E83A290FC439007DFCC0 /* Assets.xcassets */,
 				BD51E83C290FC439007DFCC0 /* LaunchScreen.storyboard */,
 				BD51E83F290FC439007DFCC0 /* Info.plist */,
@@ -619,11 +623,8 @@
 				66C6FD18291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib in Resources */,
 				66CE2C602921D1C8007BD8E1 /* EndYearViewController.xib in Resources */,
 				66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */,
-				66CE2C642921F3DA007BD8E1 /* EmptyScheduleViewController.xib in Resources */,
 				663A3F46292123FB0059C2F3 /* BadgesFinishedViewController.xib in Resources */,
 				663A3F54292136FF0059C2F3 /* AboutTableViewCell.xib in Resources */,
-				BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */,
-				663A3F4F292135E70059C2F3 /* ActivitesTableViewCell.xib in Resources */,
 				668F264829228C4E00412735 /* DescriptionTableViewCell.xib in Resources */,
 				668F264029228A4900412735 /* DetailTaskTableViewCell.xib in Resources */,
 				666C9073291D3E1D00AB065D /* AddAreaViewController.xib in Resources */,
@@ -632,6 +633,8 @@
 				66BCE37E291A64CB00021E8A /* TitleScheduleTableViewCell.xib in Resources */,
 				BD102B59292E1C1000A29811 /* ListItemVC.xib in Resources */,
 				668F2634292276ED00412735 /* LearderBoardInfoTableViewCell.xib in Resources */,
+				66BA514C292E050400014473 /* MainViewController.xib in Resources */,
+				66F4BE73292FC569004CF4A6 /* ActivitiesTableViewCell.xib in Resources */,
 				BD102B5E292E1C5400A29811 /* CardItemCell.xib in Resources */,
 				66C6FD10291A36490068D08B /* AfterSignInViewController.xib in Resources */,
 				668F2638292279B000412735 /* RankNamePointTableViewCell.xib in Resources */,
@@ -662,6 +665,8 @@
 				66C6FD0F291A36490068D08B /* AfterSignInViewController.swift in Sources */,
 				BDF69A1A2930DCB900AC594C /* BranchAreaViewModel.swift in Sources */,
 				666C9072291D3E1D00AB065D /* AddAreaViewController.swift in Sources */,
+				66BA514B292E050400014473 /* MainViewController.swift in Sources */,
+				BDCA3F1E292BA2DD00BA573C /* SetTimeCellCell.swift in Sources */,
 				66BCE379291A61E300021E8A /* ScheduleViewController.swift in Sources */,
 				BD64AAF7292B6E76001653A1 /* AddItemDetailVC.swift in Sources */,
 				BDF69A0F2930C6CB00AC594C /* MasterPlaceRepository.swift in Sources */,
@@ -689,7 +694,6 @@
 				668F263B29227BC200412735 /* RankTableViewCell.swift in Sources */,
 				BDF69A1C2930E31B00AC594C /* AddItemDetailViewModel.swift in Sources */,
 				663A3F53292136FF0059C2F3 /* AboutTableViewCell.swift in Sources */,
-				66CE2C632921F3DA007BD8E1 /* EmptyScheduleViewController.swift in Sources */,
 				66C6FD13291A38FE0068D08B /* TagScheduleTableViewCell.swift in Sources */,
 				BD1F468D2923753000B646F1 /* ChallengesVC.swift in Sources */,
 				66BCE37D291A64CB00021E8A /* TitleScheduleTableViewCell.swift in Sources */,
@@ -701,6 +705,7 @@
 				668F264B29228D2B00412735 /* RewardTableViewCell.swift in Sources */,
 				BD51E834290FC437007DFCC0 /* SceneDelegate.swift in Sources */,
 				663A3F3B29211B0B0059C2F3 /* BranchAreaViewController.swift in Sources */,
+				66F4BE72292FC569004CF4A6 /* ActivitiesTableViewCell.swift in Sources */,
 				BDF69A062930C0D100AC594C /* Area.swift in Sources */,
 				668F2637292279B000412735 /* RankNamePointTableViewCell.swift in Sources */,
 				BDF69A152930D0CD00AC594C /* ItemRepository.swift in Sources */,
@@ -710,14 +715,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD51E837290FC438007DFCC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD51E838290FC438007DFCC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD51E83C290FC439007DFCC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -8,7 +8,8 @@
 import UIKit
 
 class ScheduleViewController: UIViewController {
-    @IBOutlet weak var ScheduleTable: UITableView!
+
+    @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -16,18 +17,61 @@ class ScheduleViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
 
-        // Do any additional setup after loading the view.
+        title = "Schedule"
+        tableView.separatorStyle = .none
+        tableView.register(UINib(nibName: "TitleAllAreaTableViewCell", bundle: nil), forCellReuseIdentifier: "TitleAllAreaTableViewCell")
+        
+        tableView.register(UINib(nibName: "TagAllAreaTableViewCell", bundle: nil), forCellReuseIdentifier: "TagAllAreaTableViewCell")
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+    }
+    
+    func goToBranchAreaViewController() {
+        let destination = BranchAreaViewController()
+        navigationController?.pushViewController(destination, animated: true)
     }
 
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ScheduleViewController: UITableViewDataSource {
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
-    */
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.section {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TitleAllAreaTableViewCell", for: indexPath) as! TitleAllAreaTableViewCell
+            
+            return cell
+            
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TagAllAreaTableViewCell", for: indexPath) as! TagAllAreaTableViewCell
+            
+            return cell
+            
+        default:
+            let cell = UITableViewCell()
+            
+            return cell
+            
+        }
+
+    }
+}
+
+extension ScheduleViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        goToBranchAreaViewController()
+    }
 
 }
