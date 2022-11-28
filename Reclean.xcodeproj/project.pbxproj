@@ -66,17 +66,13 @@
 		66CE2C682921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE2C662921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib */; };
 		66F4BE72292FC569004CF4A6 /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F4BE70292FC569004CF4A6 /* ActivitiesTableViewCell.swift */; };
 		66F4BE73292FC569004CF4A6 /* ActivitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66F4BE71292FC569004CF4A6 /* ActivitiesTableViewCell.xib */; };
-		BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F467C2923727800B646F1 /* AllAreasVC.swift */; };
-		BD1F467F2923727800B646F1 /* AllAreasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F467D2923727800B646F1 /* AllAreasVC.xib */; };
-		BD1F4683292372F600B646F1 /* AddAreasListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F4681292372F600B646F1 /* AddAreasListVC.swift */; };
-		BD1F4684292372F600B646F1 /* AddAreasListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F4682292372F600B646F1 /* AddAreasListVC.xib */; };
-		BD1F46882923734E00B646F1 /* AddAreaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */; };
-		BD1F46892923734E00B646F1 /* AddAreaListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */; };
 		BD102B54292E0C9C00A29811 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD102B53292E0C9C00A29811 /* Date+Extension.swift */; };
 		BD102B58292E1C1000A29811 /* ListItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD102B56292E1C1000A29811 /* ListItemVC.swift */; };
 		BD102B59292E1C1000A29811 /* ListItemVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD102B57292E1C1000A29811 /* ListItemVC.xib */; };
 		BD102B5D292E1C5400A29811 /* CardItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD102B5B292E1C5400A29811 /* CardItemCell.swift */; };
 		BD102B5E292E1C5400A29811 /* CardItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD102B5C292E1C5400A29811 /* CardItemCell.xib */; };
+		BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F467C2923727800B646F1 /* AllAreasVC.swift */; };
+		BD1F467F2923727800B646F1 /* AllAreasVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F467D2923727800B646F1 /* AllAreasVC.xib */; };
 		BD1F468D2923753000B646F1 /* ChallengesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F468B2923753000B646F1 /* ChallengesVC.swift */; };
 		BD1F468E2923753000B646F1 /* ChallengesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1F468C2923753000B646F1 /* ChallengesVC.xib */; };
 		BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51E831290FC437007DFCC0 /* AppDelegate.swift */; };
@@ -118,7 +114,7 @@
 		66280C3C2921444400C63CC6 /* ThropiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThropiesTableViewCell.xib; sourceTree = "<group>"; };
 		66280C3F2921456D00C63CC6 /* BadgesCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesCreateViewController.swift; sourceTree = "<group>"; };
 		66280C402921456D00C63CC6 /* BadgesCreateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgesCreateViewController.xib; sourceTree = "<group>"; };
-		663A3F3929211B0B0059C2F3 /* BranchAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchAreaViewController.swift; sourceTree = "<group>"; };
+		663A3F3929211B0B0059C2F3 /* BranchAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BranchAreaViewController.swift; path = Reclean/Schedule/BranchArea/BranchAreaViewController.swift; sourceTree = SOURCE_ROOT; };
 		663A3F3A29211B0B0059C2F3 /* BranchAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BranchAreaViewController.xib; sourceTree = "<group>"; };
 		663A3F3D29211FED0059C2F3 /* TodaysScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysScheduleViewController.swift; sourceTree = "<group>"; };
 		663A3F3E29211FED0059C2F3 /* TodaysScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodaysScheduleViewController.xib; sourceTree = "<group>"; };
@@ -171,17 +167,13 @@
 		66CE2C662921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagEmptyScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		66F4BE70292FC569004CF4A6 /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
 		66F4BE71292FC569004CF4A6 /* ActivitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesTableViewCell.xib; sourceTree = "<group>"; };
-		BD1F467C2923727800B646F1 /* AllAreasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAreasVC.swift; sourceTree = "<group>"; };
-		BD1F467D2923727800B646F1 /* AllAreasVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAreasVC.xib; sourceTree = "<group>"; };
-		BD1F4681292372F600B646F1 /* AddAreasListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreasListVC.swift; sourceTree = "<group>"; };
-		BD1F4682292372F600B646F1 /* AddAreasListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreasListVC.xib; sourceTree = "<group>"; };
-		BD1F46862923734E00B646F1 /* AddAreaListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaListTableViewCell.swift; sourceTree = "<group>"; };
-		BD1F46872923734E00B646F1 /* AddAreaListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaListTableViewCell.xib; sourceTree = "<group>"; };
 		BD102B53292E0C9C00A29811 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		BD102B5B292E1C5400A29811 /* CardItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemCell.swift; sourceTree = "<group>"; };
-		BD102B5C292E1C5400A29811 /* CardItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardItemCell.xib; sourceTree = "<group>"; };
 		BD102B56292E1C1000A29811 /* ListItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemVC.swift; sourceTree = "<group>"; };
 		BD102B57292E1C1000A29811 /* ListItemVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemVC.xib; sourceTree = "<group>"; };
+		BD102B5B292E1C5400A29811 /* CardItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemCell.swift; sourceTree = "<group>"; };
+		BD102B5C292E1C5400A29811 /* CardItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardItemCell.xib; sourceTree = "<group>"; };
+		BD1F467C2923727800B646F1 /* AllAreasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAreasVC.swift; sourceTree = "<group>"; };
+		BD1F467D2923727800B646F1 /* AllAreasVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAreasVC.xib; sourceTree = "<group>"; };
 		BD1F468B2923753000B646F1 /* ChallengesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesVC.swift; sourceTree = "<group>"; };
 		BD1F468C2923753000B646F1 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
 		BD51E82E290FC437007DFCC0 /* Reclean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reclean.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,8 +320,6 @@
 				BDF69A182930DC7B00AC594C /* BranchArea */,
 				66BCE378291A61E300021E8A /* ScheduleViewController.xib */,
 				66BCE377291A61E300021E8A /* ScheduleViewController.swift */,
-				663A3F3A29211B0B0059C2F3 /* BranchAreaViewController.xib */,
-				663A3F3929211B0B0059C2F3 /* BranchAreaViewController.swift */,
 				663A3F3E29211FED0059C2F3 /* TodaysScheduleViewController.xib */,
 				663A3F3D29211FED0059C2F3 /* TodaysScheduleViewController.swift */,
 				663A3F332920F6C30059C2F3 /* Cell */,
@@ -616,7 +606,6 @@
 				66C6FD18291A3A2C0068D08B /* TitleAllAreaTableViewCell.xib in Resources */,
 				66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */,
 				BD1F468E2923753000B646F1 /* ChallengesVC.xib in Resources */,
-				BD51E839290FC438007DFCC0 /* Main.storyboard in Resources */,
 				BD64AB00292B6F6E001653A1 /* ItemNameCell.xib in Resources */,
 				660E078A29213E7E002201A3 /* ThrophyTableViewCell.xib in Resources */,
 				668F264429228BB500412735 /* DetailTaskTagTableViewCell.xib in Resources */,
@@ -656,7 +645,6 @@
 				BD64AB03292B6F83001653A1 /* InitialDateCell.swift in Sources */,
 				668F264329228BB500412735 /* DetailTaskTagTableViewCell.swift in Sources */,
 				BD102B5D292E1C5400A29811 /* CardItemCell.swift in Sources */,
-				BD51E836290FC438007DFCC0 /* ViewController.swift in Sources */,
 				BDF69A042930C06D00AC594C /* MasterPlace.swift in Sources */,
 				BDCDF6CA291A457E001BD533 /* AllItemsViewController.swift in Sources */,
 				668F263F29228A4900412735 /* DetailTaskTableViewCell.swift in Sources */,
@@ -666,7 +654,6 @@
 				BDF69A1A2930DCB900AC594C /* BranchAreaViewModel.swift in Sources */,
 				666C9072291D3E1D00AB065D /* AddAreaViewController.swift in Sources */,
 				66BA514B292E050400014473 /* MainViewController.swift in Sources */,
-				BDCA3F1E292BA2DD00BA573C /* SetTimeCellCell.swift in Sources */,
 				66BCE379291A61E300021E8A /* ScheduleViewController.swift in Sources */,
 				BD64AAF7292B6E76001653A1 /* AddItemDetailVC.swift in Sources */,
 				BDF69A0F2930C6CB00AC594C /* MasterPlaceRepository.swift in Sources */,
@@ -686,7 +673,6 @@
 				66280C3D2921444400C63CC6 /* ThropiesTableViewCell.swift in Sources */,
 				BDF69A082930C14200AC594C /* MasterActivity.swift in Sources */,
 				BDF69A0A2930C18600AC594C /* ItemActivity.swift in Sources */,
-				663A3F4E292135E70059C2F3 /* ActivitesTableViewCell.swift in Sources */,
 				BDF69A112930C9CC00AC594C /* AreaRepository.swift in Sources */,
 				BD102B58292E1C1000A29811 /* ListItemVC.swift in Sources */,
 				BD102B54292E0C9C00A29811 /* Date+Extension.swift in Sources */,
