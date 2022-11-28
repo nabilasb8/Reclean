@@ -11,9 +11,8 @@ class ListItemVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let activities = ["Vacuum carpet", "Laundry", "Washing dishes"]
-    let areas = ["Bedroom", "Living room", "Bathroom"]
-    let dates = ["22 Nov 2022", "24 Nov 2022", "25 Nov 2022"]
+    var activities: [ItemActivity] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,9 +46,7 @@ extension ListItemVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CardItemCell", for: indexPath) as! CardItemCell
         let activity = activities[indexPath.row]
-        let areaName = areas[indexPath.row]
-        let dateActivity = dates[indexPath.row]
-        cell.configure(activity: activity, area: areaName, date: dateActivity)
+        cell.configure(activity: activity.activityId, area: activity.areaId, date: activity.date)
         
         return cell
     }

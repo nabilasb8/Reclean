@@ -10,25 +10,23 @@ import UIKit
 class BranchAreaViewController: UIViewController {
 
     @IBOutlet weak var btnAddItem: UIButton!
+    var area: Area?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         btnAddItem.addTarget(self, action: #selector(didClickButtonAdd), for: .touchUpInside)
     }
     
-    func setTitle(text: String) {
-        title = text
+    func setArea(area: Area) {
+        title = area.getPlace()?.name
+        self.area = area
     }
     
     @objc func didClickButtonAdd() {
         let addItemDetailVC = AddItemDetailVC()
+        addItemDetailVC.setArea(area: area)
         
         let nav = UINavigationController(rootViewController: addItemDetailVC)
-//        nav.modalPresentationStyle = .pageSheet
-//
-//        if let sheet = nav.sheetPresentationController {
-//            sheet.detents = [.medium(), .large()]
-//            sheet.preferredCornerRadius = 40
-//        }
         present(nav, animated: true, completion: nil)
     }
 }

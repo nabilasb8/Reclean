@@ -11,6 +11,9 @@ class AddItemDetailVC: UIViewController {
 
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    var activities: [MasterActivity] = []
+    var viewModel = AddItemDetailViewModel()
+    var area: Area?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,20 +29,23 @@ class AddItemDetailVC: UIViewController {
         tableView.delegate = self
         
         btnSave.addTarget(self, action: #selector(didClickButtonSave), for: .touchUpInside)
+        viewModel.getActivities(placeId: area?.placeId ?? "") { result in
+            print("master activities = \(result.count)")
+            self.activities = result
+            self.tableView.reloadData()
+        }
+    }
+    
+    func setArea(area: Area?) {
+        self.area = area
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
     
     @objc func didClickButtonSave() {
-        let listItemVC = ListItemVC()
-        
-        let nav = UINavigationController(rootViewController: listItemVC)
-//        nav.modalPresentationStyle = .pageSheet
-//
-//        if let sheet = nav.sheetPresentationController {
-//            sheet.detents = [.medium(), .large()]
-//            sheet.preferredCornerRadius = 40
-//        }
-        present(nav, animated: true, completion: nil)
+        dismiss(animated: true)
     }
 }
 
@@ -57,6 +63,7 @@ extension AddItemDetailVC: UITableViewDataSource {
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SelectItemCell", for: indexPath) as! SelectItemCell
+            cell.configure(activities: activities)
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ItemNameCell", for: indexPath) as! ItemNameCell
