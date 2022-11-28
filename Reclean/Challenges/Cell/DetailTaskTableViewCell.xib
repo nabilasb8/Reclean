@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,58 +19,50 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7k-bJ-uRq">
-                        <rect key="frame" x="0.0" y="0.0" width="315" height="57"/>
+                        <rect key="frame" x="40" y="0.0" width="235" height="57"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiV-NY-CmF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/10 Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiV-NY-CmF">
                                 <rect key="frame" x="20" y="16.666666666666668" width="140" height="24.000000000000004"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="pa1-bI-1yf"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" size="20" name="SFPro-Bold"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" name="Black Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul4-XW-LG8">
-                                <rect key="frame" x="222" y="14.666666666666664" width="68" height="28"/>
+                                <rect key="frame" x="149" y="14.666666666666664" width="68" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="0dC-pZ-2lD"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="aXw-uK-9rj"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="See All">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="10" name="SFPro-Regular"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="filled" title="See All" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
                                     <color key="baseBackgroundColor" name="Brand Color"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="Tag Color"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ul4-XW-LG8" secondAttribute="trailing" constant="25" id="AzH-X7-dM3"/>
+                            <constraint firstAttribute="trailing" secondItem="Ul4-XW-LG8" secondAttribute="trailing" constant="18" id="AzH-X7-dM3"/>
                             <constraint firstItem="qiV-NY-CmF" firstAttribute="leading" secondItem="X7k-bJ-uRq" secondAttribute="leading" constant="20" id="GAX-CV-oO4"/>
                             <constraint firstItem="Ul4-XW-LG8" firstAttribute="centerY" secondItem="X7k-bJ-uRq" secondAttribute="centerY" id="XQe-Ha-MPA"/>
                             <constraint firstItem="qiV-NY-CmF" firstAttribute="centerY" secondItem="X7k-bJ-uRq" secondAttribute="centerY" id="pgo-Pd-geL"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="X7k-bJ-uRq" secondAttribute="trailing" id="8Qf-Ky-qwl"/>
                     <constraint firstAttribute="bottom" secondItem="X7k-bJ-uRq" secondAttribute="bottom" id="Zou-5i-2hy"/>
+                    <constraint firstItem="X7k-bJ-uRq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="d2v-gS-Uuq"/>
                     <constraint firstItem="X7k-bJ-uRq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hrU-nu-RaZ"/>
-                    <constraint firstItem="X7k-bJ-uRq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="o4N-KP-tfQ"/>
+                    <constraint firstAttribute="trailing" secondItem="X7k-bJ-uRq" secondAttribute="trailing" constant="40" id="x9g-VP-p0d"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -77,6 +70,9 @@
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="Black Color">
+            <color red="0.11400000005960464" green="0.086000002920627594" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Brand Color">
             <color red="0.11800000071525574" green="0.25099998712539673" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

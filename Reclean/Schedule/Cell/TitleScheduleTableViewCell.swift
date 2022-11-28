@@ -10,6 +10,7 @@ import UIKit
 class TitleScheduleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var seeAll: UIButton!
+    @IBOutlet weak var titleSchedule: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
