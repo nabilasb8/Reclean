@@ -105,6 +105,7 @@
 		BDF69A1C2930E31B00AC594C /* AddItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF69A1B2930E31B00AC594C /* AddItemDetailViewModel.swift */; };
 		BDFAB4102934A871007C1F9F /* CardAreaCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAB40E2934A871007C1F9F /* CardAreaCellCollectionViewCell.swift */; };
 		BDFAB4112934A871007C1F9F /* CardAreaCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */; };
+		BDFAB4152934BA4B007C1F9F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFAB4142934BA4B007C1F9F /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -208,6 +209,8 @@
 		BDF69A1B2930E31B00AC594C /* AddItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemDetailViewModel.swift; sourceTree = "<group>"; };
 		BDFAB40E2934A871007C1F9F /* CardAreaCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAreaCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardAreaCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		BDFAB4122934BA3F007C1F9F /* Reclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reclean.entitlements; sourceTree = "<group>"; };
+		BDFAB4142934BA4B007C1F9F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFAB4152934BA4B007C1F9F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +437,7 @@
 				66698756291D112700F865ED /* Launch Screen.storyboard */,
 				BD51E830290FC437007DFCC0 /* Reclean */,
 				BD51E82F290FC437007DFCC0 /* Products */,
+				BDFAB4132934BA4B007C1F9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -447,6 +452,7 @@
 		BD51E830290FC437007DFCC0 /* Reclean */ = {
 			isa = PBXGroup;
 			children = (
+				BDFAB4122934BA3F007C1F9F /* Reclean.entitlements */,
 				BDF69A0D2930C62B00AC594C /* Repositories */,
 				BDF69A002930A99B00AC594C /* Models */,
 				BD102B52292E0C8200A29811 /* Utils */,
@@ -525,6 +531,14 @@
 				BDF69A192930DCB900AC594C /* BranchAreaViewModel.swift */,
 			);
 			path = BranchArea;
+			sourceTree = "<group>";
+		};
+		BDFAB4132934BA4B007C1F9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDFAB4142934BA4B007C1F9F /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -831,6 +845,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Reclean/Reclean.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DFF5WS246X;
@@ -847,7 +862,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabila.Reclean;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw1ftly.Reclean;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -860,6 +875,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Reclean/Reclean.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DFF5WS246X;
@@ -876,7 +892,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabila.Reclean;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw1ftly.Reclean;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
