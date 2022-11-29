@@ -19,9 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: windowScene)
-        let rootViewController = AddAreaViewController()
+//        let rootViewController = AddAreaViewController()
 //        let area = AreaRepository.shared.getAreas()[0]
 //        rootViewController.setArea(area: area)
+          let rootViewController = AllAreasVC()
         
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()

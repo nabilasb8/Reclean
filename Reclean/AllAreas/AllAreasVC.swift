@@ -9,22 +9,83 @@ import UIKit
 
 class AllAreasVC: UIViewController {
 
-    @IBOutlet weak var listAAreaTableView: UITableView!
+    @IBOutlet weak var listAreaCollView: UICollectionView!
+    var areas: [Area] = []
+    let viewModel = AllAreasViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "All Areas"
+        
+        let screenWidth = UIScreen.main.bounds.width
+        let itemWidth = (screenWidth - 40) / 3
+        
+        let collectionViewLayout = UICollectionViewFlowLayout()
+        collectionViewLayout.itemSize = CGSize(width: itemWidth, height: 125)
+        collectionViewLayout.scrollDirection = .vertical
+        collectionViewLayout.minimumInteritemSpacing = 0
+        collectionViewLayout.minimumLineSpacing = 20
+        listAreaCollView.collectionViewLayout = collectionViewLayout
+        listAreaCollView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
+        listAreaCollView.register(UINib(nibName: "CardAreaCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardAreaCellCollectionViewCell")
+        listAreaCollView.dataSource = self
+        listAreaCollView.delegate = self
+        
+        viewModel.getAreas { result in
+            self.areas = result
+            self.listAreaCollView.reloadData()
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func goToBranchAreaVC(area: Area) {
+        let destination = BranchAreaViewController()
+        destination.setArea(area: area)
+        navigationController?.pushViewController(destination, animated: true)
     }
-    */
+    
+    func showAddAreaVC() {
+        let destination = UINavigationController(rootViewController: AddAreaVC())
+        present(destination, animated: true)
+    }
+}
 
+extension AllAreasVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return areas.count + 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = listAreaCollView.dequeueReusableCell(withReuseIdentifier: "CardAreaCellCollectionViewCell", for: indexPath) as! CardAreaCellCollectionViewCell
+        
+        if indexPath.item % 2 == 0 {
+            cell.viewBackground.backgroundColor = .secondaryOrange.withAlphaComponent(0.2)
+        } else {
+            cell.viewBackground.backgroundColor = .primaryNavy.withAlphaComponent(0.2)
+        }
+        
+        if indexPath.item < areas.count {
+            let area = areas[indexPath.item]
+            cell.configure(
+                title: area.getPlace()?.name,
+                iconName: area.getPlace()?.iconName
+            )
+        } else {
+            cell.configure(title: "Add Area", iconName: "btn_addarea")
+        }
+        
+        return cell
+    }
+}
+
+extension AllAreasVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.item < areas.count {
+            let area = areas[indexPath.item]
+            goToBranchAreaVC(area: area)
+        } else {
+            showAddAreaVC()
+        }
+    }
 }

@@ -19,8 +19,8 @@ class AreaRepository {
         
         let area1: Area = Area(
             id: UUID().uuidString,
-            placeId: "laundry-room",
-            description: "Ruang tengah"
+            placeId: "living-room",
+            description: "Ruang tamu"
         )
         areas.append(area1)
         

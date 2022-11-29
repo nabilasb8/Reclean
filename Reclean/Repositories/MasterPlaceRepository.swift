@@ -22,20 +22,23 @@ class MasterPlaceRepository {
         var places: [MasterPlace] = []
         
         let place1: MasterPlace = MasterPlace(
-            id: "laundry-room",
-            name: "Laundry Room"
+            id: "living-room",
+            name: "Living Room",
+            iconName: "living_room"
         )
         places.append(place1)
         
         let place2: MasterPlace = MasterPlace(
             id: "bed-room",
-            name: "Bedroom"
+            name: "Bedroom",
+            iconName: "bed_room"
         )
         places.append(place2)
         
         let place3: MasterPlace = MasterPlace(
             id: "kitchen",
-            name: "Kitchen"
+            name: "Kitchen",
+            iconName: "kitchen"
         )
         places.append(place3)
         

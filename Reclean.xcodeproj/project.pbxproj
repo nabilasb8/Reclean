@@ -106,6 +106,10 @@
 		BDFAB4102934A871007C1F9F /* CardAreaCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAB40E2934A871007C1F9F /* CardAreaCellCollectionViewCell.swift */; };
 		BDFAB4112934A871007C1F9F /* CardAreaCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */; };
 		BDFAB4152934BA4B007C1F9F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFAB4142934BA4B007C1F9F /* CloudKit.framework */; };
+		C9ADDD7129360FFD003CC129 /* AddAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */; };
+		C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */; };
+		C9ADDD7D2936127C003CC129 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */; };
+		C9ADDD7F29362DCB003CC129 /* AllAreasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD7E29362DCB003CC129 /* AllAreasViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -211,6 +215,10 @@
 		BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardAreaCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		BDFAB4122934BA3F007C1F9F /* Reclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reclean.entitlements; sourceTree = "<group>"; };
 		BDFAB4142934BA4B007C1F9F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaVC.swift; sourceTree = "<group>"; };
+		C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaVC.xib; sourceTree = "<group>"; };
+		C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C9ADDD7E29362DCB003CC129 /* AllAreasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAreasViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				BD102B53292E0C9C00A29811 /* Date+Extension.swift */,
+				C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -397,19 +406,13 @@
 		BD1F467B2923725D00B646F1 /* AllAreas */ = {
 			isa = PBXGroup;
 			children = (
-				BD1F4680292372D600B646F1 /* AddAreasList */,
+				C9ADDD6E29360F6E003CC129 /* AddArea */,
+				BD1F46852923732900B646F1 /* Cells */,
 				BD1F467C2923727800B646F1 /* AllAreasVC.swift */,
 				BD1F467D2923727800B646F1 /* AllAreasVC.xib */,
+				C9ADDD7E29362DCB003CC129 /* AllAreasViewModel.swift */,
 			);
 			path = AllAreas;
-			sourceTree = "<group>";
-		};
-		BD1F4680292372D600B646F1 /* AddAreasList */ = {
-			isa = PBXGroup;
-			children = (
-				BD1F46852923732900B646F1 /* Cells */,
-			);
-			path = AddAreasList;
 			sourceTree = "<group>";
 		};
 		BD1F46852923732900B646F1 /* Cells */ = {
@@ -541,6 +544,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C9ADDD6E29360F6E003CC129 /* AddArea */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */,
+				C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */,
+			);
+			path = AddArea;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -630,6 +642,7 @@
 				663A3F54292136FF0059C2F3 /* AboutTableViewCell.xib in Resources */,
 				668F264829228C4E00412735 /* DescriptionTableViewCell.xib in Resources */,
 				668F264029228A4900412735 /* DetailTaskTableViewCell.xib in Resources */,
+				C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */,
 				666C9073291D3E1D00AB065D /* AddAreaViewController.xib in Resources */,
 				66280C3E2921444400C63CC6 /* ThropiesTableViewCell.xib in Resources */,
 				66CE2C682921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib in Resources */,
@@ -655,10 +668,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF69A132930CCC800AC594C /* MasterActivityRepository.swift in Sources */,
+				C9ADDD7D2936127C003CC129 /* UIColor+Extension.swift in Sources */,
 				BD64AAFB292B6EEF001653A1 /* SelectItemCell.swift in Sources */,
 				BD64AB03292B6F83001653A1 /* InitialDateCell.swift in Sources */,
 				668F264329228BB500412735 /* DetailTaskTagTableViewCell.swift in Sources */,
 				BD102B5D292E1C5400A29811 /* CardItemCell.swift in Sources */,
+				C9ADDD7129360FFD003CC129 /* AddAreaVC.swift in Sources */,
 				BDF69A042930C06D00AC594C /* MasterPlace.swift in Sources */,
 				BDCDF6CA291A457E001BD533 /* AllItemsViewController.swift in Sources */,
 				668F263F29228A4900412735 /* DetailTaskTableViewCell.swift in Sources */,
@@ -675,6 +690,7 @@
 				BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */,
 				66C6FD17291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift in Sources */,
 				663A3F4A292126C50059C2F3 /* ProfileViewController.swift in Sources */,
+				C9ADDD7F29362DCB003CC129 /* AllAreasViewModel.swift in Sources */,
 				668F264729228C4E00412735 /* DescriptionTableViewCell.swift in Sources */,
 				663A3F3F29211FED0059C2F3 /* TodaysScheduleViewController.swift in Sources */,
 				66CE2C5F2921D1C8007BD8E1 /* EndYearViewController.swift in Sources */,
