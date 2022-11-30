@@ -31,7 +31,6 @@ class AddAreaViewController: UIViewController {
         setPopupButton()
         
         title = "Add Area"
-        cancelButton()
         saveButton()
     }
     
@@ -60,7 +59,7 @@ class AddAreaViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: Any) {
-        isianText = textField.text ?? ""
+        isianText = textFieldAreaName.text ?? ""
         print(isianText)
         dismiss(animated: true, completion: nil)
         scheduleDelegate.didTapSave()
@@ -69,10 +68,6 @@ class AddAreaViewController: UIViewController {
     
     @objc func moveToAnotherVC(){
         // kode pbuat pindah
-        if let navigationController1 = navigationController {
-            let viewController = AfterSignInViewController()
-            navigationController1.pushViewController(viewController,animated:true)
-        }
     }
     
     func saveButton() {
