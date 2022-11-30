@@ -13,5 +13,4 @@ class AllAreasViewModel {
         let result = AreaRepository.shared.getAreas()
         didGetAreas(result)
     }
-    
 }

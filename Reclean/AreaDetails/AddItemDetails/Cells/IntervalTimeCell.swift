@@ -11,7 +11,9 @@ class IntervalTimeCell: UITableViewCell {
 
     @IBOutlet weak var labelInterval: UILabel!
     @IBOutlet weak var selectButton: UIButton!
-    var intervals = ["Daily", "Weekly", "Monthly", "Yearly"]
+    var intervals: [MasterInterval] = []
+    
+    var didSelectInterval: ((String) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,13 +33,21 @@ class IntervalTimeCell: UITableViewCell {
         
     }
     
+    func configure(intervals: [MasterInterval]) {
+        self.intervals = intervals
+        let actions = generateMenus()
+        let menu = UIMenu(title: "", options: .displayInline, children: actions)
+        selectButton.menu = menu
+    }
+    
     func generateMenus() -> [UIAction] {
         var actions = [UIAction]()
         
         for interval in intervals {
-            let action = UIAction(title: interval) { (action) in
-                self.labelInterval.text = interval
+            let action = UIAction(title: interval.name) { (action) in
+                self.labelInterval.text = interval.name
                 self.labelInterval.textColor = .label
+                self.didSelectInterval?(interval.id)
             }
             actions.append(action)
         }

@@ -22,7 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let rootViewController = AddAreaViewController()
 //        let area = AreaRepository.shared.getAreas()[0]
 //        rootViewController.setArea(area: area)
-          let rootViewController = AllAreasVC()
+        let rootViewController = ListItemVC()
+        let area = AreaRepository.shared.getAreas()[0]
+        rootViewController.setArea(area: area)
         
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()

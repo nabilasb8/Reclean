@@ -9,9 +9,25 @@ import Foundation
 
 class ItemRepository {
     static let shared = ItemRepository()
+    private var items: [ItemActivity] = []
     
-    func getMasterItem() -> [ItemActivity] {
-        generateDummyItemActivities()
+    init() {
+        items = generateDummyItemActivities()
+    }
+    
+    func getItemActivities() -> [ItemActivity] {
+        return items
+    }
+    
+    func getItemActivitiesByArea(areaId: String) -> [ItemActivity] {
+        return getItemActivities()
+            .filter { item in
+                return item.areaId == areaId
+            }
+    }
+    
+    func addItemActivity(item: ItemActivity) {
+        items.append(item)
     }
     
     private func generateDummyItemActivities() -> [ItemActivity] {
@@ -19,30 +35,30 @@ class ItemRepository {
         
         let item1: ItemActivity = ItemActivity(
             id: UUID().uuidString,
-            areaId: "laundry-room",
-            activityId: "laundry",
+            areaId: "area1",
+            activityId: "vacuum-carpet",
             description: "Baju kerja",
-            date: "25 Nov 2022",
+            date: Date(),
             intervalId: "daily"
         )
         itemRepositories.append(item1)
         
         let item2: ItemActivity = ItemActivity(
             id: UUID().uuidString,
-            areaId: "bed-room",
+            areaId: "area2",
             activityId: "vacuum-bed",
             description: "Hard cleaning",
-            date: "26 Nov 2022",
+            date: Date(),
             intervalId: "weekly"
         )
         itemRepositories.append(item2)
         
         let item3: ItemActivity = ItemActivity(
             id: UUID().uuidString,
-            areaId: "kitchen",
+            areaId: "area3",
             activityId: "washing-dishes",
             description: "Cuci piring & gelas",
-            date: "27 Nov 2022",
+            date: Date(),
             intervalId: "monthly"
         )
         itemRepositories.append(item3)

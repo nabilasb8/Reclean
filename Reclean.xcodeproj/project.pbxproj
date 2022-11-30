@@ -106,6 +106,7 @@
 		BDFAB4102934A871007C1F9F /* CardAreaCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAB40E2934A871007C1F9F /* CardAreaCellCollectionViewCell.swift */; };
 		BDFAB4112934A871007C1F9F /* CardAreaCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */; };
 		BDFAB4152934BA4B007C1F9F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFAB4142934BA4B007C1F9F /* CloudKit.framework */; };
+		C9918C4A29374C5900BBB13A /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9918C4929374C5900BBB13A /* ListItemViewModel.swift */; };
 		C9ADDD7129360FFD003CC129 /* AddAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */; };
 		C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */; };
 		C9ADDD7D2936127C003CC129 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */; };
@@ -215,6 +216,7 @@
 		BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardAreaCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		BDFAB4122934BA3F007C1F9F /* Reclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reclean.entitlements; sourceTree = "<group>"; };
 		BDFAB4142934BA4B007C1F9F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C9918C4929374C5900BBB13A /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
 		C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaVC.swift; sourceTree = "<group>"; };
 		C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaVC.xib; sourceTree = "<group>"; };
 		C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 				BD102B5A292E1C3700A29811 /* Cell */,
 				BD102B56292E1C1000A29811 /* ListItemVC.swift */,
 				BD102B57292E1C1000A29811 /* ListItemVC.xib */,
+				C9918C4929374C5900BBB13A /* ListItemViewModel.swift */,
 			);
 			path = ListItem;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				BDF69A112930C9CC00AC594C /* AreaRepository.swift in Sources */,
 				BD102B58292E1C1000A29811 /* ListItemVC.swift in Sources */,
 				BD102B54292E0C9C00A29811 /* Date+Extension.swift in Sources */,
+				C9918C4A29374C5900BBB13A /* ListItemViewModel.swift in Sources */,
 				66280C412921456D00C63CC6 /* BadgesCreateViewController.swift in Sources */,
 				668F263B29227BC200412735 /* RankTableViewCell.swift in Sources */,
 				BDF69A1C2930E31B00AC594C /* AddItemDetailViewModel.swift in Sources */,

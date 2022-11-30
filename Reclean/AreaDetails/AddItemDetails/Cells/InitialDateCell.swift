@@ -14,6 +14,7 @@ class InitialDateCell: UITableViewCell {
     @IBOutlet weak var datePicker: UIDatePicker!
     
     var needUpdateTableView: (() -> Void)?
+    var didDateChanged: ((Date) -> Void)?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,6 +38,7 @@ class InitialDateCell: UITableViewCell {
     @objc func didDatePickerValueChanged() {
         labelDate.text = "\(datePicker.date.getFormattedDate(format: "MMM d, h:mm a"))"
         labelDate.textColor = .label
+        didDateChanged?(datePicker.date)
         needUpdateTableView?()
     }
 

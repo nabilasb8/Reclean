@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListItemVC" customModule="Reclean" customModuleProvider="target">
             <connections>
+                <outlet property="btnAddEmptyState" destination="aun-o3-UYu" id="HKH-zV-BSP"/>
+                <outlet property="emptyStateView" destination="zfQ-R7-2YX" id="UQl-v3-Fli"/>
                 <outlet property="tableView" destination="rCZ-JH-ly4" id="cu0-8x-04G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,22 +23,68 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rCZ-JH-ly4">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfQ-R7-2YX">
+                    <rect key="frame" x="20" y="333" width="374" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whoops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-mU-R2R">
+                            <rect key="frame" x="125.5" y="0.0" width="123" height="41"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The cleaning task is empty looks like you haven't create any task yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2z-Il-xtO">
+                            <rect key="frame" x="40" y="65" width="294" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aun-o3-UYu">
+                            <rect key="frame" x="0.0" y="170" width="374" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="yhO-o1-C2c"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Add Item" cornerStyle="capsule">
+                                <color key="baseBackgroundColor" name="Brand Color"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="WSd-mU-R2R" firstAttribute="centerX" secondItem="zfQ-R7-2YX" secondAttribute="centerX" id="4Bq-Fb-bql"/>
+                        <constraint firstItem="WSd-mU-R2R" firstAttribute="top" secondItem="zfQ-R7-2YX" secondAttribute="top" id="E4X-vv-pVb"/>
+                        <constraint firstAttribute="trailing" secondItem="aun-o3-UYu" secondAttribute="trailing" id="F7d-1h-TWM"/>
+                        <constraint firstItem="aun-o3-UYu" firstAttribute="leading" secondItem="zfQ-R7-2YX" secondAttribute="leading" id="HvG-Uw-bqv"/>
+                        <constraint firstItem="aun-o3-UYu" firstAttribute="top" secondItem="h2z-Il-xtO" secondAttribute="bottom" constant="64" id="Kxl-sw-XzQ"/>
+                        <constraint firstAttribute="bottom" secondItem="aun-o3-UYu" secondAttribute="bottom" id="Oho-yn-Ear"/>
+                        <constraint firstAttribute="trailing" secondItem="h2z-Il-xtO" secondAttribute="trailing" constant="40" id="YPi-cx-WZz"/>
+                        <constraint firstItem="h2z-Il-xtO" firstAttribute="leading" secondItem="zfQ-R7-2YX" secondAttribute="leading" constant="40" id="ebs-Yi-IxX"/>
+                        <constraint firstItem="h2z-Il-xtO" firstAttribute="top" secondItem="WSd-mU-R2R" secondAttribute="bottom" constant="24" id="xyD-hL-Nac"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="rCZ-JH-ly4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5Ue-bR-JZV"/>
+                <constraint firstItem="zfQ-R7-2YX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Lzx-k5-xGc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rCZ-JH-ly4" secondAttribute="bottom" id="Q3T-uH-Eyv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zfQ-R7-2YX" secondAttribute="trailing" constant="20" id="XcQ-92-VRY"/>
                 <constraint firstItem="rCZ-JH-ly4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hRh-3D-69v"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rCZ-JH-ly4" secondAttribute="trailing" id="lJu-wB-V7t"/>
+                <constraint firstItem="zfQ-R7-2YX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="z95-3W-HWd"/>
             </constraints>
             <point key="canvasLocation" x="132" y="107"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="Brand Color">
+            <color red="0.11800000071525574" green="0.25099998712539673" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
