@@ -107,6 +107,7 @@
 		BDFAB4112934A871007C1F9F /* CardAreaCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */; };
 		BDFAB4152934BA4B007C1F9F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFAB4142934BA4B007C1F9F /* CloudKit.framework */; };
 		C9918C4A29374C5900BBB13A /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9918C4929374C5900BBB13A /* ListItemViewModel.swift */; };
+		C9918C4C2937745E00BBB13A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9918C4B2937745E00BBB13A /* TabBarController.swift */; };
 		C9ADDD7129360FFD003CC129 /* AddAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */; };
 		C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */; };
 		C9ADDD7D2936127C003CC129 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */; };
@@ -217,6 +218,7 @@
 		BDFAB4122934BA3F007C1F9F /* Reclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reclean.entitlements; sourceTree = "<group>"; };
 		BDFAB4142934BA4B007C1F9F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		C9918C4929374C5900BBB13A /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
+		C9918C4B2937745E00BBB13A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaVC.swift; sourceTree = "<group>"; };
 		C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaVC.xib; sourceTree = "<group>"; };
 		C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 				666C9070291D3E1D00AB065D /* AddAreaViewController.swift */,
 				66BA514A292E050400014473 /* MainViewController.xib */,
 				66BA5149292E050400014473 /* MainViewController.swift */,
+				C9918C4B2937745E00BBB13A /* TabBarController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -703,6 +706,7 @@
 				BDF69A0C2930C33800AC594C /* MasterInterval.swift in Sources */,
 				BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */,
 				66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */,
+				C9918C4C2937745E00BBB13A /* TabBarController.swift in Sources */,
 				66280C3D2921444400C63CC6 /* ThropiesTableViewCell.swift in Sources */,
 				BDF69A082930C14200AC594C /* MasterActivity.swift in Sources */,
 				BDF69A0A2930C18600AC594C /* ItemActivity.swift in Sources */,
