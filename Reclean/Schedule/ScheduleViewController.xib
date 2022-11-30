@@ -31,7 +31,10 @@
                     </constraints>
                     <color key="tintColor" name="Brand Color"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Add Area">
+                    <buttonConfiguration key="configuration" style="filled" title="Add Area" cornerStyle="capsule">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" name="Brand Color"/>
+                        </backgroundConfiguration>
                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                     </buttonConfiguration>
                     <userDefinedRuntimeAttributes>
@@ -50,7 +53,11 @@
                     </constraints>
                     <color key="tintColor" name="White Color"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Join Family">
+                    <buttonConfiguration key="configuration" style="filled" title="Join Family" cornerStyle="capsule">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" name="White Color"/>
+                            <color key="strokeColor" name="Brand Color"/>
+                        </backgroundConfiguration>
                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                         <color key="baseForegroundColor" name="Brand Color"/>
                     </buttonConfiguration>

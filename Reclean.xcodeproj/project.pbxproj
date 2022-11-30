@@ -114,6 +114,7 @@
 /* Begin PBXFileReference section */
 		660E078729213E7E002201A3 /* ThrophyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrophyTableViewCell.swift; sourceTree = "<group>"; };
 		660E078829213E7E002201A3 /* ThrophyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThrophyTableViewCell.xib; sourceTree = "<group>"; };
+		661C20A229375D12000231AC /* Reclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reclean.entitlements; sourceTree = "<group>"; };
 		66280C3B2921444400C63CC6 /* ThropiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThropiesTableViewCell.swift; sourceTree = "<group>"; };
 		66280C3C2921444400C63CC6 /* ThropiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThropiesTableViewCell.xib; sourceTree = "<group>"; };
 		66280C3F2921456D00C63CC6 /* BadgesCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesCreateViewController.swift; sourceTree = "<group>"; };
@@ -459,6 +460,7 @@
 		BD51E830290FC437007DFCC0 /* Reclean */ = {
 			isa = PBXGroup;
 			children = (
+				661C20A229375D12000231AC /* Reclean.entitlements */,
 				BDF69A0D2930C62B00AC594C /* Repositories */,
 				BDF69A002930A99B00AC594C /* Models */,
 				BD102B52292E0C8200A29811 /* Utils */,
@@ -847,9 +849,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Reclean/Reclean.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DFF5WS246X;
+				DEVELOPMENT_TEAM = 8FYVDX646G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ReClean;
@@ -876,9 +879,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Reclean/Reclean.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DFF5WS246X;
+				DEVELOPMENT_TEAM = 8FYVDX646G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ReClean;

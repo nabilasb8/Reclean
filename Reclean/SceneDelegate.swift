@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: windowScene)
-        let rootViewController = ScheduleViewController()
+        let rootViewController = MainViewController()
 //        let area = AreaRepository.shared.getAreas()[0]
 //        rootViewController.setArea(area: area)
         
