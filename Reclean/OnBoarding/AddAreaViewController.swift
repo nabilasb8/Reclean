@@ -8,12 +8,19 @@
 import UIKit
 import CloudKit
 
+protocol ScheduleDelegate {
+    func didTapSave()
+}
+
 class AddAreaViewController: UIViewController {
+    
+    var scheduleDelegate: ScheduleDelegate!
     
     @IBOutlet weak var selectArea: UIButton!
     @IBOutlet weak var textFieldAreaName: UITextField!
     
     let areas = ["Living Room", "Bedroom", "Bathroom" ]
+    var isianText: String = ""
     
     let publicDatabase = CKContainer(identifier: "iCloud.com.sw1ftly.Reclean").publicCloudDatabase
     
@@ -46,14 +53,17 @@ class AddAreaViewController: UIViewController {
         selectArea.showsMenuAsPrimaryAction = true
         selectArea.changesSelectionAsPrimaryAction = true
     }
+
     
+    @IBAction func cancelButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
-    
-    func cancelButton() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .cancel,
-            target: self,
-            action: #selector(moveToAnotherVC))
+    @IBAction func saveButton(_ sender: Any) {
+        isianText = textField.text ?? ""
+        print(isianText)
+        dismiss(animated: true, completion: nil)
+        scheduleDelegate.didTapSave()
         
     }
     

@@ -47,6 +47,7 @@
                     <segments>
                         <segment title="ACTIVITIES"/>
                         <segment title="ABOUT"/>
+                        <segment title="PROFILE"/>
                     </segments>
                     <connections>
                         <action selector="controlSegment:" destination="-1" eventType="valueChanged" id="DBc-XZ-jUW"/>
