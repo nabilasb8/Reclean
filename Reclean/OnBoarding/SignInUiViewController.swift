@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import AuthenticationServices
 
 class SignInUiViewController: UIViewController {
+    
+
     
     override func viewDidLoad() {
 
@@ -19,20 +22,39 @@ class SignInUiViewController: UIViewController {
     
     @IBAction func continueSignIn(_ sender: Any) {
         if let navigationController = navigationController {
-            let viewController = AfterSignInViewController()
+            let viewController = ScheduleViewController()
             navigationController.pushViewController(viewController,animated:true)
         }
+        
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName, .email]
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        authorizationController.delegate = self
+        authorizationController.performRequests()
+        
+        
+    }
+    
+}
+
+extension SignInUiViewController: ASAuthorizationControllerDelegate {
+    
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        if let appleIDCredential = authorization.credential as?  ASAuthorizationAppleIDCredential {
+            let userIdentifier = appleIDCredential.user
+            let fullName = appleIDCredential.fullName
+            //    let email = appleIDCredential.email
+            //    
+            //    lblUserName.text = email!
+            //        
+            //    print("User id is \(userIdentifier) \n Full Name is \(String(describing: fullName)) \n Email id is \(String(describing: email))") }
+        }
+       
     }
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        print(error.localizedDescription)
     }
-    */
-
 }

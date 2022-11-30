@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteFamilyVC" customModule="Reclean" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonInvite" destination="TIV-XH-coi" id="tSF-Xf-Aqi"/>
+                <outlet property="textFieldAppleID" destination="zZV-UT-hTB" id="iTb-WG-5GZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="warningText" destination="cIe-BA-yqQ" id="C44-PW-Hb4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Apple ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaj-dZ-n4R">
+                    <rect key="frame" x="16" y="133" width="107" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZV-UT-hTB">
+                    <rect key="frame" x="16" y="173" width="358" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="XXj-7U-kjP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIV-XH-coi">
+                    <rect key="frame" x="155" y="291" width="80" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="RCw-gf-1Ym"/>
+                        <constraint firstAttribute="height" constant="50" id="jWY-Ih-QrV"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Invite">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" name="BlueColor"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" name="Border Color"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="inviteButton:" destination="-1" eventType="touchUpInside" id="VWT-NP-hdL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email format is incorrect. Please use format example: johny@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIe-BA-yqQ">
+                    <rect key="frame" x="16" y="241" width="240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="avb-JE-hbt"/>
+                        <constraint firstAttribute="width" constant="240" id="da7-NB-tp1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RH-W1-5AU">
+                    <rect key="frame" x="8" y="61.666666666666657" width="77" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                        <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="MOF-fU-OAG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite Member" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jq-w3-fqv">
+                    <rect key="frame" x="127.66666666666669" y="67" width="135" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jaj-dZ-n4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2xU-9p-l91"/>
+                <constraint firstItem="TIV-XH-coi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BjX-dh-p3y"/>
+                <constraint firstItem="zZV-UT-hTB" firstAttribute="top" secondItem="jaj-dZ-n4R" secondAttribute="bottom" constant="20" id="GCJ-dU-C4e"/>
+                <constraint firstItem="cIe-BA-yqQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Mj2-aH-Oeh"/>
+                <constraint firstItem="4RH-W1-5AU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="XMe-Rc-mdH"/>
+                <constraint firstItem="4RH-W1-5AU" firstAttribute="centerY" secondItem="2jq-w3-fqv" secondAttribute="centerY" id="fc5-yT-qwK"/>
+                <constraint firstItem="jaj-dZ-n4R" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="86" id="gHK-B3-6Z1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zZV-UT-hTB" secondAttribute="trailing" constant="16" id="k6a-Dn-vqB"/>
+                <constraint firstItem="cIe-BA-yqQ" firstAttribute="top" secondItem="zZV-UT-hTB" secondAttribute="bottom" constant="20" id="nk7-NQ-vhd"/>
+                <constraint firstItem="TIV-XH-coi" firstAttribute="top" secondItem="cIe-BA-yqQ" secondAttribute="bottom" constant="20" id="pQj-2g-L7E"/>
+                <constraint firstItem="2jq-w3-fqv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r3n-38-hc2"/>
+                <constraint firstItem="2jq-w3-fqv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="uO1-E7-58h"/>
+                <constraint firstItem="zZV-UT-hTB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vW9-RL-C1d"/>
+            </constraints>
+            <point key="canvasLocation" x="75.384615384615387" y="19.90521327014218"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BlueColor">
+            <color red="0.11800000071525574" green="0.25099998712539673" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Border Color">
+            <color red="0.96899998188018799" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

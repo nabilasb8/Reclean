@@ -10,8 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AfterSignInViewController" customModule="Reclean" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleViewController" customModule="Reclean" customModuleProvider="target">
             <connections>
+                <outlet property="buttonAddArea" destination="HRx-jE-aVS" id="fIM-4m-o3K"/>
+                <outlet property="buttonJoinFamily" destination="Ox5-37-Bbs" id="zrG-ec-Ju3"/>
+                <outlet property="labelName" destination="zCr-7G-vni" id="uBu-on-1kY"/>
+                <outlet property="labelReclean" destination="uoy-j1-6e6" id="ilZ-Sd-hMV"/>
+                <outlet property="labelTag" destination="SlF-bz-WSb" id="jHU-Pe-CWd"/>
+                <outlet property="tableView" destination="fi7-li-QNq" id="1U6-zH-zCD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -138,6 +144,10 @@
                         <action selector="joinButtonFamily:" destination="-1" eventType="touchUpInside" id="VcF-LQ-WZ4"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-li-QNq">
+                    <rect key="frame" x="0.0" y="47" width="390" height="707"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -145,13 +155,17 @@
                 <constraint firstItem="HRx-jE-aVS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="0vn-mw-lfn"/>
                 <constraint firstItem="zCr-7G-vni" firstAttribute="top" secondItem="uoy-j1-6e6" secondAttribute="bottom" constant="50" id="5B2-Vs-Jkx"/>
                 <constraint firstItem="uoy-j1-6e6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="65V-Rp-anP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fi7-li-QNq" secondAttribute="trailing" id="ABb-eL-FSg"/>
                 <constraint firstItem="Ox5-37-Bbs" firstAttribute="top" secondItem="HRx-jE-aVS" secondAttribute="bottom" constant="20" id="ApB-3V-3k5"/>
+                <constraint firstItem="fi7-li-QNq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Dee-aH-lEu"/>
                 <constraint firstItem="Ox5-37-Bbs" firstAttribute="width" secondItem="HRx-jE-aVS" secondAttribute="width" id="GL1-nK-pem"/>
                 <constraint firstItem="tmy-vZ-agI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GlM-W0-Xl1"/>
+                <constraint firstItem="fi7-li-QNq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="I97-6R-Exn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SlF-bz-WSb" secondAttribute="trailing" constant="40" id="LNf-Tk-HKA"/>
                 <constraint firstAttribute="bottom" secondItem="tmy-vZ-agI" secondAttribute="bottom" id="UnO-6f-uBg"/>
                 <constraint firstItem="HRx-jE-aVS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yun-Md-yhp"/>
                 <constraint firstItem="SlF-bz-WSb" firstAttribute="top" secondItem="zCr-7G-vni" secondAttribute="bottom" constant="20" id="a9T-of-C8i"/>
+                <constraint firstItem="tmy-vZ-agI" firstAttribute="top" secondItem="fi7-li-QNq" secondAttribute="bottom" id="crt-WK-RHE"/>
                 <constraint firstItem="zCr-7G-vni" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dnJ-Vc-oFh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HRx-jE-aVS" secondAttribute="trailing" constant="38" id="i59-dE-3d9"/>
                 <constraint firstItem="HRx-jE-aVS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="j8A-aj-o5V"/>
@@ -160,7 +174,7 @@
                 <constraint firstItem="HRx-jE-aVS" firstAttribute="top" secondItem="SlF-bz-WSb" secondAttribute="bottom" constant="30" id="uhJ-Hf-eZ7"/>
                 <constraint firstItem="SlF-bz-WSb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="yuc-bf-alu"/>
             </constraints>
-            <point key="canvasLocation" x="99.069767441860463" y="20.600858369098713"/>
+            <point key="canvasLocation" x="98.461538461538453" y="19.90521327014218"/>
         </view>
     </objects>
     <resources>

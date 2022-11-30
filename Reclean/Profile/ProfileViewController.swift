@@ -16,6 +16,7 @@ class ProfileViewController: UIViewController {
     
     let akuSiapa = [""]
     let akuDimana = [""]
+    let akuKenapa = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,8 @@ class ProfileViewController: UIViewController {
         tableView.register(UINib(nibName: "AboutTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutTableViewCell")
         tableView.register(UINib(nibName: "ThrophyTableViewCell", bundle: nil), forCellReuseIdentifier: "ThrophyTableViewCell")
         tableView.register(UINib(nibName: "ThropiesTableViewCell", bundle: nil), forCellReuseIdentifier: "ThropiesTableViewCell")
+        tableView.register(UINib(nibName: "AddNewFamilyTFC", bundle: nil), forCellReuseIdentifier: "AddNewFamilyTFC")
+        tableView.register(UINib(nibName: "FamilyMemberTVC", bundle: nil), forCellReuseIdentifier: "FamilyMemberTVC")
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -47,6 +50,8 @@ extension ProfileViewController: UITableViewDataSource {
             return 1
         case 1:
             return 3
+        case 2:
+            return 2
         default:
             break
         }
@@ -59,6 +64,8 @@ extension ProfileViewController: UITableViewDataSource {
             return akuSiapa.count
         case 1:
             return akuDimana.count
+        case 2:
+            return akuKenapa.count
         default:
             break
         }
@@ -88,17 +95,49 @@ extension ProfileViewController: UITableViewDataSource {
                 let cell = UITableViewCell()
                 return cell
             }
+            
+        case 2:
+            switch indexPath.section {
+            case 0:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "AddNewFamilyTFC", for: indexPath) as! AddNewFamilyTFC
+                return cell
+            case 1:
+                let cell1 = tableView.dequeueReusableCell(withIdentifier: "FamilyMemberTVC", for: indexPath) as! FamilyMemberTVC
+                return cell1
+                
+            default:
+                let cell = UITableViewCell()
+                return cell
+            }
+            
         default:
             break
         }
         let cell = UITableViewCell()
         return cell
     }
+    
+    func goToSourceViewController(category: String) {
+        let destination = InviteFamilyVC()
+        destination.modalPresentationStyle = .popover
+        present(destination, animated: true, completion: nil)
+    }
 }
 
 extension ProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch segmentedControl.selectedSegmentIndex {
+        case 2:
+            switch indexPath.section {
+            case 0:
+                let category = akuKenapa[indexPath.row]
+                goToSourceViewController(category: category)
+            default:
+                break
+            }
+        default:
+            0
+        }
         
     }
-    
 }

@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj8-Lx-xOw">
-                    <rect key="frame" x="38" y="223.66666666666666" width="67" height="19"/>
+                    <rect key="frame" x="28" y="223.66666666666666" width="67" height="19"/>
                     <attributedString key="attributedText">
                         <fragment content="Add Area">
                             <attributes>
@@ -36,7 +36,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdY-sc-a4I">
-                    <rect key="frame" x="38" y="117" width="82" height="18.666666666666657"/>
+                    <rect key="frame" x="28" y="117" width="82" height="18.666666666666657"/>
                     <attributedString key="attributedText">
                         <fragment content="Select Area">
                             <attributes>
@@ -48,8 +48,8 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Input Area Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-Tz-tw7">
-                    <rect key="frame" x="38" y="262.66666666666669" width="314" height="48"/>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-Tz-tw7">
+                    <rect key="frame" x="28" y="262.66666666666669" width="334" height="48"/>
                     <color key="backgroundColor" name="gray2"/>
                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -60,7 +60,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaQ-5Z-OpO">
-                    <rect key="frame" x="38" y="155.66666666666666" width="314" height="48"/>
+                    <rect key="frame" x="28" y="155.66666666666666" width="334" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="Nva-vf-qlR"/>
                     </constraints>
@@ -73,20 +73,54 @@
                         <color key="baseForegroundColor" name="Gray Color 3"/>
                     </buttonConfiguration>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP7-gM-8W6">
+                    <rect key="frame" x="16" y="52.333333333333329" width="74" height="33.333333333333329"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                        <backgroundConfiguration key="background"/>
+                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                        <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="OMf-op-bbj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdj-E9-xKK">
+                    <rect key="frame" x="315" y="52.333333333333329" width="59" height="33.333333333333329"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Save">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="saveButton:" destination="-1" eventType="touchUpInside" id="RES-M9-2UE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G8-HE-Kl4">
+                    <rect key="frame" x="151.66666666666666" y="57" width="87" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="2G8-HE-Kl4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4cF-RQ-D2D"/>
                 <constraint firstItem="bhK-Tz-tw7" firstAttribute="top" secondItem="Dj8-Lx-xOw" secondAttribute="bottom" constant="20" id="6mV-Pi-iea"/>
                 <constraint firstItem="Dj8-Lx-xOw" firstAttribute="top" secondItem="XaQ-5Z-OpO" secondAttribute="bottom" constant="20" id="BRg-nL-gAK"/>
-                <constraint firstItem="Dj8-Lx-xOw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="CVk-Av-A8a"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bhK-Tz-tw7" secondAttribute="trailing" constant="38" id="HFm-qa-kFS"/>
-                <constraint firstItem="XaQ-5Z-OpO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="YtZ-hM-5tw"/>
+                <constraint firstItem="Dj8-Lx-xOw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="CVk-Av-A8a"/>
+                <constraint firstItem="GP7-gM-8W6" firstAttribute="centerY" secondItem="2G8-HE-Kl4" secondAttribute="centerY" id="DuZ-Sa-B7v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bhK-Tz-tw7" secondAttribute="trailing" constant="28" id="HFm-qa-kFS"/>
+                <constraint firstItem="Vdj-E9-xKK" firstAttribute="centerY" secondItem="2G8-HE-Kl4" secondAttribute="centerY" id="Qsk-bZ-eQE"/>
+                <constraint firstItem="GP7-gM-8W6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SoH-RN-vEW"/>
+                <constraint firstItem="XaQ-5Z-OpO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="YtZ-hM-5tw"/>
                 <constraint firstItem="XaQ-5Z-OpO" firstAttribute="top" secondItem="AdY-sc-a4I" secondAttribute="bottom" constant="20" id="pBV-Lt-O78"/>
-                <constraint firstItem="AdY-sc-a4I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="pED-pS-gYs"/>
+                <constraint firstItem="AdY-sc-a4I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="pED-pS-gYs"/>
                 <constraint firstItem="AdY-sc-a4I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="pER-dD-d5p"/>
-                <constraint firstItem="bhK-Tz-tw7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="pKb-Iz-gmH"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XaQ-5Z-OpO" secondAttribute="trailing" constant="38" id="xmY-ij-MxU"/>
+                <constraint firstItem="bhK-Tz-tw7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="pKb-Iz-gmH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vdj-E9-xKK" secondAttribute="trailing" constant="16" id="uAL-Jv-4ir"/>
+                <constraint firstItem="2G8-HE-Kl4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="wTF-tM-q9P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XaQ-5Z-OpO" secondAttribute="trailing" constant="28" id="xmY-ij-MxU"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="-90.769230769230759" y="31.279620853080566"/>
@@ -101,6 +135,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
