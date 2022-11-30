@@ -19,7 +19,7 @@ class SignInUiViewController: UIViewController {
     
     @IBAction func continueSignIn(_ sender: Any) {
         if let navigationController = navigationController {
-            let viewController = AfterSignInViewController()
+            let viewController = ScheduleViewController()
             navigationController.pushViewController(viewController,animated:true)
         }
     }

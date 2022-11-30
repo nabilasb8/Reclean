@@ -7,22 +7,25 @@
 
 import UIKit
 
+protocol ScheduleDelegate {
+    func didTapSave()
+}
+
 class AddAreaViewController: UIViewController {
+    
+    var scheduleDelegate: ScheduleDelegate!
     
     @IBOutlet weak var selectArea: UIButton!
     @IBOutlet weak var textField: UITextField!
     
     let areas = ["Living Room", "Bedroom", "Bathroom" ]
+    var isianText: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         setPopupButton()
-        
-        title = "Add Area"
-        cancelButton()
-        saveButton()
-        
+
     }
     
     func setPopupButton() {
@@ -34,39 +37,18 @@ class AddAreaViewController: UIViewController {
         selectArea.showsMenuAsPrimaryAction = true
         selectArea.changesSelectionAsPrimaryAction = true
     }
+
     
+    @IBAction func cancelButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
-    
-    func cancelButton() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .cancel,
-            target: self,
-            action: #selector(moveToAnotherVC))
+    @IBAction func saveButton(_ sender: Any) {
+        isianText = textField.text ?? ""
+        print(isianText)
+        dismiss(animated: true, completion: nil)
+        scheduleDelegate.didTapSave()
         
-    }
-    
-    @objc func moveToAnotherVC(){
-        // kode pbuat pindah
-        if let navigationController1 = navigationController {
-            let viewController = AfterSignInViewController()
-            navigationController1.pushViewController(viewController,animated:true)
-        }
-    }
-    
-    func saveButton() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .save,
-            target: self,
-            action: #selector(moveToAnotherVC2))
-        
-    }
-    
-    @objc func moveToAnotherVC2(){
-        // kode pbuat pindah
-        if let navigationController1 = navigationController {
-            let viewController = ScheduleViewController()
-            navigationController1.pushViewController(viewController,animated:true)
-        }
     }
     
     
