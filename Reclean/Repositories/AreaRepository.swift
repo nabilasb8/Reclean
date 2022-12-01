@@ -10,15 +10,21 @@ import Foundation
 class AreaRepository {
     static let shared = AreaRepository()
     
+    private var areas: [Area] = []
+    
     func getAreas() -> [Area] {
-        return generateDummyAreas()
+        return areas
     }
     
     func getArea(id: String) -> Area? {
-        return generateDummyAreas()
+        return areas
             .first { area in
                 return area.id == id
             }
+    }
+    
+    func addArea(area: Area) {
+        areas.append(area)
     }
     
     private func generateDummyAreas() -> [Area] {

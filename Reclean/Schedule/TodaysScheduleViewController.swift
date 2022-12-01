@@ -8,14 +8,14 @@
 import UIKit
 
 class TodaysScheduleViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    title = "Today'sSchedule"
-    
+        title = "Today's Schedule"
+        
     }
-
-
-
+    
+    
+    
 }

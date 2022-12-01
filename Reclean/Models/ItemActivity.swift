@@ -14,6 +14,7 @@ struct ItemActivity {
     var description: String
     var date: Date
     var intervalId: String
+    var isDone: Bool
     
     func getActivity() -> MasterActivity? {
         return MasterActivityRepository.shared.getMasterActivity(id: self.activityId)

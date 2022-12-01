@@ -32,7 +32,14 @@ class AllAreasVC: UIViewController {
         listAreaCollView.register(UINib(nibName: "CardAreaCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardAreaCellCollectionViewCell")
         listAreaCollView.dataSource = self
         listAreaCollView.delegate = self
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getAreas()
+    }
+    
+    func getAreas() {
         viewModel.getAreas { result in
             self.areas = result
             self.listAreaCollView.reloadData()
@@ -46,8 +53,12 @@ class AllAreasVC: UIViewController {
     }
     
     func showAddAreaVC() {
-        let destination = UINavigationController(rootViewController: AddAreaVC())
-        present(destination, animated: true)
+        let destination = AddAreaVC()
+        let nav = UINavigationController(rootViewController: AddAreaVC())
+        destination.didAddArea = {
+            self.getAreas()
+        }
+        present(nav, animated: true)
     }
 }
 
@@ -68,7 +79,7 @@ extension AllAreasVC: UICollectionViewDataSource {
         if indexPath.item < areas.count {
             let area = areas[indexPath.item]
             cell.configure(
-                title: area.getPlace()?.name,
+                title: area.description,
                 iconName: area.getPlace()?.iconName
             )
         } else {

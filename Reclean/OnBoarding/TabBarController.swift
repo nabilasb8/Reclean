@@ -26,11 +26,12 @@ class TabBarController: UITabBarController {
     
     func createScheduleViewController() -> UIViewController {
         let viewController = ScheduleViewController()
+        let nav = UINavigationController(rootViewController: viewController)
         viewController.view.backgroundColor = .systemBackground
-        viewController.title = "Schedule"
-        viewController.tabBarItem.image = UIImage(systemName: "calendar")
+        nav.title = "Schedule"
+        nav.tabBarItem.image = UIImage(systemName: "calendar")
         
-        return viewController
+        return nav
     }
     
     func createChallengesViewController() -> UIViewController {

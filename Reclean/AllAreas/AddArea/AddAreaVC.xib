@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAreaVC" customModule="Reclean" customModuleProvider="target">
             <connections>
                 <outlet property="areaLabel" destination="Hbf-JA-VS5" id="Oki-wE-wbM"/>
+                <outlet property="btnSave" destination="dhG-uz-f5s" id="ZJx-RG-ho2"/>
                 <outlet property="descAreaLabel" destination="vQs-hP-294" id="qER-Yo-WLy"/>
                 <outlet property="selectTypeBtn" destination="I13-Jo-lQb" id="rZ4-kw-yzS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
