@@ -44,11 +44,12 @@ class TabBarController: UITabBarController {
     }
     
     func createProfileViewController() -> UIViewController {
-        let viewController = UIViewController()
+        let viewController = ProfileViewController()
+        let nav = UINavigationController(rootViewController: viewController)
         viewController.view.backgroundColor = .systemBackground
-        viewController.title = "Profile"
-        viewController.tabBarItem.image = UIImage(systemName: "person.circle")
+        nav.title = "Profile"
+        nav.tabBarItem.image = UIImage(systemName: "person.circle")
         
-        return viewController
+        return nav
     }
 }

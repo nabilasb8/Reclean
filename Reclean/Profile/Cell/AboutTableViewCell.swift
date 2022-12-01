@@ -9,9 +9,16 @@ import UIKit
 
 class AboutTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var containerView3: UIView!
+    @IBOutlet weak var containerView2: UIView!
+    @IBOutlet weak var containerView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         selectionStyle = .none
+        containerView.backgroundColor = .blueLinear.withAlphaComponent(0.2)
+        containerView2.backgroundColor = .blueLinear.withAlphaComponent(0.2)
+        containerView3.backgroundColor = .blueLinear.withAlphaComponent(0.2)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

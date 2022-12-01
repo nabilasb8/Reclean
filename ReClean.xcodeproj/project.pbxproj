@@ -203,7 +203,7 @@
 		BD1F467D2923727800B646F1 /* AllAreasVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAreasVC.xib; sourceTree = "<group>"; };
 		BD1F468B2923753000B646F1 /* ChallengesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesVC.swift; sourceTree = "<group>"; };
 		BD1F468C2923753000B646F1 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
-		BD51E82E290FC437007DFCC0 /* Reclean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reclean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD51E82E290FC437007DFCC0 /* ReClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51E831290FC437007DFCC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD51E833290FC437007DFCC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BD51E83A290FC439007DFCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -493,7 +493,7 @@
 		BD51E82F290FC437007DFCC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD51E82E290FC437007DFCC0 /* Reclean.app */,
+				BD51E82E290FC437007DFCC0 /* ReClean.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -612,9 +612,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD51E82D290FC437007DFCC0 /* Reclean */ = {
+		BD51E82D290FC437007DFCC0 /* ReClean */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD51E842290FC439007DFCC0 /* Build configuration list for PBXNativeTarget "Reclean" */;
+			buildConfigurationList = BD51E842290FC439007DFCC0 /* Build configuration list for PBXNativeTarget "ReClean" */;
 			buildPhases = (
 				BD51E82A290FC437007DFCC0 /* Sources */,
 				BD51E82B290FC437007DFCC0 /* Frameworks */,
@@ -624,9 +624,9 @@
 			);
 			dependencies = (
 			);
-			name = Reclean;
+			name = ReClean;
 			productName = Reclean;
-			productReference = BD51E82E290FC437007DFCC0 /* Reclean.app */;
+			productReference = BD51E82E290FC437007DFCC0 /* ReClean.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -644,7 +644,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "Reclean" */;
+			buildConfigurationList = BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "ReClean" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -657,7 +657,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD51E82D290FC437007DFCC0 /* Reclean */,
+				BD51E82D290FC437007DFCC0 /* ReClean */,
 			);
 		};
 /* End PBXProject section */
@@ -991,7 +991,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "Reclean" */ = {
+		BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "ReClean" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD51E840290FC439007DFCC0 /* Debug */,
@@ -1000,7 +1000,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD51E842290FC439007DFCC0 /* Build configuration list for PBXNativeTarget "Reclean" */ = {
+		BD51E842290FC439007DFCC0 /* Build configuration list for PBXNativeTarget "ReClean" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD51E843290FC439007DFCC0 /* Debug */,
