@@ -37,9 +37,9 @@ class ScheduleViewController: UIViewController {
 
     @IBAction func addAreaa(_ sender: Any) {
 
-            let viewController = AddAreaViewController()
+            let viewController = AddAreaVC()
            viewController.modalPresentationStyle = .popover
-            viewController.scheduleDelegate = self
+//            viewController.scheduleDelegate = self
             present(viewController, animated: true, completion: nil)
 
     }

@@ -25,7 +25,7 @@ class TabBarController: UITabBarController {
     }
     
     func createScheduleViewController() -> UIViewController {
-        let viewController = UIViewController()
+        let viewController = ScheduleViewController()
         viewController.view.backgroundColor = .systemBackground
         viewController.title = "Schedule"
         viewController.tabBarItem.image = UIImage(systemName: "calendar")
