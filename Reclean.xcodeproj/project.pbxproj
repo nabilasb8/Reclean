@@ -27,6 +27,14 @@
 		66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66402161291BAF94001442D2 /* TagAllAreaTableViewCell.xib */; };
 		66436F59293843B70034F844 /* InvitationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66436F57293843B70034F844 /* InvitationCodeViewController.swift */; };
 		66436F5A293843B70034F844 /* InvitationCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66436F58293843B70034F844 /* InvitationCodeViewController.xib */; };
+		6648828E2938B015003D1F33 /* ActiveChallengeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648828C2938B015003D1F33 /* ActiveChallengeTVC.swift */; };
+		6648828F2938B015003D1F33 /* ActiveChallengeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6648828D2938B015003D1F33 /* ActiveChallengeTVC.xib */; };
+		664882922938B03D003D1F33 /* ActiveTagTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664882902938B03D003D1F33 /* ActiveTagTVC.swift */; };
+		664882932938B03D003D1F33 /* ActiveTagTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664882912938B03D003D1F33 /* ActiveTagTVC.xib */; };
+		664882962938B052003D1F33 /* PastChallengeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664882942938B052003D1F33 /* PastChallengeTVC.swift */; };
+		664882972938B052003D1F33 /* PastChallengeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664882952938B052003D1F33 /* PastChallengeTVC.xib */; };
+		6648829A2938B076003D1F33 /* PastChallengeTagTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664882982938B076003D1F33 /* PastChallengeTagTVC.swift */; };
+		6648829B2938B076003D1F33 /* PastChallengeTagTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664882992938B076003D1F33 /* PastChallengeTagTVC.xib */; };
 		665A52AB2935071E0069E421 /* AddNewFamilyTFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A52A92935071E0069E421 /* AddNewFamilyTFC.swift */; };
 		665A52AC2935071E0069E421 /* AddNewFamilyTFC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665A52AA2935071E0069E421 /* AddNewFamilyTFC.xib */; };
 		665A52AF293507480069E421 /* FamilyMemberTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A52AD293507480069E421 /* FamilyMemberTVC.swift */; };
@@ -123,7 +131,6 @@
 /* Begin PBXFileReference section */
 		660E078729213E7E002201A3 /* ThrophyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrophyTableViewCell.swift; sourceTree = "<group>"; };
 		660E078829213E7E002201A3 /* ThrophyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThrophyTableViewCell.xib; sourceTree = "<group>"; };
-		661C20A229375D12000231AC /* Reclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reclean.entitlements; sourceTree = "<group>"; };
 		66280C3B2921444400C63CC6 /* ThropiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThropiesTableViewCell.swift; sourceTree = "<group>"; };
 		66280C3C2921444400C63CC6 /* ThropiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThropiesTableViewCell.xib; sourceTree = "<group>"; };
 		66280C3F2921456D00C63CC6 /* BadgesCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesCreateViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +149,14 @@
 		66402161291BAF94001442D2 /* TagAllAreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAllAreaTableViewCell.xib; sourceTree = "<group>"; };
 		66436F57293843B70034F844 /* InvitationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCodeViewController.swift; sourceTree = "<group>"; };
 		66436F58293843B70034F844 /* InvitationCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitationCodeViewController.xib; sourceTree = "<group>"; };
+		6648828C2938B015003D1F33 /* ActiveChallengeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChallengeTVC.swift; sourceTree = "<group>"; };
+		6648828D2938B015003D1F33 /* ActiveChallengeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActiveChallengeTVC.xib; sourceTree = "<group>"; };
+		664882902938B03D003D1F33 /* ActiveTagTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTagTVC.swift; sourceTree = "<group>"; };
+		664882912938B03D003D1F33 /* ActiveTagTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActiveTagTVC.xib; sourceTree = "<group>"; };
+		664882942938B052003D1F33 /* PastChallengeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastChallengeTVC.swift; sourceTree = "<group>"; };
+		664882952938B052003D1F33 /* PastChallengeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastChallengeTVC.xib; sourceTree = "<group>"; };
+		664882982938B076003D1F33 /* PastChallengeTagTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastChallengeTagTVC.swift; sourceTree = "<group>"; };
+		664882992938B076003D1F33 /* PastChallengeTagTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastChallengeTagTVC.xib; sourceTree = "<group>"; };
 		665A52A92935071E0069E421 /* AddNewFamilyTFC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFamilyTFC.swift; sourceTree = "<group>"; };
 		665A52AA2935071E0069E421 /* AddNewFamilyTFC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewFamilyTFC.xib; sourceTree = "<group>"; };
 		665A52AD293507480069E421 /* FamilyMemberTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberTVC.swift; sourceTree = "<group>"; };
@@ -313,6 +328,21 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6648828B2938AFEB003D1F33 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6648828C2938B015003D1F33 /* ActiveChallengeTVC.swift */,
+				6648828D2938B015003D1F33 /* ActiveChallengeTVC.xib */,
+				664882902938B03D003D1F33 /* ActiveTagTVC.swift */,
+				664882912938B03D003D1F33 /* ActiveTagTVC.xib */,
+				664882942938B052003D1F33 /* PastChallengeTVC.swift */,
+				664882952938B052003D1F33 /* PastChallengeTVC.xib */,
+				664882982938B076003D1F33 /* PastChallengeTagTVC.swift */,
+				664882992938B076003D1F33 /* PastChallengeTagTVC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		668F2630292276BA00412735 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,7 +482,7 @@
 		BD1F468A292374E800B646F1 /* TabChallenges */ = {
 			isa = PBXGroup;
 			children = (
-				BDDCAAFB2924CE2700A28325 /* Cells */,
+				6648828B2938AFEB003D1F33 /* Cell */,
 				BD1F468B2923753000B646F1 /* ChallengesVC.swift */,
 				BD1F468C2923753000B646F1 /* ChallengesVC.xib */,
 			);
@@ -518,13 +548,6 @@
 				BDCDF6C9291A457E001BD533 /* AllItemsViewController.xib */,
 			);
 			path = CleaningItems;
-			sourceTree = "<group>";
-		};
-		BDDCAAFB2924CE2700A28325 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		BDF69A002930A99B00AC594C /* Models */ = {
@@ -639,6 +662,8 @@
 				66436F5A293843B70034F844 /* InvitationCodeViewController.xib in Resources */,
 				BD64AAF8292B6E76001653A1 /* AddItemDetailVC.xib in Resources */,
 				66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */,
+				664882932938B03D003D1F33 /* ActiveTagTVC.xib in Resources */,
+				6648829B2938B076003D1F33 /* PastChallengeTagTVC.xib in Resources */,
 				BD64AAFC292B6EEF001653A1 /* SelectItemCell.xib in Resources */,
 				BD64AB04292B6F83001653A1 /* InitialDateCell.xib in Resources */,
 				66C6FD20291A3C8A0068D08B /* TagAllScheduleTableViewCell.xib in Resources */,
@@ -665,8 +690,10 @@
 				66CE2C602921D1C8007BD8E1 /* EndYearViewController.xib in Resources */,
 				66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */,
 				663A3F46292123FB0059C2F3 /* BadgesFinishedViewController.xib in Resources */,
+				6648828F2938B015003D1F33 /* ActiveChallengeTVC.xib in Resources */,
 				668871EE293587C60045770E /* InviteFamilyVC.xib in Resources */,
 				663A3F54292136FF0059C2F3 /* AboutTableViewCell.xib in Resources */,
+				664882972938B052003D1F33 /* PastChallengeTVC.xib in Resources */,
 				668F264829228C4E00412735 /* DescriptionTableViewCell.xib in Resources */,
 				668F264029228A4900412735 /* DetailTaskTableViewCell.xib in Resources */,
 				C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */,
@@ -715,6 +742,7 @@
 				66BA514B292E050400014473 /* MainViewController.swift in Sources */,
 				BD64AAF7292B6E76001653A1 /* AddItemDetailVC.swift in Sources */,
 				BDF69A0F2930C6CB00AC594C /* MasterPlaceRepository.swift in Sources */,
+				664882922938B03D003D1F33 /* ActiveTagTVC.swift in Sources */,
 				66CE2C672921F484007BD8E1 /* TagEmptyScheduleTableViewCell.swift in Sources */,
 				BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */,
 				66C6FD17291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift in Sources */,
@@ -741,6 +769,7 @@
 				C9918C4A29374C5900BBB13A /* ListItemViewModel.swift in Sources */,
 				66280C412921456D00C63CC6 /* BadgesCreateViewController.swift in Sources */,
 				668F263B29227BC200412735 /* RankTableViewCell.swift in Sources */,
+				6648829A2938B076003D1F33 /* PastChallengeTagTVC.swift in Sources */,
 				BDF69A1C2930E31B00AC594C /* AddItemDetailViewModel.swift in Sources */,
 				663A3F53292136FF0059C2F3 /* AboutTableViewCell.swift in Sources */,
 				66C6FD13291A38FE0068D08B /* TagScheduleTableViewCell.swift in Sources */,
@@ -751,6 +780,7 @@
 				668F2633292276ED00412735 /* LearderBoardInfoTableViewCell.swift in Sources */,
 				66402162291BAF94001442D2 /* TagAllAreaTableViewCell.swift in Sources */,
 				BDFAB4102934A871007C1F9F /* CardAreaCellCollectionViewCell.swift in Sources */,
+				664882962938B052003D1F33 /* PastChallengeTVC.swift in Sources */,
 				668F264B29228D2B00412735 /* RewardTableViewCell.swift in Sources */,
 				BD51E834290FC437007DFCC0 /* SceneDelegate.swift in Sources */,
 				663A3F3B29211B0B0059C2F3 /* BranchAreaViewController.swift in Sources */,
@@ -758,6 +788,7 @@
 				BDF69A062930C0D100AC594C /* Area.swift in Sources */,
 				668F2637292279B000412735 /* RankNamePointTableViewCell.swift in Sources */,
 				BDF69A152930D0CD00AC594C /* ItemRepository.swift in Sources */,
+				6648828E2938B015003D1F33 /* ActiveChallengeTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
