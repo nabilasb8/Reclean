@@ -25,6 +25,8 @@
 		663A3F54292136FF0059C2F3 /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663A3F52292136FF0059C2F3 /* AboutTableViewCell.xib */; };
 		66402162291BAF94001442D2 /* TagAllAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66402160291BAF94001442D2 /* TagAllAreaTableViewCell.swift */; };
 		66402163291BAF94001442D2 /* TagAllAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66402161291BAF94001442D2 /* TagAllAreaTableViewCell.xib */; };
+		66436F59293843B70034F844 /* InvitationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66436F57293843B70034F844 /* InvitationCodeViewController.swift */; };
+		66436F5A293843B70034F844 /* InvitationCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66436F58293843B70034F844 /* InvitationCodeViewController.xib */; };
 		665A52AB2935071E0069E421 /* AddNewFamilyTFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A52A92935071E0069E421 /* AddNewFamilyTFC.swift */; };
 		665A52AC2935071E0069E421 /* AddNewFamilyTFC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665A52AA2935071E0069E421 /* AddNewFamilyTFC.xib */; };
 		665A52AF293507480069E421 /* FamilyMemberTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A52AD293507480069E421 /* FamilyMemberTVC.swift */; };
@@ -131,6 +133,8 @@
 		663A3F52292136FF0059C2F3 /* AboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
 		66402160291BAF94001442D2 /* TagAllAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAllAreaTableViewCell.swift; sourceTree = "<group>"; };
 		66402161291BAF94001442D2 /* TagAllAreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAllAreaTableViewCell.xib; sourceTree = "<group>"; };
+		66436F57293843B70034F844 /* InvitationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationCodeViewController.swift; sourceTree = "<group>"; };
+		66436F58293843B70034F844 /* InvitationCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitationCodeViewController.xib; sourceTree = "<group>"; };
 		665A52A92935071E0069E421 /* AddNewFamilyTFC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFamilyTFC.swift; sourceTree = "<group>"; };
 		665A52AA2935071E0069E421 /* AddNewFamilyTFC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewFamilyTFC.xib; sourceTree = "<group>"; };
 		665A52AD293507480069E421 /* FamilyMemberTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberTVC.swift; sourceTree = "<group>"; };
@@ -345,6 +349,8 @@
 			children = (
 				66CE2C5D2921D1C8007BD8E1 /* EndYearViewController.swift */,
 				66CE2C5E2921D1C8007BD8E1 /* EndYearViewController.xib */,
+				66436F57293843B70034F844 /* InvitationCodeViewController.swift */,
+				66436F58293843B70034F844 /* InvitationCodeViewController.xib */,
 				668F2630292276BA00412735 /* Cell */,
 			);
 			path = Challenges;
@@ -599,6 +605,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66436F5A293843B70034F844 /* InvitationCodeViewController.xib in Resources */,
 				BD64AAF8292B6E76001653A1 /* AddItemDetailVC.xib in Resources */,
 				66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */,
 				BD64AAFC292B6EEF001653A1 /* SelectItemCell.xib in Resources */,
@@ -660,6 +667,7 @@
 				BD64AAFB292B6EEF001653A1 /* SelectItemCell.swift in Sources */,
 				665A52AF293507480069E421 /* FamilyMemberTVC.swift in Sources */,
 				BD64AB03292B6F83001653A1 /* InitialDateCell.swift in Sources */,
+				66436F59293843B70034F844 /* InvitationCodeViewController.swift in Sources */,
 				668F264329228BB500412735 /* DetailTaskTagTableViewCell.swift in Sources */,
 				BD102B5D292E1C5400A29811 /* CardItemCell.swift in Sources */,
 				BDF69A042930C06D00AC594C /* MasterPlace.swift in Sources */,
