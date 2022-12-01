@@ -10,19 +10,24 @@ import Foundation
 class MasterActivityRepository {
     static let shared = MasterActivityRepository()
     
-    func getMasterActivity(placeId: String) -> [MasterActivity] {
+    func getMasterActivities(placeId: String) -> [MasterActivity] {
         return generateDummyMasterActivities()
             .filter { $0.placeId == placeId }
+    }
+    
+    func getMasterActivity(id: String) -> MasterActivity? {
+        return generateDummyMasterActivities()
+            .first(where: { $0.id == id })
     }
     
     private func generateDummyMasterActivities() -> [MasterActivity] {
         var masterActivities: [MasterActivity] = []
         
         let masterActivity1: MasterActivity = MasterActivity(
-            id: "laundry",
-            name: "Laundry",
+            id: "vacuum-carpet",
+            name: "Vacuum Carpet",
             point: 10,
-            placeId: "laundry-room"
+            placeId: "living-room"
         )
         masterActivities.append(masterActivity1)
         

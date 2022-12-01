@@ -109,6 +109,13 @@
 		BDF69A1C2930E31B00AC594C /* AddItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF69A1B2930E31B00AC594C /* AddItemDetailViewModel.swift */; };
 		BDFAB4102934A871007C1F9F /* CardAreaCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAB40E2934A871007C1F9F /* CardAreaCellCollectionViewCell.swift */; };
 		BDFAB4112934A871007C1F9F /* CardAreaCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */; };
+		BDFAB4152934BA4B007C1F9F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFAB4142934BA4B007C1F9F /* CloudKit.framework */; };
+		C9918C4A29374C5900BBB13A /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9918C4929374C5900BBB13A /* ListItemViewModel.swift */; };
+		C9918C4C2937745E00BBB13A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9918C4B2937745E00BBB13A /* TabBarController.swift */; };
+		C9ADDD7129360FFD003CC129 /* AddAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */; };
+		C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */; };
+		C9ADDD7D2936127C003CC129 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */; };
+		C9ADDD7F29362DCB003CC129 /* AllAreasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD7E29362DCB003CC129 /* AllAreasViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -217,6 +224,14 @@
 		BDF69A1B2930E31B00AC594C /* AddItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemDetailViewModel.swift; sourceTree = "<group>"; };
 		BDFAB40E2934A871007C1F9F /* CardAreaCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAreaCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardAreaCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		BDFAB4122934BA3F007C1F9F /* Reclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reclean.entitlements; sourceTree = "<group>"; };
+		BDFAB4142934BA4B007C1F9F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C9918C4929374C5900BBB13A /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
+		C9918C4B2937745E00BBB13A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaVC.swift; sourceTree = "<group>"; };
+		C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaVC.xib; sourceTree = "<group>"; };
+		C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C9ADDD7E29362DCB003CC129 /* AllAreasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAreasViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFAB4152934BA4B007C1F9F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +339,7 @@
 				666C9070291D3E1D00AB065D /* AddAreaViewController.swift */,
 				66BA514A292E050400014473 /* MainViewController.xib */,
 				66BA5149292E050400014473 /* MainViewController.swift */,
+				C9918C4B2937745E00BBB13A /* TabBarController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -354,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				BD102B53292E0C9C00A29811 /* Date+Extension.swift */,
+				C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -364,6 +382,7 @@
 				BD102B5A292E1C3700A29811 /* Cell */,
 				BD102B56292E1C1000A29811 /* ListItemVC.swift */,
 				BD102B57292E1C1000A29811 /* ListItemVC.xib */,
+				C9918C4929374C5900BBB13A /* ListItemViewModel.swift */,
 			);
 			path = ListItem;
 			sourceTree = "<group>";
@@ -406,19 +425,13 @@
 		BD1F467B2923725D00B646F1 /* AllAreas */ = {
 			isa = PBXGroup;
 			children = (
-				BD1F4680292372D600B646F1 /* AddAreasList */,
+				C9ADDD6E29360F6E003CC129 /* AddArea */,
+				BD1F46852923732900B646F1 /* Cells */,
 				BD1F467C2923727800B646F1 /* AllAreasVC.swift */,
 				BD1F467D2923727800B646F1 /* AllAreasVC.xib */,
+				C9ADDD7E29362DCB003CC129 /* AllAreasViewModel.swift */,
 			);
 			path = AllAreas;
-			sourceTree = "<group>";
-		};
-		BD1F4680292372D600B646F1 /* AddAreasList */ = {
-			isa = PBXGroup;
-			children = (
-				BD1F46852923732900B646F1 /* Cells */,
-			);
-			path = AddAreasList;
 			sourceTree = "<group>";
 		};
 		BD1F46852923732900B646F1 /* Cells */ = {
@@ -446,6 +459,7 @@
 				66698756291D112700F865ED /* Launch Screen.storyboard */,
 				BD51E830290FC437007DFCC0 /* Reclean */,
 				BD51E82F290FC437007DFCC0 /* Products */,
+				BDFAB4132934BA4B007C1F9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -460,7 +474,7 @@
 		BD51E830290FC437007DFCC0 /* Reclean */ = {
 			isa = PBXGroup;
 			children = (
-				661C20A229375D12000231AC /* Reclean.entitlements */,
+				BDFAB4122934BA3F007C1F9F /* Reclean.entitlements */,
 				BDF69A0D2930C62B00AC594C /* Repositories */,
 				BDF69A002930A99B00AC594C /* Models */,
 				BD102B52292E0C8200A29811 /* Utils */,
@@ -539,6 +553,23 @@
 				BDF69A192930DCB900AC594C /* BranchAreaViewModel.swift */,
 			);
 			path = BranchArea;
+			sourceTree = "<group>";
+		};
+		BDFAB4132934BA4B007C1F9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDFAB4142934BA4B007C1F9F /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9ADDD6E29360F6E003CC129 /* AddArea */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */,
+				C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */,
+			);
+			path = AddArea;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -631,6 +662,7 @@
 				663A3F54292136FF0059C2F3 /* AboutTableViewCell.xib in Resources */,
 				668F264829228C4E00412735 /* DescriptionTableViewCell.xib in Resources */,
 				668F264029228A4900412735 /* DetailTaskTableViewCell.xib in Resources */,
+				C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */,
 				666C9073291D3E1D00AB065D /* AddAreaViewController.xib in Resources */,
 				66280C3E2921444400C63CC6 /* ThropiesTableViewCell.xib in Resources */,
 				66CE2C682921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib in Resources */,
@@ -657,11 +689,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF69A132930CCC800AC594C /* MasterActivityRepository.swift in Sources */,
+				C9ADDD7D2936127C003CC129 /* UIColor+Extension.swift in Sources */,
 				BD64AAFB292B6EEF001653A1 /* SelectItemCell.swift in Sources */,
 				665A52AF293507480069E421 /* FamilyMemberTVC.swift in Sources */,
 				BD64AB03292B6F83001653A1 /* InitialDateCell.swift in Sources */,
 				668F264329228BB500412735 /* DetailTaskTagTableViewCell.swift in Sources */,
 				BD102B5D292E1C5400A29811 /* CardItemCell.swift in Sources */,
+				C9ADDD7129360FFD003CC129 /* AddAreaVC.swift in Sources */,
 				BDF69A042930C06D00AC594C /* MasterPlace.swift in Sources */,
 				BDCDF6CA291A457E001BD533 /* AllItemsViewController.swift in Sources */,
 				668F263F29228A4900412735 /* DetailTaskTableViewCell.swift in Sources */,
@@ -677,6 +711,7 @@
 				BD51E832290FC437007DFCC0 /* AppDelegate.swift in Sources */,
 				66C6FD17291A3A2C0068D08B /* TitleAllAreaTableViewCell.swift in Sources */,
 				663A3F4A292126C50059C2F3 /* ProfileViewController.swift in Sources */,
+				C9ADDD7F29362DCB003CC129 /* AllAreasViewModel.swift in Sources */,
 				668F264729228C4E00412735 /* DescriptionTableViewCell.swift in Sources */,
 				663A3F3F29211FED0059C2F3 /* TodaysScheduleViewController.swift in Sources */,
 				66CE2C5F2921D1C8007BD8E1 /* EndYearViewController.swift in Sources */,
@@ -686,6 +721,7 @@
 				BDF69A0C2930C33800AC594C /* MasterInterval.swift in Sources */,
 				BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */,
 				66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */,
+				C9918C4C2937745E00BBB13A /* TabBarController.swift in Sources */,
 				66DCC2CC293642FC004381C6 /* ScheduleViewController.swift in Sources */,
 				66280C3D2921444400C63CC6 /* ThropiesTableViewCell.swift in Sources */,
 				BDF69A082930C14200AC594C /* MasterActivity.swift in Sources */,
@@ -694,6 +730,7 @@
 				BD102B58292E1C1000A29811 /* ListItemVC.swift in Sources */,
 				668871ED293587C60045770E /* InviteFamilyVC.swift in Sources */,
 				BD102B54292E0C9C00A29811 /* Date+Extension.swift in Sources */,
+				C9918C4A29374C5900BBB13A /* ListItemViewModel.swift in Sources */,
 				66280C412921456D00C63CC6 /* BadgesCreateViewController.swift in Sources */,
 				668F263B29227BC200412735 /* RankTableViewCell.swift in Sources */,
 				BDF69A1C2930E31B00AC594C /* AddItemDetailViewModel.swift in Sources */,
@@ -866,7 +903,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabila.Reclean;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw1ftly.Reclean;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -896,7 +933,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nabila.Reclean;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sw1ftly.Reclean;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

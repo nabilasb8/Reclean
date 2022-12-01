@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CloudKit
 
 protocol ScheduleDelegate {
     func didTapSave()
@@ -16,16 +17,30 @@ class AddAreaViewController: UIViewController {
     var scheduleDelegate: ScheduleDelegate!
     
     @IBOutlet weak var selectArea: UIButton!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textFieldAreaName: UITextField!
     
     let areas = ["Living Room", "Bedroom", "Bathroom" ]
     var isianText: String = ""
+    
+    let publicDatabase = CKContainer(identifier: "iCloud.com.sw1ftly.Reclean").publicCloudDatabase
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         setPopupButton()
-
+        
+        title = "Add Area"
+        saveButton()
+    }
+    
+    func insertAreaName() {
+        let allArea = CKRecord(recordType: "AllArea")
+        allArea["name"] = textFieldAreaName.text! as CKRecordValue
+        
+        publicDatabase.save(allArea) { record, error in
+            print(error.debugDescription)
+        }
     }
     
     func setPopupButton() {
@@ -44,11 +59,32 @@ class AddAreaViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: Any) {
-        isianText = textField.text ?? ""
+        isianText = textFieldAreaName.text ?? ""
         print(isianText)
         dismiss(animated: true, completion: nil)
         scheduleDelegate.didTapSave()
         
+    }
+    
+    @objc func moveToAnotherVC(){
+        // kode pbuat pindah
+    }
+    
+    func saveButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .save,
+            target: self,
+            action: #selector(moveToAnotherVC2))
+    }
+    
+    @objc func moveToAnotherVC2(){
+        insertAreaName()
+        
+        // kode pbuat pindah
+        if let navigationController1 = navigationController {
+            let viewController = ScheduleViewController()
+            navigationController1.pushViewController(viewController,animated:true)
+        }
     }
     
     

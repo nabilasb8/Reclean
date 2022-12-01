@@ -13,6 +13,8 @@ class SelectItemCell: UITableViewCell {
     var activities: [MasterActivity] = []
     @IBOutlet weak var labelActivity: UILabel!
     
+    var didSelectActivity: ((String) -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -37,10 +39,10 @@ class SelectItemCell: UITableViewCell {
         var actions = [UIAction]()
         
         for activity in activities {
-            print(activity.name)
             let action = UIAction(title: activity.name) { (action) in
                 self.labelActivity.text = activity.name
                 self.labelActivity.textColor = .label
+                self.didSelectActivity?(activity.id)
             }
             actions.append(action)
         }

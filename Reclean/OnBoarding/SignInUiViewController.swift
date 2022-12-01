@@ -22,8 +22,8 @@ class SignInUiViewController: UIViewController {
     
     @IBAction func continueSignIn(_ sender: Any) {
         if let navigationController = navigationController {
-            let viewController = ScheduleViewController()
-            navigationController.pushViewController(viewController,animated:true)
+            let viewController = TabBarController()
+            navigationController.setViewControllers([viewController], animated: true)
         }
         
         let appleIDProvider = ASAuthorizationAppleIDProvider()

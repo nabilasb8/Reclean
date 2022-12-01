@@ -20,8 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         let rootViewController = MainViewController()
-//        let area = AreaRepository.shared.getAreas()[0]
-//        rootViewController.setArea(area: area)
         
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()

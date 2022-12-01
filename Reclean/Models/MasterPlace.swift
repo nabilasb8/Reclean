@@ -10,4 +10,5 @@ import Foundation
 struct MasterPlace {
     var id: String
     var name: String
+    var iconName: String
 }

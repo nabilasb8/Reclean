@@ -14,6 +14,7 @@ class BranchAreaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         btnAddItem.addTarget(self, action: #selector(didClickButtonAdd), for: .touchUpInside)
     }
     
