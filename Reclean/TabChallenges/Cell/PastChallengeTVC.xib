@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="PastChallengeTVC" customModule="Reclean" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liz-XK-9Sg">
+                        <rect key="frame" x="20" y="16" width="353" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="i9B-d8-60R">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="c8o-hF-lBH"/>
+                                    <constraint firstAttribute="height" constant="80" id="ddy-Yp-ATa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Independence Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neb-Vh-GxU">
+                                <rect key="frame" x="100" y="20" width="233" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Endend on 19 August 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-Qe-x8M">
+                                <rect key="frame" x="100" y="47" width="199" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="grayfont"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISU-cq-xNE">
+                                <rect key="frame" x="319" y="28" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="6aL-Je-t3a"/>
+                                    <constraint firstAttribute="width" constant="24" id="HxK-yZ-Wgb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Workout-Btn"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i9B-d8-60R" secondAttribute="bottom" id="1Oo-uD-SrV"/>
+                            <constraint firstItem="ISU-cq-xNE" firstAttribute="leading" secondItem="GdC-Qe-x8M" secondAttribute="trailing" constant="20" id="6Gf-yG-Ye2"/>
+                            <constraint firstAttribute="trailing" secondItem="ISU-cq-xNE" secondAttribute="trailing" constant="10" id="9vd-4f-TzJ"/>
+                            <constraint firstItem="neb-Vh-GxU" firstAttribute="leading" secondItem="i9B-d8-60R" secondAttribute="trailing" constant="10" id="BMj-XC-Hul"/>
+                            <constraint firstItem="i9B-d8-60R" firstAttribute="top" secondItem="liz-XK-9Sg" secondAttribute="top" id="C8J-lu-j5x"/>
+                            <constraint firstItem="ISU-cq-xNE" firstAttribute="centerY" secondItem="liz-XK-9Sg" secondAttribute="centerY" id="JNO-as-wJI"/>
+                            <constraint firstAttribute="trailing" secondItem="neb-Vh-GxU" secondAttribute="trailing" constant="20" id="TqQ-rj-D1c"/>
+                            <constraint firstItem="GdC-Qe-x8M" firstAttribute="leading" secondItem="i9B-d8-60R" secondAttribute="trailing" constant="10" id="eL4-c0-kKV"/>
+                            <constraint firstAttribute="height" constant="80" id="me9-18-WW0"/>
+                            <constraint firstItem="GdC-Qe-x8M" firstAttribute="top" secondItem="neb-Vh-GxU" secondAttribute="bottom" constant="10" id="pYy-u8-5hd"/>
+                            <constraint firstItem="neb-Vh-GxU" firstAttribute="top" secondItem="liz-XK-9Sg" secondAttribute="top" constant="20" id="sXs-AJ-ncC"/>
+                            <constraint firstItem="i9B-d8-60R" firstAttribute="leading" secondItem="liz-XK-9Sg" secondAttribute="leading" id="wB6-Ga-75N"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="liz-XK-9Sg" secondAttribute="trailing" constant="20" id="67J-mb-WDe"/>
+                    <constraint firstItem="liz-XK-9Sg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Wvd-hf-a6l"/>
+                    <constraint firstItem="liz-XK-9Sg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cAn-tH-wFA"/>
+                    <constraint firstAttribute="bottom" secondItem="liz-XK-9Sg" secondAttribute="bottom" constant="16" id="eQ1-Re-WEX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="78.625954198473281" y="45.774647887323944"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Workout-Btn" width="24" height="24"/>
+        <image name="kitchen" width="150" height="154"/>
+        <namedColor name="grayfont">
+            <color red="0.67843137254901964" green="0.64313725490196083" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
