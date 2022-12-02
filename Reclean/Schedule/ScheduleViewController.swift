@@ -9,39 +9,53 @@ import UIKit
 
 class ScheduleViewController: UIViewController {
     
-    var akuKenapa = [""]
-
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var labelReClean: UIView!
     
     @IBOutlet weak var buttonAddArea: UIButton!
     @IBOutlet weak var buttonJoinFamily: UIButton!
     
+    var dataSource: [ScheduleCellType] = []
+    var viewModel = ScheduleViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true)
-
+        
         //TableViewSchedule
         title = "Schedule"
         
         tableView.isHidden = true
         tableView.separatorStyle = .none
-        tableView.register(UINib(nibName: "TitleAllAreaTableViewCell", bundle: nil), forCellReuseIdentifier: "TitleAllAreaTableViewCell")
-        
-        tableView.register(UINib(nibName: "TagAllAreaTableViewCell", bundle: nil), forCellReuseIdentifier: "TagAllAreaTableViewCell")
-        
+        tableView.register(UINib(nibName: "ScheduleHeaderCell", bundle: nil), forCellReuseIdentifier: "ScheduleHeaderCell")
+        tableView.register(UINib(nibName: "ScheduleItemCell", bundle: nil), forCellReuseIdentifier: "ScheduleItemCell")
+        tableView.register(UINib(nibName: "CardItemCell", bundle: nil), forCellReuseIdentifier: "CardItemCell")
         tableView.dataSource = self
         tableView.delegate = self
-        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        tableView.separatorStyle = .none
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        getDataSource()
+    }
+    
+    func getDataSource() {
+        viewModel.getDataSource { result in
+            self.tableView.isHidden = result.isEmpty
+            self.dataSource = result
+            self.tableView.reloadData()
+        }
+    }
+    
     @IBAction func addAreaa(_ sender: Any) {
-
-            let viewController = AddAreaViewController()
-           viewController.modalPresentationStyle = .popover
-            viewController.scheduleDelegate = self
-            present(viewController, animated: true, completion: nil)
-
+        let destination = AddAreaVC()
+        destination.didAddArea = {
+            self.getDataSource()
+        }
+        
+        let nav = UINavigationController(rootViewController: destination)
+        present(nav, animated: true, completion: nil)
     }
     
     @IBAction func joinButtonFamily(_ sender: Any) {
@@ -54,62 +68,81 @@ class ScheduleViewController: UIViewController {
         labelReClean.isHidden = true
     }
     
-    func goToBranchViewController() {
-        if let navigationController = navigationController {
-            let viewController = BranchAreaViewController()
-            navigationController.pushViewController(viewController,animated:true)
+    func didClickButtonAtHeader(action: ScheduleHeaderActionType) {
+        switch action {
+        case .allArea:
+            goToAllAreasVC()
+        case .allSchedule:
+            goToAllSchedule()
         }
     }
     
+    func goToListItemVC(area: Area) {
+        let destination = ListItemVC()
+        destination.setArea(area: area)
+        navigationController?.pushViewController(destination, animated: true)
+    }
     
-        
+    func goToAllAreasVC() {
+        let destination = AllAreasVC()
+        navigationController?.pushViewController(destination, animated: true)
+    }
+    
+    func goToAllSchedule() {
+        let destination = TodaysScheduleViewController()
+        navigationController?.pushViewController(destination, animated: true)
+    }
 }
 
 extension ScheduleViewController: UITableViewDataSource {
     
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return dataSource.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        switch indexPath.section {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TitleAllAreaTableViewCell", for: indexPath) as! TitleAllAreaTableViewCell
+        let cellType = dataSource[indexPath.row]
+        switch cellType {
+        case let .header(title, action):
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleHeaderCell", for: indexPath) as! ScheduleHeaderCell
+            cell.configure(title: title)
+            cell.didClickedButtonDetail = {
+                self.didClickButtonAtHeader(action: action)
+            }
             
             return cell
             
-        case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TagAllAreaTableViewCell", for: indexPath) as! TagAllAreaTableViewCell
+        case let .areaItem(area):
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleItemCell", for: indexPath) as! ScheduleItemCell
+            cell.configure(area: area)
             
             return cell
             
-        default:
-            let cell = UITableViewCell()
+        case let .activityItem(itemActivity):
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CardItemCell", for: indexPath) as! CardItemCell
+            cell.configure(itemActivity: itemActivity)
+            cell.didClickedButtonFinish = {
+                self.viewModel.markItemAsDone(id: itemActivity.id)
+                self.getDataSource()
+            }
             
             return cell
-            
         }
-
     }
 }
 
 extension ScheduleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellType = dataSource[indexPath.row]
         
-            switch indexPath.section {
-            case 1 :
-                goToBranchViewController()
-            default:
-                break
-            }
-
+        switch cellType {
+        case let .areaItem(area):
+            goToListItemVC(area: area)
+        default:
+            break
+        }
     }
-
+    
 }
 
 extension ScheduleViewController: ScheduleDelegate {
@@ -117,6 +150,6 @@ extension ScheduleViewController: ScheduleDelegate {
         screenEmpty()
         tableView.isHidden = false
     }
-
+    
 }
 

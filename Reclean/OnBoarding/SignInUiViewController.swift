@@ -10,10 +10,8 @@ import AuthenticationServices
 
 class SignInUiViewController: UIViewController {
     
-
-    
     override func viewDidLoad() {
-
+        
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
@@ -21,36 +19,54 @@ class SignInUiViewController: UIViewController {
     
     
     @IBAction func continueSignIn(_ sender: Any) {
-        if let navigationController = navigationController {
-            let viewController = TabBarController()
-            navigationController.setViewControllers([viewController], animated: true)
-        }
-        
+        goToTabBarController()
+    }
+    
+    func signInWithAppleId() {
         let appleIDProvider = ASAuthorizationAppleIDProvider()
         let request = appleIDProvider.createRequest()
         request.requestedScopes = [.fullName, .email]
+        
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
         authorizationController.delegate = self
+        authorizationController.presentationContextProvider = self
         authorizationController.performRequests()
-        
-        
     }
     
+    func goToTabBarController() {
+        if let navigationController = navigationController {
+            let viewController = TabBarController()
+            navigationController.setNavigationBarHidden(true, animated: false)
+            navigationController.setViewControllers([viewController], animated: true)
+        }
+    }
+    
+}
+
+extension SignInUiViewController: ASAuthorizationControllerPresentationContextProviding {
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return self.view.window!
+    }
 }
 
 extension SignInUiViewController: ASAuthorizationControllerDelegate {
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-        if let appleIDCredential = authorization.credential as?  ASAuthorizationAppleIDCredential {
+        
+        switch authorization.credential {
+        case let appleIDCredential as ASAuthorizationAppleIDCredential:
             let userIdentifier = appleIDCredential.user
             let fullName = appleIDCredential.fullName
-            //    let email = appleIDCredential.email
-            //    
-            //    lblUserName.text = email!
-            //        
-            //    print("User id is \(userIdentifier) \n Full Name is \(String(describing: fullName)) \n Email id is \(String(describing: email))") }
+            print("ASAuthorizationAppleIDCredential \(userIdentifier) \(fullName)")
+        case let passwordCredential as ASPasswordCredential:
+            let username = passwordCredential.user
+            let password = passwordCredential.password
+            print("ASPasswordCredential \(username) \(password)")
+        default:
+            break
         }
-       
+        
+        goToTabBarController()
     }
     
     

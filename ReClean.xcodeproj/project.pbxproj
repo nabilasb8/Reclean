@@ -120,6 +120,14 @@
 		BDFAB4102934A871007C1F9F /* CardAreaCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFAB40E2934A871007C1F9F /* CardAreaCellCollectionViewCell.swift */; };
 		BDFAB4112934A871007C1F9F /* CardAreaCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */; };
 		BDFAB4152934BA4B007C1F9F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFAB4142934BA4B007C1F9F /* CloudKit.framework */; };
+		C98500D52938B45000C701CD /* AddAreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98500D42938B45000C701CD /* AddAreaViewModel.swift */; };
+		C98500D82938BDBF00C701CD /* ScheduleHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98500D62938BDBF00C701CD /* ScheduleHeaderCell.swift */; };
+		C98500D92938BDBF00C701CD /* ScheduleHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98500D72938BDBF00C701CD /* ScheduleHeaderCell.xib */; };
+		C98500DC2938BDD000C701CD /* ScheduleItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98500DA2938BDD000C701CD /* ScheduleItemCell.swift */; };
+		C98500DD2938BDD000C701CD /* ScheduleItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98500DB2938BDD000C701CD /* ScheduleItemCell.xib */; };
+		C98500E02938D49500C701CD /* ScheduleCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98500DF2938D49500C701CD /* ScheduleCellType.swift */; };
+		C98500E22938DF6900C701CD /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98500E12938DF6900C701CD /* ScheduleViewModel.swift */; };
+		C98500E42938F02B00C701CD /* ScheduleHeaderActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98500E32938F02B00C701CD /* ScheduleHeaderActionType.swift */; };
 		C9918C4A29374C5900BBB13A /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9918C4929374C5900BBB13A /* ListItemViewModel.swift */; };
 		C9918C4C2937745E00BBB13A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9918C4B2937745E00BBB13A /* TabBarController.swift */; };
 		C9ADDD7129360FFD003CC129 /* AddAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */; };
@@ -211,7 +219,7 @@
 		BD1F467D2923727800B646F1 /* AllAreasVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAreasVC.xib; sourceTree = "<group>"; };
 		BD1F468B2923753000B646F1 /* ChallengesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesVC.swift; sourceTree = "<group>"; };
 		BD1F468C2923753000B646F1 /* ChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengesVC.xib; sourceTree = "<group>"; };
-		BD51E82E290FC437007DFCC0 /* Reclean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reclean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD51E82E290FC437007DFCC0 /* ReClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51E831290FC437007DFCC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD51E833290FC437007DFCC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BD51E83A290FC439007DFCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -245,6 +253,14 @@
 		BDFAB40F2934A871007C1F9F /* CardAreaCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardAreaCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		BDFAB4122934BA3F007C1F9F /* Reclean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reclean.entitlements; sourceTree = "<group>"; };
 		BDFAB4142934BA4B007C1F9F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C98500D42938B45000C701CD /* AddAreaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaViewModel.swift; sourceTree = "<group>"; };
+		C98500D62938BDBF00C701CD /* ScheduleHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeaderCell.swift; sourceTree = "<group>"; };
+		C98500D72938BDBF00C701CD /* ScheduleHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleHeaderCell.xib; sourceTree = "<group>"; };
+		C98500DA2938BDD000C701CD /* ScheduleItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemCell.swift; sourceTree = "<group>"; };
+		C98500DB2938BDD000C701CD /* ScheduleItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleItemCell.xib; sourceTree = "<group>"; };
+		C98500DF2938D49500C701CD /* ScheduleCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCellType.swift; sourceTree = "<group>"; };
+		C98500E12938DF6900C701CD /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		C98500E32938F02B00C701CD /* ScheduleHeaderActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeaderActionType.swift; sourceTree = "<group>"; };
 		C9918C4929374C5900BBB13A /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
 		C9918C4B2937745E00BBB13A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAreaVC.swift; sourceTree = "<group>"; };
@@ -282,6 +298,10 @@
 				66C6FD1D291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift */,
 				66CE2C662921F484007BD8E1 /* TagEmptyScheduleTableViewCell.xib */,
 				66CE2C652921F484007BD8E1 /* TagEmptyScheduleTableViewCell.swift */,
+				C98500D62938BDBF00C701CD /* ScheduleHeaderCell.swift */,
+				C98500D72938BDBF00C701CD /* ScheduleHeaderCell.xib */,
+				C98500DA2938BDD000C701CD /* ScheduleItemCell.swift */,
+				C98500DB2938BDD000C701CD /* ScheduleItemCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -381,8 +401,10 @@
 		66C6FD04291A32C30068D08B /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				C98500DE2938D45E00C701CD /* Enums */,
 				66DCC2CA293642FC004381C6 /* ScheduleViewController.swift */,
 				66DCC2CB293642FC004381C6 /* ScheduleViewController.xib */,
+				C98500E12938DF6900C701CD /* ScheduleViewModel.swift */,
 				BDF69A182930DC7B00AC594C /* BranchArea */,
 				663A3F3E29211FED0059C2F3 /* TodaysScheduleViewController.xib */,
 				663A3F3D29211FED0059C2F3 /* TodaysScheduleViewController.swift */,
@@ -502,7 +524,7 @@
 		BD51E82F290FC437007DFCC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD51E82E290FC437007DFCC0 /* Reclean.app */,
+				BD51E82E290FC437007DFCC0 /* ReClean.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -592,11 +614,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C98500DE2938D45E00C701CD /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C98500DF2938D49500C701CD /* ScheduleCellType.swift */,
+				C98500E32938F02B00C701CD /* ScheduleHeaderActionType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		C9ADDD6E29360F6E003CC129 /* AddArea */ = {
 			isa = PBXGroup;
 			children = (
 				C9ADDD6F29360FFD003CC129 /* AddAreaVC.swift */,
 				C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */,
+				C98500D42938B45000C701CD /* AddAreaViewModel.swift */,
 			);
 			path = AddArea;
 			sourceTree = "<group>";
@@ -604,9 +636,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD51E82D290FC437007DFCC0 /* Reclean */ = {
+		BD51E82D290FC437007DFCC0 /* ReClean */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD51E842290FC439007DFCC0 /* Build configuration list for PBXNativeTarget "Reclean" */;
+			buildConfigurationList = BD51E842290FC439007DFCC0 /* Build configuration list for PBXNativeTarget "ReClean" */;
 			buildPhases = (
 				BD51E82A290FC437007DFCC0 /* Sources */,
 				BD51E82B290FC437007DFCC0 /* Frameworks */,
@@ -616,9 +648,9 @@
 			);
 			dependencies = (
 			);
-			name = Reclean;
+			name = ReClean;
 			productName = Reclean;
-			productReference = BD51E82E290FC437007DFCC0 /* Reclean.app */;
+			productReference = BD51E82E290FC437007DFCC0 /* ReClean.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -636,7 +668,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "Reclean" */;
+			buildConfigurationList = BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "ReClean" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -649,7 +681,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD51E82D290FC437007DFCC0 /* Reclean */,
+				BD51E82D290FC437007DFCC0 /* ReClean */,
 			);
 		};
 /* End PBXProject section */
@@ -674,6 +706,7 @@
 				BDFAB4112934A871007C1F9F /* CardAreaCellCollectionViewCell.xib in Resources */,
 				66C6FD1C291A3C6E0068D08B /* TitleAllScheduleTableViewCell.xib in Resources */,
 				66280C422921456D00C63CC6 /* BadgesCreateViewController.xib in Resources */,
+				C98500DD2938BDD000C701CD /* ScheduleItemCell.xib in Resources */,
 				BD51E83B290FC439007DFCC0 /* Assets.xcassets in Resources */,
 				663A3F4029211FED0059C2F3 /* TodaysScheduleViewController.xib in Resources */,
 				668F264C29228D2B00412735 /* RewardTableViewCell.xib in Resources */,
@@ -696,6 +729,7 @@
 				664882972938B052003D1F33 /* PastChallengeTVC.xib in Resources */,
 				668F264829228C4E00412735 /* DescriptionTableViewCell.xib in Resources */,
 				668F264029228A4900412735 /* DetailTaskTableViewCell.xib in Resources */,
+				C98500D92938BDBF00C701CD /* ScheduleHeaderCell.xib in Resources */,
 				C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */,
 				666C9073291D3E1D00AB065D /* AddAreaViewController.xib in Resources */,
 				66280C3E2921444400C63CC6 /* ThropiesTableViewCell.xib in Resources */,
@@ -726,6 +760,7 @@
 				C9ADDD7D2936127C003CC129 /* UIColor+Extension.swift in Sources */,
 				BD64AAFB292B6EEF001653A1 /* SelectItemCell.swift in Sources */,
 				665A52AF293507480069E421 /* FamilyMemberTVC.swift in Sources */,
+				C98500E02938D49500C701CD /* ScheduleCellType.swift in Sources */,
 				BD64AB03292B6F83001653A1 /* InitialDateCell.swift in Sources */,
 				66436F59293843B70034F844 /* InvitationCodeViewController.swift in Sources */,
 				668F264329228BB500412735 /* DetailTaskTagTableViewCell.swift in Sources */,
@@ -757,9 +792,12 @@
 				BDF69A0C2930C33800AC594C /* MasterInterval.swift in Sources */,
 				BD1F467E2923727800B646F1 /* AllAreasVC.swift in Sources */,
 				66C6FD1F291A3C8A0068D08B /* TagAllScheduleTableViewCell.swift in Sources */,
+				C98500D82938BDBF00C701CD /* ScheduleHeaderCell.swift in Sources */,
 				C9918C4C2937745E00BBB13A /* TabBarController.swift in Sources */,
 				66DCC2CC293642FC004381C6 /* ScheduleViewController.swift in Sources */,
 				66280C3D2921444400C63CC6 /* ThropiesTableViewCell.swift in Sources */,
+				C98500E22938DF6900C701CD /* ScheduleViewModel.swift in Sources */,
+				C98500E42938F02B00C701CD /* ScheduleHeaderActionType.swift in Sources */,
 				BDF69A082930C14200AC594C /* MasterActivity.swift in Sources */,
 				BDF69A0A2930C18600AC594C /* ItemActivity.swift in Sources */,
 				BDF69A112930C9CC00AC594C /* AreaRepository.swift in Sources */,
@@ -774,6 +812,7 @@
 				663A3F53292136FF0059C2F3 /* AboutTableViewCell.swift in Sources */,
 				66C6FD13291A38FE0068D08B /* TagScheduleTableViewCell.swift in Sources */,
 				BD1F468D2923753000B646F1 /* ChallengesVC.swift in Sources */,
+				C98500DC2938BDD000C701CD /* ScheduleItemCell.swift in Sources */,
 				66BCE37D291A64CB00021E8A /* TitleScheduleTableViewCell.swift in Sources */,
 				BD64AB07292B6FA3001653A1 /* IntervalTimeCell.swift in Sources */,
 				660E078929213E7E002201A3 /* ThrophyTableViewCell.swift in Sources */,
@@ -788,6 +827,7 @@
 				BDF69A062930C0D100AC594C /* Area.swift in Sources */,
 				668F2637292279B000412735 /* RankNamePointTableViewCell.swift in Sources */,
 				BDF69A152930D0CD00AC594C /* ItemRepository.swift in Sources */,
+				C98500D52938B45000C701CD /* AddAreaViewModel.swift in Sources */,
 				6648828E2938B015003D1F33 /* ActiveChallengeTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -928,7 +968,7 @@
 				CODE_SIGN_ENTITLEMENTS = Reclean/Reclean.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FYVDX646G;
+				DEVELOPMENT_TEAM = DFF5WS246X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ReClean;
@@ -958,7 +998,7 @@
 				CODE_SIGN_ENTITLEMENTS = Reclean/Reclean.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FYVDX646G;
+				DEVELOPMENT_TEAM = DFF5WS246X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reclean/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ReClean;
@@ -983,7 +1023,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "Reclean" */ = {
+		BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "ReClean" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD51E840290FC439007DFCC0 /* Debug */,
@@ -992,7 +1032,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD51E842290FC439007DFCC0 /* Build configuration list for PBXNativeTarget "Reclean" */ = {
+		BD51E842290FC439007DFCC0 /* Build configuration list for PBXNativeTarget "ReClean" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD51E843290FC439007DFCC0 /* Debug */,

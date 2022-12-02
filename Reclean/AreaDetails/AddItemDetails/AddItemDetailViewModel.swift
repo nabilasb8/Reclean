@@ -21,7 +21,8 @@ class AddItemDetailViewModel {
             activityId: activityId,
             description: description,
             date: date,
-            intervalId: intervalId
+            intervalId: intervalId,
+            isDone: false
         )
         ItemRepository.shared.addItemActivity(item: item)
     }

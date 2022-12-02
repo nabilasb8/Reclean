@@ -11,12 +11,11 @@ class ItemRepository {
     static let shared = ItemRepository()
     private var items: [ItemActivity] = []
     
-    init() {
-        items = generateDummyItemActivities()
-    }
-    
     func getItemActivities() -> [ItemActivity] {
         return items
+            .filter { item in
+                return item.isDone == false
+            }
     }
     
     func getItemActivitiesByArea(areaId: String) -> [ItemActivity] {
@@ -30,39 +29,9 @@ class ItemRepository {
         items.append(item)
     }
     
-    private func generateDummyItemActivities() -> [ItemActivity] {
-        var itemRepositories: [ItemActivity] = []
-        
-        let item1: ItemActivity = ItemActivity(
-            id: UUID().uuidString,
-            areaId: "area1",
-            activityId: "vacuum-carpet",
-            description: "Baju kerja",
-            date: Date(),
-            intervalId: "daily"
-        )
-        itemRepositories.append(item1)
-        
-        let item2: ItemActivity = ItemActivity(
-            id: UUID().uuidString,
-            areaId: "area2",
-            activityId: "vacuum-bed",
-            description: "Hard cleaning",
-            date: Date(),
-            intervalId: "weekly"
-        )
-        itemRepositories.append(item2)
-        
-        let item3: ItemActivity = ItemActivity(
-            id: UUID().uuidString,
-            areaId: "area3",
-            activityId: "washing-dishes",
-            description: "Cuci piring & gelas",
-            date: Date(),
-            intervalId: "monthly"
-        )
-        itemRepositories.append(item3)
-        
-        return itemRepositories
+    func setItemStatus(id: String, isDone: Bool) {
+        if let index = items.firstIndex(where: { $0.id == id }) {
+            items[index].isDone = isDone
+        }
     }
 }

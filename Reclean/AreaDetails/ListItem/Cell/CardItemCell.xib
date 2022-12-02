@@ -23,14 +23,14 @@
                         <rect key="frame" x="20" y="8" width="326" height="112"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Badges" translatesAutoresizingMaskIntoConstraints="NO" id="5Xf-WI-a0k">
-                                <rect key="frame" x="0.0" y="16" width="80" height="80"/>
+                                <rect key="frame" x="16" y="16" width="48" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="J44-Rf-F6h"/>
-                                    <constraint firstAttribute="width" constant="80" id="LZc-kk-tSR"/>
+                                    <constraint firstAttribute="height" constant="48" id="J44-Rf-F6h"/>
+                                    <constraint firstAttribute="width" constant="48" id="LZc-kk-tSR"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ucr-hM-zOo">
-                                <rect key="frame" x="96" y="36.5" width="150" height="39"/>
+                                <rect key="frame" x="80" y="20.5" width="150" height="39"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laundry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry3-ct-mox">
                                         <rect key="frame" x="0.0" y="0.0" width="62.5" height="20.5"/>
@@ -64,7 +64,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfT-wR-GL0">
-                                <rect key="frame" x="262" y="42" width="64" height="28.5"/>
+                                <rect key="frame" x="246" y="26" width="64" height="28.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="5e8-zb-lRu"/>
                                 </constraints>
@@ -79,10 +79,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ucr-hM-zOo" firstAttribute="leading" secondItem="5Xf-WI-a0k" secondAttribute="trailing" constant="16" id="43l-B6-A8V"/>
-                            <constraint firstAttribute="trailing" secondItem="RfT-wR-GL0" secondAttribute="trailing" id="9JA-xb-AJs"/>
+                            <constraint firstAttribute="trailing" secondItem="RfT-wR-GL0" secondAttribute="trailing" constant="16" id="9JA-xb-AJs"/>
                             <constraint firstAttribute="bottom" secondItem="5Xf-WI-a0k" secondAttribute="bottom" constant="16" id="EbG-Wx-VsS"/>
                             <constraint firstItem="RfT-wR-GL0" firstAttribute="leading" secondItem="Ucr-hM-zOo" secondAttribute="trailing" constant="16" id="H9K-zp-Izx"/>
-                            <constraint firstItem="5Xf-WI-a0k" firstAttribute="leading" secondItem="jhs-jL-QY4" secondAttribute="leading" id="ICu-pa-ekD"/>
+                            <constraint firstItem="5Xf-WI-a0k" firstAttribute="leading" secondItem="jhs-jL-QY4" secondAttribute="leading" constant="16" id="ICu-pa-ekD"/>
                             <constraint firstItem="RfT-wR-GL0" firstAttribute="centerY" secondItem="Ucr-hM-zOo" secondAttribute="centerY" id="dxF-ag-2J9"/>
                             <constraint firstItem="Ucr-hM-zOo" firstAttribute="centerY" secondItem="5Xf-WI-a0k" secondAttribute="centerY" id="kBS-be-1rP"/>
                             <constraint firstItem="5Xf-WI-a0k" firstAttribute="top" secondItem="jhs-jL-QY4" secondAttribute="top" constant="16" id="rqv-eH-K2T"/>
@@ -90,14 +90,16 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="jhs-jL-QY4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7Fd-aG-pX9"/>
+                    <constraint firstItem="jhs-jL-QY4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="7Fd-aG-pX9"/>
                     <constraint firstAttribute="trailing" secondItem="jhs-jL-QY4" secondAttribute="trailing" constant="20" id="gtq-4w-wMF"/>
                     <constraint firstItem="jhs-jL-QY4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jq8-j4-OIT"/>
-                    <constraint firstAttribute="bottom" secondItem="jhs-jL-QY4" secondAttribute="bottom" constant="8" id="sbW-ef-GjD"/>
+                    <constraint firstAttribute="bottom" secondItem="jhs-jL-QY4" secondAttribute="bottom" constant="12" id="sbW-ef-GjD"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="bgView" destination="jhs-jL-QY4" id="0nd-8k-WwT"/>
+                <outlet property="btnFinish" destination="RfT-wR-GL0" id="Cs9-f2-Kc8"/>
                 <outlet property="iconItem" destination="5Xf-WI-a0k" id="UW5-1I-YG8"/>
                 <outlet property="labelActivity" destination="Ry3-ct-mox" id="Hzj-ff-a62"/>
                 <outlet property="labelArea" destination="36D-Qw-ZIO" id="hRJ-h2-jnr"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -79,18 +79,6 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jof-3b-xYG">
-                    <rect key="frame" x="0.0" y="720" width="390" height="90"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="MCv-aC-9rB"/>
-                    </constraints>
-                    <items>
-                        <tabBarItem title="Schedule" image="schedule" id="pse-EX-YW0"/>
-                        <tabBarItem title="Challenges" image="challenges" id="xmG-rJ-hAF"/>
-                        <tabBarItem title="Profile" image="profile" id="G2K-Fb-Vv8"/>
-                    </items>
-                </tabBar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CpN-9a-w9V">
                     <rect key="frame" x="60" y="147" width="270" height="140"/>
                     <subviews>
@@ -163,7 +151,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dBe-Cd-6dR">
-                    <rect key="frame" x="0.0" y="47" width="390" height="673"/>
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
@@ -177,25 +165,19 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CpN-9a-w9V" secondAttribute="trailing" constant="60" id="ADc-oV-g8Z"/>
                 <constraint firstItem="dBe-Cd-6dR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AJT-rY-E4d"/>
                 <constraint firstItem="q2c-bk-5zO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="CnS-i7-b7X"/>
-                <constraint firstItem="Jof-3b-xYG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EUs-xQ-AEh"/>
                 <constraint firstItem="q2c-bk-5zO" firstAttribute="top" secondItem="YD4-wf-B0J" secondAttribute="bottom" constant="10" id="KV3-mc-NmT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l2y-PI-W0a" secondAttribute="trailing" constant="38" id="P66-ox-rTX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q2c-bk-5zO" secondAttribute="trailing" constant="38" id="PL2-FD-Cx8"/>
                 <constraint firstItem="YD4-wf-B0J" firstAttribute="centerX" secondItem="l2y-PI-W0a" secondAttribute="centerX" id="WUd-AW-aUO"/>
                 <constraint firstItem="CpN-9a-w9V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="adg-AT-Jv1"/>
-                <constraint firstItem="Jof-3b-xYG" firstAttribute="top" secondItem="dBe-Cd-6dR" secondAttribute="bottom" id="bre-hm-skh"/>
-                <constraint firstItem="Jof-3b-xYG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ePC-2q-l24"/>
                 <constraint firstItem="l2y-PI-W0a" firstAttribute="top" secondItem="CpN-9a-w9V" secondAttribute="bottom" constant="60" id="gxW-8N-YcZ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jof-3b-xYG" secondAttribute="bottom" id="qSU-nN-ips"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dBe-Cd-6dR" secondAttribute="bottom" id="had-LF-Rq7"/>
                 <constraint firstItem="l2y-PI-W0a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="r0F-YK-Ear"/>
             </constraints>
             <point key="canvasLocation" x="20" y="20.616113744075829"/>
         </view>
     </objects>
     <resources>
-        <image name="challenges" width="24" height="24"/>
-        <image name="profile" width="24" height="24"/>
-        <image name="schedule" width="24" height="24"/>
         <namedColor name="BlueColor">
             <color red="0.11800000071525574" green="0.25099998712539673" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
