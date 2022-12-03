@@ -14,6 +14,12 @@ class MasterIntervalRepository {
         generateDummyMasterInterval()
     }
     
+    func getMasterIntervalById(id: String) -> MasterInterval? {
+        return getMasterInterval().first { interval in
+            return interval.id == id
+        }
+    }
+    
     private func generateDummyMasterInterval() -> [MasterInterval] {
         var masterIntervals: [MasterInterval] = []
         

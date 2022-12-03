@@ -15,7 +15,4 @@ class TodaysScheduleViewController: UIViewController {
         title = "Today's Schedule"
         
     }
-    
-    
-    
 }

@@ -13,9 +13,11 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    lazy var btnLogout = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(didClickButtonLogout))
     
     var viewModel = ProfileViewModel()
     var pastItemActivities: [ItemActivity] = []
+    var activitiesPoint: Int = 0
     
     let akuSiapa = [""]
     let akuDimana = [""]
@@ -25,6 +27,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Profile"
+        btnLogout.tintColor = .red
+        navigationItem.rightBarButtonItem = btnLogout
         
         tableView.register(UINib(nibName: "ActivitiesTableViewCell", bundle: nil), forCellReuseIdentifier: "ActivitiesTableViewCell")
         tableView.register(UINib(nibName: "AboutTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutTableViewCell")
@@ -33,6 +37,7 @@ class ProfileViewController: UIViewController {
         tableView.register(UINib(nibName: "AddNewFamilyTFC", bundle: nil), forCellReuseIdentifier: "AddNewFamilyTFC")
         tableView.register(UINib(nibName: "FamilyMemberTVC", bundle: nil), forCellReuseIdentifier: "FamilyMemberTVC")
         tableView.register(UINib(nibName: "CardItemCell", bundle: nil), forCellReuseIdentifier: "CardItemCell")
+        tableView.register(UINib(nibName: "ActivityPointCell", bundle: nil), forCellReuseIdentifier: "ActivityPointCell")
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -44,6 +49,13 @@ class ProfileViewController: UIViewController {
         
         viewModel.getPastActivities { result in
             self.pastItemActivities = result
+            var totalPoint = 0
+            result.forEach { item in
+                let point = item.getActivity()?.point ?? 0
+                totalPoint += point
+            }
+            self.activitiesPoint = totalPoint
+            
             self.tableView.reloadData()
         }
     }
@@ -51,6 +63,19 @@ class ProfileViewController: UIViewController {
     
     @IBAction func controlSegment(_ sender: Any) {
         tableView.reloadData()
+    }
+    
+    @objc func didClickButtonLogout() {
+        viewModel.markUserUnauthorized()
+        goToSignInViewController()
+    }
+    
+    func goToSignInViewController() {
+        let destination = SignInUiViewController()
+        navigationController?
+            .tabBarController?
+            .navigationController?
+            .setViewControllers([destination], animated: true)
     }
 }
 
@@ -61,7 +86,7 @@ extension ProfileViewController: UITableViewDataSource {
         case 0:
             return pastItemActivities.count
         case 1:
-            return 3
+            return 1
         case 2:
             return 2
         default:
@@ -80,21 +105,10 @@ extension ProfileViewController: UITableViewDataSource {
             return cell
             
         case 1:
-            switch indexPath.row {
-            case 0:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "AboutTableViewCell", for: indexPath) as! AboutTableViewCell
-                return cell
-            case 1:
-                let cell1 = tableView.dequeueReusableCell(withIdentifier: "ThrophyTableViewCell", for: indexPath) as! ThrophyTableViewCell
-                return cell1
-            case 2:
-                let cell2 = tableView.dequeueReusableCell(withIdentifier: "ThropiesTableViewCell", for: indexPath) as! ThropiesTableViewCell
-                return cell2
-                
-            default:
-                let cell = UITableViewCell()
-                return cell
-            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityPointCell", for: indexPath) as! ActivityPointCell
+            cell.configure(point: activitiesPoint)
+            
+            return cell
             
         case 2:
             switch indexPath.row {

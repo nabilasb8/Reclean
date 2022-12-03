@@ -13,4 +13,8 @@ class ListItemViewModel {
         let result = ItemRepository.shared.getItemActivitiesByArea(areaId: areaId)
         didGetItems(result)
     }
+    
+    func markItemAsDone(id: String) {
+        ItemRepository.shared.setFinishDate(id: id, finishDate: Date())
+    }
 }

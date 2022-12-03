@@ -54,7 +54,7 @@ class AllAreasVC: UIViewController {
     
     func showAddAreaVC() {
         let destination = AddAreaVC()
-        let nav = UINavigationController(rootViewController: AddAreaVC())
+        let nav = UINavigationController(rootViewController: destination)
         destination.didAddArea = {
             self.getAreas()
         }

@@ -84,6 +84,10 @@ extension ListItemVC: UITableViewDataSource {
             area: activity.getArea()?.description,
             date: activity.date.getFormattedDate(format: "MMM d, yyyy")
         )
+        cell.didClickedButtonFinish = {
+            self.viewModel.markItemAsDone(id: activity.id)
+            self.getItems()
+        }
         
         return cell
     }

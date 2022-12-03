@@ -41,4 +41,10 @@ class ItemRepository {
             items[index].finishDate = finishDate
         }
     }
+    
+    func deleteItemActivity(id: String) {
+        items.removeAll { item in
+            return item.id == id
+        }
+    }
 }

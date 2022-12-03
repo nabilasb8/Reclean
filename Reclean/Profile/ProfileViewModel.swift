@@ -12,4 +12,8 @@ class ProfileViewModel {
         let pastActivities = ItemRepository.shared.getPastItemActivities()
         didGetPastActivities(pastActivities)
     }
+    
+    func markUserUnauthorized() {
+        UserRepository.shared.setUserAuthorization(status: false)
+    }
 }

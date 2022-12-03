@@ -27,8 +27,9 @@ class ScheduleHeaderCell: UITableViewCell {
         didClickedButtonDetail?()
     }
     
-    func configure(title: String?) {
+    func configure(title: String?, isBtnDetailsHidden: Bool) {
         self.headerLabel.text = title
+        self.btnDetails.isHidden = isBtnDetailsHidden
     }
     
 }

@@ -27,5 +27,4 @@ class ScheduleItemCell: UITableViewCell {
         self.areaType.text = area.getPlace()?.name
         self.iconArea.image = UIImage(named: area.getPlace()?.iconName ?? "")
     }
-    
 }

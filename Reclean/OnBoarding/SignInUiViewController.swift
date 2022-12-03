@@ -10,6 +10,8 @@ import AuthenticationServices
 
 class SignInUiViewController: UIViewController {
     
+    var viewModel = SignInViewModel()
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -19,7 +21,7 @@ class SignInUiViewController: UIViewController {
     
     
     @IBAction func continueSignIn(_ sender: Any) {
-        goToTabBarController()
+        signInWithAppleId()
     }
     
     func signInWithAppleId() {
@@ -66,6 +68,7 @@ extension SignInUiViewController: ASAuthorizationControllerDelegate {
             break
         }
         
+        viewModel.markUserAuthorized()
         goToTabBarController()
     }
     

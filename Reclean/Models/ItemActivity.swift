@@ -23,4 +23,8 @@ struct ItemActivity {
     func getArea() -> Area? {
         return AreaRepository.shared.getArea(id: self.areaId)
     }
+    
+    func getInterval() -> MasterInterval? {
+        return MasterIntervalRepository.shared.getMasterIntervalById(id: intervalId)
+    }
 }
