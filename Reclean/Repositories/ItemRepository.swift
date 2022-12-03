@@ -14,7 +14,14 @@ class ItemRepository {
     func getItemActivities() -> [ItemActivity] {
         return items
             .filter { item in
-                return item.isDone == false
+                return item.finishDate == nil
+            }
+    }
+    
+    func getPastItemActivities() -> [ItemActivity] {
+        return items
+            .filter { item in
+                return item.finishDate != nil
             }
     }
     
@@ -29,9 +36,9 @@ class ItemRepository {
         items.append(item)
     }
     
-    func setItemStatus(id: String, isDone: Bool) {
+    func setFinishDate(id: String, finishDate: Date) {
         if let index = items.firstIndex(where: { $0.id == id }) {
-            items[index].isDone = isDone
+            items[index].finishDate = finishDate
         }
     }
 }

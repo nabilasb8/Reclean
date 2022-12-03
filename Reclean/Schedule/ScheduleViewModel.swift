@@ -60,7 +60,7 @@ class ScheduleViewModel {
     }
     
     func markItemAsDone(id: String) {
-        ItemRepository.shared.setItemStatus(id: id, isDone: true)
+        ItemRepository.shared.setFinishDate(id: id, finishDate: Date())
     }
     
 }

@@ -42,6 +42,13 @@ class CardItemCell: UITableViewCell {
     func configure(itemActivity: ItemActivity) {
         labelActivity.text = itemActivity.getActivity()?.name
         labelArea.text = itemActivity.getArea()?.description
-        labelDate.text = itemActivity.date.getFormattedDate(format: "MMM d, yyyy")
+        
+        if let finishDate = itemActivity.finishDate {
+            labelDate.text = finishDate.getFormattedDate(format: "MMM d, yyyy")
+            btnFinish.isHidden = true
+        } else {
+            labelDate.text = itemActivity.date.getFormattedDate(format: "MMM d, yyyy")
+            btnFinish.isHidden = false
+        }
     }
 }

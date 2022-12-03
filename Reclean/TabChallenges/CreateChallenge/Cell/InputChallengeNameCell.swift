@@ -1,17 +1,19 @@
 //
-//  TagScheduleTableViewCell.swift
-//  Reclean
+//  InputChallengeNameCell.swift
+//  ReClean
 //
-//  Created by Hastomi Riduan Munthe on 08/11/22.
+//  Created by Nabila Syafrina on 02/12/22.
 //
 
 import UIKit
 
-class TagScheduleTableViewCell: UITableViewCell {
+class InputChallengeNameCell: UITableViewCell {
 
+    @IBOutlet weak var textFieldChallenge: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

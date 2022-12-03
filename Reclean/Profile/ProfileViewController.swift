@@ -14,6 +14,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    var viewModel = ProfileViewModel()
+    var pastItemActivities: [ItemActivity] = []
+    
     let akuSiapa = [""]
     let akuDimana = [""]
     let akuKenapa = [""]
@@ -29,11 +32,20 @@ class ProfileViewController: UIViewController {
         tableView.register(UINib(nibName: "ThropiesTableViewCell", bundle: nil), forCellReuseIdentifier: "ThropiesTableViewCell")
         tableView.register(UINib(nibName: "AddNewFamilyTFC", bundle: nil), forCellReuseIdentifier: "AddNewFamilyTFC")
         tableView.register(UINib(nibName: "FamilyMemberTVC", bundle: nil), forCellReuseIdentifier: "FamilyMemberTVC")
+        tableView.register(UINib(nibName: "CardItemCell", bundle: nil), forCellReuseIdentifier: "CardItemCell")
         
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        viewModel.getPastActivities { result in
+            self.pastItemActivities = result
+            self.tableView.reloadData()
+        }
     }
     
     
@@ -44,43 +56,31 @@ class ProfileViewController: UIViewController {
 
 extension ProfileViewController: UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            return 1
+            return pastItemActivities.count
         case 1:
             return 3
         case 2:
             return 2
         default:
-            break
+            return 0
         }
-        return 0
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            return akuSiapa.count
-        case 1:
-            return akuDimana.count
-        case 2:
-            return akuKenapa.count
-        default:
-            break
-        }
-        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ActivitiesTableViewCell", for: indexPath) as! ActivitiesTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CardItemCell", for: indexPath) as! CardItemCell
+            let activity = pastItemActivities[indexPath.row]
+            cell.configure(itemActivity: activity)
+            
             return cell
             
         case 1:
-            switch indexPath.section {
+            switch indexPath.row {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "AboutTableViewCell", for: indexPath) as! AboutTableViewCell
                 return cell
@@ -97,7 +97,7 @@ extension ProfileViewController: UITableViewDataSource {
             }
             
         case 2:
-            switch indexPath.section {
+            switch indexPath.row {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "AddNewFamilyTFC", for: indexPath) as! AddNewFamilyTFC
                 return cell
@@ -128,7 +128,7 @@ extension ProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch segmentedControl.selectedSegmentIndex {
         case 2:
-            switch indexPath.section {
+            switch indexPath.row {
             case 0:
                 let category = akuKenapa[indexPath.row]
                 goToSourceViewController(category: category)
@@ -136,7 +136,7 @@ extension ProfileViewController: UITableViewDelegate {
                 break
             }
         default:
-            0
+            break
         }
         
     }

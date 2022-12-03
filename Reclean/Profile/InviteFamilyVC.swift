@@ -8,6 +8,7 @@
 import UIKit
 
 class InviteFamilyVC: UIViewController {
+    @IBOutlet weak var textFieldView: UIView!
     @IBOutlet weak var textFieldAppleID: UITextField!
     @IBOutlet weak var buttonInvite: UIButton!
     @IBOutlet weak var warningText: UILabel!
@@ -19,7 +20,8 @@ class InviteFamilyVC: UIViewController {
         // Do any additional setup after loading the view.
         title = "Invite Member"
         warningText.isHidden = true
-
+        textFieldView.backgroundColor = .border
+        textFieldView.layer.cornerRadius = 16
     }
     
     

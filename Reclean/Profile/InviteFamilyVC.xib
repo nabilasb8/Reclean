@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteFamilyVC" customModule="Reclean" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteFamilyVC" customModule="ReClean" customModuleProvider="target">
             <connections>
                 <outlet property="buttonInvite" destination="TIV-XH-coi" id="tSF-Xf-Aqi"/>
                 <outlet property="textFieldAppleID" destination="zZV-UT-hTB" id="iTb-WG-5GZ"/>
+                <outlet property="textFieldView" destination="aga-fB-Ff1" id="nR4-be-8fd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="warningText" destination="cIe-BA-yqQ" id="C44-PW-Hb4"/>
             </connections>
@@ -29,14 +30,26 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZV-UT-hTB">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aga-fB-Ff1">
                     <rect key="frame" x="16" y="173" width="358" height="48"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZV-UT-hTB">
+                            <rect key="frame" x="16" y="0.0" width="326" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="XXj-7U-kjP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="48" id="XXj-7U-kjP"/>
+                        <constraint firstAttribute="trailing" secondItem="zZV-UT-hTB" secondAttribute="trailing" constant="16" id="ljh-NC-tia"/>
+                        <constraint firstItem="zZV-UT-hTB" firstAttribute="leading" secondItem="aga-fB-Ff1" secondAttribute="leading" constant="16" id="o0m-hs-JMH"/>
+                        <constraint firstItem="zZV-UT-hTB" firstAttribute="top" secondItem="aga-fB-Ff1" secondAttribute="top" id="p4e-9C-LYt"/>
+                        <constraint firstAttribute="bottom" secondItem="zZV-UT-hTB" secondAttribute="bottom" id="tKe-dy-WOj"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIV-XH-coi">
                     <rect key="frame" x="155" y="291" width="80" height="50"/>
                     <constraints>
@@ -86,17 +99,17 @@
             <constraints>
                 <constraint firstItem="jaj-dZ-n4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2xU-9p-l91"/>
                 <constraint firstItem="TIV-XH-coi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BjX-dh-p3y"/>
-                <constraint firstItem="zZV-UT-hTB" firstAttribute="top" secondItem="jaj-dZ-n4R" secondAttribute="bottom" constant="20" id="GCJ-dU-C4e"/>
+                <constraint firstItem="aga-fB-Ff1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FbH-eN-cCY"/>
                 <constraint firstItem="cIe-BA-yqQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Mj2-aH-Oeh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aga-fB-Ff1" secondAttribute="trailing" constant="16" id="UvS-h5-upx"/>
+                <constraint firstItem="aga-fB-Ff1" firstAttribute="top" secondItem="jaj-dZ-n4R" secondAttribute="bottom" constant="20" id="V7D-Za-JAf"/>
                 <constraint firstItem="4RH-W1-5AU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="XMe-Rc-mdH"/>
                 <constraint firstItem="4RH-W1-5AU" firstAttribute="centerY" secondItem="2jq-w3-fqv" secondAttribute="centerY" id="fc5-yT-qwK"/>
                 <constraint firstItem="jaj-dZ-n4R" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="86" id="gHK-B3-6Z1"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zZV-UT-hTB" secondAttribute="trailing" constant="16" id="k6a-Dn-vqB"/>
-                <constraint firstItem="cIe-BA-yqQ" firstAttribute="top" secondItem="zZV-UT-hTB" secondAttribute="bottom" constant="20" id="nk7-NQ-vhd"/>
                 <constraint firstItem="TIV-XH-coi" firstAttribute="top" secondItem="cIe-BA-yqQ" secondAttribute="bottom" constant="20" id="pQj-2g-L7E"/>
                 <constraint firstItem="2jq-w3-fqv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r3n-38-hc2"/>
                 <constraint firstItem="2jq-w3-fqv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="uO1-E7-58h"/>
-                <constraint firstItem="zZV-UT-hTB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vW9-RL-C1d"/>
+                <constraint firstItem="cIe-BA-yqQ" firstAttribute="top" secondItem="aga-fB-Ff1" secondAttribute="bottom" constant="20" id="xSK-li-Yrg"/>
             </constraints>
             <point key="canvasLocation" x="75.384615384615387" y="19.90521327014218"/>
         </view>

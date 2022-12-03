@@ -12,7 +12,7 @@ class ListItemVC: UIViewController {
     @IBOutlet weak var btnAddEmptyState: UIButton!
     @IBOutlet weak var emptyStateView: UIView!
     @IBOutlet weak var tableView: UITableView!
-    lazy var btnAddTopRight = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(didClickBtnAdd))
+    lazy var btnAddTopRight = UIBarButtonItem(image: UIImage(systemName: "plus.app"), style: .plain, target: self, action: #selector(didClickBtnAdd))
     
     var activities: [ItemActivity] = []
     var area: Area?
