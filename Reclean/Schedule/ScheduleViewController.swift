@@ -59,7 +59,13 @@ class ScheduleViewController: UIViewController {
     }
     
     @IBAction func joinButtonFamily(_ sender: Any) {
+        let destination = InvitationCodeViewController()
+//        destination.didAddArea = {
+//            self.getDataSource()
+//        }
         
+        let nav = UINavigationController(rootViewController: destination)
+        present(nav, animated: true, completion: nil)
     }
     
     func screenEmpty() {

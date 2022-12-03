@@ -122,6 +122,18 @@ extension ProfileViewController: UITableViewDataSource {
         destination.modalPresentationStyle = .popover
         present(destination, animated: true, completion: nil)
     }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Invitation Pending", message: "The user has not accept the invitation. Please remind him/her to accept.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: { action in
+            print("sudah")
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel Invitation", style: .destructive, handler: { action in
+            print("sudah")
+        }))
+
+        present(alert, animated: true)
+    }
 }
 
 extension ProfileViewController: UITableViewDelegate {
@@ -132,6 +144,8 @@ extension ProfileViewController: UITableViewDelegate {
             case 0:
                 let category = akuKenapa[indexPath.row]
                 goToSourceViewController(category: category)
+            case 1:
+                showAlert()
             default:
                 break
             }
