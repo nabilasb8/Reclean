@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvitationCodeViewController" customModule="Reclean" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvitationCodeViewController" customModule="ReClean" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -42,7 +42,7 @@
                     <buttonConfiguration key="configuration" style="plain" image="Closeexit"/>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baN-vd-wvb">
-                    <rect key="frame" x="0.0" y="175" width="390" height="635"/>
+                    <rect key="frame" x="0.0" y="175" width="390" height="669"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite friends and get a bonus points for every new player!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubh-QN-ct1">
                             <rect key="frame" x="40" y="20" width="310" height="48"/>
@@ -128,7 +128,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mph-kL-mGj" secondAttribute="trailing" constant="30" id="8Tr-bC-bBd"/>
                 <constraint firstItem="baN-vd-wvb" firstAttribute="top" secondItem="6aM-XS-YfK" secondAttribute="bottom" constant="40" id="fAd-eY-7Zf"/>
                 <constraint firstItem="h6g-0v-IsU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="j4g-Qq-CJz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="baN-vd-wvb" secondAttribute="bottom" id="jDh-Dj-Zbg"/>
+                <constraint firstAttribute="bottom" secondItem="baN-vd-wvb" secondAttribute="bottom" id="jDh-Dj-Zbg"/>
                 <constraint firstItem="baN-vd-wvb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oTY-jv-7EP"/>
                 <constraint firstItem="6aM-XS-YfK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qas-de-c4W"/>
                 <constraint firstItem="Mph-kL-mGj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="xlM-QU-deb"/>
