@@ -16,4 +16,10 @@ class ProfileViewModel {
     func markUserUnauthorized() {
         UserRepository.shared.setUserAuthorization(status: false)
     }
+    
+    func getUserInformation(didGetUser: ((User?) -> Void)?) {
+        UserRepository.shared.getUser { result in
+            didGetUser?(result)
+        }
+    }
 }

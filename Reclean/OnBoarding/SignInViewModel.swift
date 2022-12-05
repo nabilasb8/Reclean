@@ -12,4 +12,8 @@ class SignInViewModel {
     func markUserAuthorized() {
         UserRepository.shared.setUserAuthorization(status: true)
     }
+    
+    func setUserInformation(model: User) {
+        UserRepository.shared.setUser(model: model)
+    }
 }

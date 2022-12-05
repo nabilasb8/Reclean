@@ -131,6 +131,7 @@
 		C9ADDD7229360FFD003CC129 /* AddAreaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */; };
 		C9ADDD7D2936127C003CC129 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */; };
 		C9ADDD7F29362DCB003CC129 /* AllAreasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDD7E29362DCB003CC129 /* AllAreasViewModel.swift */; };
+		C9CE2542293DEF7300D89B53 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE2541293DEF7300D89B53 /* User.swift */; };
 		C9D56B38293B341700D6995F /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56B37293B341700D6995F /* UserRepository.swift */; };
 		C9D56B3A293B356400D6995F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56B39293B356400D6995F /* SignInViewModel.swift */; };
 		C9D56B3D293B3C6C00D6995F /* ActivityPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56B3B293B3C6C00D6995F /* ActivityPointCell.swift */; };
@@ -271,6 +272,7 @@
 		C9ADDD7029360FFD003CC129 /* AddAreaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAreaVC.xib; sourceTree = "<group>"; };
 		C9ADDD7C2936127C003CC129 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C9ADDD7E29362DCB003CC129 /* AllAreasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAreasViewModel.swift; sourceTree = "<group>"; };
+		C9CE2541293DEF7300D89B53 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C9D56B37293B341700D6995F /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		C9D56B39293B356400D6995F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		C9D56B3B293B3C6C00D6995F /* ActivityPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPointCell.swift; sourceTree = "<group>"; };
@@ -589,6 +591,7 @@
 				BDF69A072930C14200AC594C /* MasterActivity.swift */,
 				BDF69A092930C18600AC594C /* ItemActivity.swift */,
 				BDF69A0B2930C33800AC594C /* MasterInterval.swift */,
+				C9CE2541293DEF7300D89B53 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -849,6 +852,7 @@
 				C9918C4C2937745E00BBB13A /* TabBarController.swift in Sources */,
 				66DCC2CC293642FC004381C6 /* ScheduleViewController.swift in Sources */,
 				66280C3D2921444400C63CC6 /* ThropiesTableViewCell.swift in Sources */,
+				C9CE2542293DEF7300D89B53 /* User.swift in Sources */,
 				C9D56B38293B341700D6995F /* UserRepository.swift in Sources */,
 				C98500E22938DF6900C701CD /* ScheduleViewModel.swift in Sources */,
 				C98500E42938F02B00C701CD /* ScheduleHeaderActionType.swift in Sources */,

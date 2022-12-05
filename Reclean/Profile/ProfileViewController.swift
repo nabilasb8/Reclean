@@ -48,6 +48,7 @@ class ProfileViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        getUserInformation()
         viewModel.getPastActivities { result in
             self.pastItemActivities = result
             var totalPoint = 0
@@ -69,6 +70,14 @@ class ProfileViewController: UIViewController {
     @objc func didClickButtonLogout() {
         viewModel.markUserUnauthorized()
         goToSignInViewController()
+    }
+    
+    func getUserInformation() {
+        viewModel.getUserInformation { model in
+            DispatchQueue.main.async {
+                self.labelName.text = model?.fullName
+            }
+        }
     }
     
     func goToSignInViewController() {
