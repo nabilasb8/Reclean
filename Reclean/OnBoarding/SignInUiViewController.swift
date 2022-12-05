@@ -58,8 +58,10 @@ extension SignInUiViewController: ASAuthorizationControllerDelegate {
         switch authorization.credential {
         case let appleIDCredential as ASAuthorizationAppleIDCredential:
             let userIdentifier = appleIDCredential.user
-            let fullName = appleIDCredential.fullName
-            print("ASAuthorizationAppleIDCredential \(userIdentifier) \(fullName)")
+            let fullName = appleIDCredential.fullName?.givenName
+            let email = appleIDCredential.email
+            let model = User(userId: userIdentifier, fullName: fullName, email: email)
+            viewModel.setUserInformation(model: model)
         case let passwordCredential as ASPasswordCredential:
             let username = passwordCredential.user
             let password = passwordCredential.password
