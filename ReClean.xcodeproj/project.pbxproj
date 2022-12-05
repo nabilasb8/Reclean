@@ -60,6 +60,8 @@
 		66BA514C292E050400014473 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BA514A292E050400014473 /* MainViewController.xib */; };
 		66C6FD07291A35770068D08B /* SignInUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6FD05291A35770068D08B /* SignInUiViewController.swift */; };
 		66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C6FD06291A35770068D08B /* SignInUiViewController.xib */; };
+		66C7275E293DF13100EB5C41 /* ComingSoonTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C7275C293DF13100EB5C41 /* ComingSoonTVC.swift */; };
+		66C7275F293DF13100EB5C41 /* ComingSoonTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C7275D293DF13100EB5C41 /* ComingSoonTVC.xib */; };
 		66CE2C5F2921D1C8007BD8E1 /* EndYearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE2C5D2921D1C8007BD8E1 /* EndYearViewController.swift */; };
 		66CE2C602921D1C8007BD8E1 /* EndYearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CE2C5E2921D1C8007BD8E1 /* EndYearViewController.xib */; };
 		66DCC2CC293642FC004381C6 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DCC2CA293642FC004381C6 /* ScheduleViewController.swift */; };
@@ -196,6 +198,8 @@
 		66BA514A292E050400014473 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		66C6FD05291A35770068D08B /* SignInUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUiViewController.swift; sourceTree = "<group>"; };
 		66C6FD06291A35770068D08B /* SignInUiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInUiViewController.xib; sourceTree = "<group>"; };
+		66C7275C293DF13100EB5C41 /* ComingSoonTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonTVC.swift; sourceTree = "<group>"; };
+		66C7275D293DF13100EB5C41 /* ComingSoonTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComingSoonTVC.xib; sourceTree = "<group>"; };
 		66CE2C5D2921D1C8007BD8E1 /* EndYearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndYearViewController.swift; sourceTree = "<group>"; };
 		66CE2C5E2921D1C8007BD8E1 /* EndYearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndYearViewController.xib; sourceTree = "<group>"; };
 		66DCC2CA293642FC004381C6 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -345,6 +349,8 @@
 				665A52AE293507480069E421 /* FamilyMemberTVC.xib */,
 				C9D56B3B293B3C6C00D6995F /* ActivityPointCell.swift */,
 				C9D56B3C293B3C6C00D6995F /* ActivityPointCell.xib */,
+				66C7275C293DF13100EB5C41 /* ComingSoonTVC.swift */,
+				66C7275D293DF13100EB5C41 /* ComingSoonTVC.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -718,7 +724,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "ReClean" */;
+			buildConfigurationList = BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "Reclean" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -748,6 +754,7 @@
 				66C6FD08291A35770068D08B /* SignInUiViewController.xib in Resources */,
 				664882932938B03D003D1F33 /* ActiveTagTVC.xib in Resources */,
 				C9D56B49293B542D00D6995F /* ActivityDetails.xib in Resources */,
+				66C7275F293DF13100EB5C41 /* ComingSoonTVC.xib in Resources */,
 				6648829B2938B076003D1F33 /* PastChallengeTagTVC.xib in Resources */,
 				BD64AAFC292B6EEF001653A1 /* SelectItemCell.xib in Resources */,
 				BD64AB04292B6F83001653A1 /* InitialDateCell.xib in Resources */,
@@ -869,6 +876,7 @@
 				C93CF2EA293A0D4500472AC7 /* InputChallengeDescriptionCell.swift in Sources */,
 				BD64AB07292B6FA3001653A1 /* IntervalTimeCell.swift in Sources */,
 				660E078929213E7E002201A3 /* ThrophyTableViewCell.swift in Sources */,
+				66C7275E293DF13100EB5C41 /* ComingSoonTVC.swift in Sources */,
 				668F2633292276ED00412735 /* LearderBoardInfoTableViewCell.swift in Sources */,
 				BDFAB4102934A871007C1F9F /* CardAreaCellCollectionViewCell.swift in Sources */,
 				664882962938B052003D1F33 /* PastChallengeTVC.swift in Sources */,
@@ -1093,7 +1101,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "ReClean" */ = {
+		BD51E829290FC437007DFCC0 /* Build configuration list for PBXProject "Reclean" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD51E840290FC439007DFCC0 /* Debug */,

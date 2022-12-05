@@ -34,8 +34,9 @@ class ProfileViewController: UIViewController {
         tableView.register(UINib(nibName: "AboutTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutTableViewCell")
         tableView.register(UINib(nibName: "ThrophyTableViewCell", bundle: nil), forCellReuseIdentifier: "ThrophyTableViewCell")
         tableView.register(UINib(nibName: "ThropiesTableViewCell", bundle: nil), forCellReuseIdentifier: "ThropiesTableViewCell")
-        tableView.register(UINib(nibName: "AddNewFamilyTFC", bundle: nil), forCellReuseIdentifier: "AddNewFamilyTFC")
-        tableView.register(UINib(nibName: "FamilyMemberTVC", bundle: nil), forCellReuseIdentifier: "FamilyMemberTVC")
+        //        tableView.register(UINib(nibName: "AddNewFamilyTFC", bundle: nil), forCellReuseIdentifier: "AddNewFamilyTFC")
+        //        tableView.register(UINib(nibName: "FamilyMemberTVC", bundle: nil), forCellReuseIdentifier: "FamilyMemberTVC")
+        tableView.register(UINib(nibName: "ComingSoonTVC", bundle: nil), forCellReuseIdentifier: "ComingSoonTVC")
         tableView.register(UINib(nibName: "CardItemCell", bundle: nil), forCellReuseIdentifier: "CardItemCell")
         tableView.register(UINib(nibName: "ActivityPointCell", bundle: nil), forCellReuseIdentifier: "ActivityPointCell")
         
@@ -121,12 +122,18 @@ extension ProfileViewController: UITableViewDataSource {
             
         case 2:
             switch indexPath.row {
-            case 0:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "AddNewFamilyTFC", for: indexPath) as! AddNewFamilyTFC
-                return cell
-            case 1:
-                let cell1 = tableView.dequeueReusableCell(withIdentifier: "FamilyMemberTVC", for: indexPath) as! FamilyMemberTVC
-                return cell1
+            case 0 :
+                let cell2 = tableView.dequeueReusableCell(withIdentifier: "ComingSoonTVC", for: indexPath) as! ComingSoonTVC
+                return cell2
+                //            case 0:
+                //                let cell = tableView.dequeueReusableCell(withIdentifier: "AddNewFamilyTFC", for: indexPath) as! AddNewFamilyTFC
+                //                return cell
+                //            case 1:
+                //                let cell1 = tableView.dequeueReusableCell(withIdentifier: "FamilyMemberTVC", for: indexPath) as! FamilyMemberTVC
+                //                return cell1
+                //            case 2 :
+                //                let cell2 = tableView.dequeueReusableCell(withIdentifier: "ComingSoonTVC", for: indexPath) as! ComingSoonTVC
+                //                return cell2
                 
             default:
                 let cell = UITableViewCell()
@@ -154,7 +161,7 @@ extension ProfileViewController: UITableViewDataSource {
         alert.addAction(UIAlertAction(title: "Cancel Invitation", style: .destructive, handler: { action in
             print("sudah")
         }))
-
+        
         present(alert, animated: true)
     }
 }
