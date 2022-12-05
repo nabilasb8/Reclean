@@ -19,4 +19,8 @@ extension UIColor {
     static var blueLinear: UIColor {
         return UIColor(red: 146/255, green: 163/255, blue: 253/255, alpha: 1.0)
     }
+    
+    static var border: UIColor {
+        return UIColor(red: 247/255, green:248/255, blue: 248/255, alpha: 1.0)
+    }
 }

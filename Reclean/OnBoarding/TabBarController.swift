@@ -35,12 +35,13 @@ class TabBarController: UITabBarController {
     }
     
     func createChallengesViewController() -> UIViewController {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .systemBackground
-        viewController.title = "Challenges"
-        viewController.tabBarItem.image = UIImage(systemName: "target")
+        let viewController = ChallengesVC()
+        let nav = UINavigationController(rootViewController: viewController)
+        nav.view.backgroundColor = .systemBackground
+        nav.title = "Challenges"
+        nav.tabBarItem.image = UIImage(systemName: "target")
         
-        return viewController
+        return nav
     }
     
     func createProfileViewController() -> UIViewController {

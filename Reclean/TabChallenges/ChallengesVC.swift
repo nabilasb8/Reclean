@@ -9,16 +9,15 @@ import UIKit
 
 class ChallengesVC: UIViewController {
 
-    
-
     @IBOutlet weak var listChallengesTableView: UITableView!
     
+    lazy var btnAddTopRight = UIBarButtonItem(image: UIImage(systemName: "plus.app"), style: .plain, target: self, action: #selector(didClickButtonAdd))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Challenges"
-
+        navigationItem.rightBarButtonItem = btnAddTopRight
         
         listChallengesTableView.register(UINib(nibName: "ActiveTagTVC", bundle: nil), forCellReuseIdentifier: "ActiveTagTVC")
         listChallengesTableView.register(UINib(nibName: "ActiveChallengeTVC", bundle: nil), forCellReuseIdentifier: "ActiveChallengeTVC")
@@ -29,8 +28,12 @@ class ChallengesVC: UIViewController {
         self.listChallengesTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
     }
-
-
+    
+    @objc func didClickButtonAdd() {
+            let destination = CreateChallengeVC()
+            let nav = UINavigationController(rootViewController: destination)
+            present(nav, animated: true, completion: nil)
+        }
 }
 
 extension ChallengesVC: UITableViewDataSource {

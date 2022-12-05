@@ -15,43 +15,49 @@ class ScheduleViewModel {
         let items = ItemRepository.shared.getItemActivities()
         let newestItems = items
             .sorted(by: { $0.date > $1.date })
-            .prefix(3)
         
         let todayItems = items
             .filter { item in
                 return Calendar.current.isDateInToday(item.date)
             }
-            .prefix(3)
         
         let areas = AreaRepository.shared.getAreas()
-            .prefix(3)
         
         if !todayItems.isEmpty {
             dataSource.append(.header(
                 title: "Today's Schedule",
-                action: .allSchedule
+                action: .allSchedule,
+                isBtnDetailsHidden: todayItems.count <= 3
             ))
-            todayItems.forEach { item in
+            todayItems
+                .prefix(3)
+                .forEach { item in
                 dataSource.append(.activityItem(itemActivity: item))
             }
         }
         
         if !areas.isEmpty {
             dataSource.append(.header(
-                title: "All Areas",
-                action: .allArea
+                title: "Areas",
+                action: .allArea,
+                isBtnDetailsHidden: false
             ))
-            areas.forEach { area in
+            areas
+                .prefix(3)
+                .forEach { area in
                 dataSource.append(.areaItem(area: area))
             }
         }
         
-        if !items.isEmpty {
+        if !newestItems.isEmpty {
             dataSource.append(.header(
-                title: "All Schedules",
-                action: .allSchedule
+                title: "Schedules",
+                action: .allSchedule,
+                isBtnDetailsHidden: newestItems.count <= 3
             ))
-            newestItems.forEach { item in
+            newestItems
+                .prefix(3)
+                .forEach { item in
                 dataSource.append(.activityItem(itemActivity: item))
             }
         }
@@ -60,7 +66,7 @@ class ScheduleViewModel {
     }
     
     func markItemAsDone(id: String) {
-        ItemRepository.shared.setItemStatus(id: id, isDone: true)
+        ItemRepository.shared.setFinishDate(id: id, finishDate: Date())
     }
     
 }

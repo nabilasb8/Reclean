@@ -1,14 +1,15 @@
 //
-//  TitleAllAreaTableViewCell.swift
-//  Reclean
+//  SetRewardCell.swift
+//  ReClean
 //
-//  Created by Hastomi Riduan Munthe on 08/11/22.
+//  Created by Nabila Syafrina on 02/12/22.
 //
 
 import UIKit
 
-class TitleAllAreaTableViewCell: UITableViewCell {
+class SetRewardCell: UITableViewCell {
 
+    @IBOutlet weak var textFieldReward: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
         

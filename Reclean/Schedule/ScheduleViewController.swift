@@ -95,7 +95,7 @@ class ScheduleViewController: UIViewController {
     }
     
     func goToAllSchedule() {
-        let destination = TodaysScheduleViewController()
+        let destination = AllScheduleVC()
         navigationController?.pushViewController(destination, animated: true)
     }
 }
@@ -109,9 +109,9 @@ extension ScheduleViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = dataSource[indexPath.row]
         switch cellType {
-        case let .header(title, action):
+        case let .header(title, action, isBtnDetailsHidden):
             let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleHeaderCell", for: indexPath) as! ScheduleHeaderCell
-            cell.configure(title: title)
+            cell.configure(title: title, isBtnDetailsHidden: isBtnDetailsHidden)
             cell.didClickedButtonDetail = {
                 self.didClickButtonAtHeader(action: action)
             }

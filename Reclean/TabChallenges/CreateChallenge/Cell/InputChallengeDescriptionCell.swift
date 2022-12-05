@@ -1,17 +1,19 @@
 //
-//  TitleAllScheduleTableViewCell.swift
-//  Reclean
+//  InputChallengeDescriptionCell.swift
+//  ReClean
 //
-//  Created by Hastomi Riduan Munthe on 08/11/22.
+//  Created by Nabila Syafrina on 02/12/22.
 //
 
 import UIKit
 
-class TitleAllScheduleTableViewCell: UITableViewCell {
-
+class InputChallengeDescriptionCell: UITableViewCell {
+    @IBOutlet weak var textFieldDescription: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

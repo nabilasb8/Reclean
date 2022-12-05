@@ -8,7 +8,7 @@
 import Foundation
 
 enum ScheduleCellType {
-    case header(title: String?, action: ScheduleHeaderActionType)
+    case header(title: String?, action: ScheduleHeaderActionType, isBtnDetailsHidden: Bool)
     case activityItem(itemActivity: ItemActivity)
     case areaItem(area: Area)
 }

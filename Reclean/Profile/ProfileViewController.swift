@@ -13,6 +13,11 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    lazy var btnLogout = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(didClickButtonLogout))
+    
+    var viewModel = ProfileViewModel()
+    var pastItemActivities: [ItemActivity] = []
+    var activitiesPoint: Int = 0
     
     let akuSiapa = [""]
     let akuDimana = [""]
@@ -22,6 +27,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Profile"
+        btnLogout.tintColor = .red
+        navigationItem.rightBarButtonItem = btnLogout
         
         tableView.register(UINib(nibName: "ActivitiesTableViewCell", bundle: nil), forCellReuseIdentifier: "ActivitiesTableViewCell")
         tableView.register(UINib(nibName: "AboutTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutTableViewCell")
@@ -29,75 +36,82 @@ class ProfileViewController: UIViewController {
         tableView.register(UINib(nibName: "ThropiesTableViewCell", bundle: nil), forCellReuseIdentifier: "ThropiesTableViewCell")
         tableView.register(UINib(nibName: "AddNewFamilyTFC", bundle: nil), forCellReuseIdentifier: "AddNewFamilyTFC")
         tableView.register(UINib(nibName: "FamilyMemberTVC", bundle: nil), forCellReuseIdentifier: "FamilyMemberTVC")
+        tableView.register(UINib(nibName: "CardItemCell", bundle: nil), forCellReuseIdentifier: "CardItemCell")
+        tableView.register(UINib(nibName: "ActivityPointCell", bundle: nil), forCellReuseIdentifier: "ActivityPointCell")
         
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        viewModel.getPastActivities { result in
+            self.pastItemActivities = result
+            var totalPoint = 0
+            result.forEach { item in
+                let point = item.getActivity()?.point ?? 0
+                totalPoint += point
+            }
+            self.activitiesPoint = totalPoint
+            
+            self.tableView.reloadData()
+        }
     }
     
     
     @IBAction func controlSegment(_ sender: Any) {
         tableView.reloadData()
     }
+    
+    @objc func didClickButtonLogout() {
+        viewModel.markUserUnauthorized()
+        goToSignInViewController()
+    }
+    
+    func goToSignInViewController() {
+        let destination = SignInUiViewController()
+        navigationController?
+            .tabBarController?
+            .navigationController?
+            .setViewControllers([destination], animated: true)
+    }
 }
 
 extension ProfileViewController: UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            return 1
-        case 1:
-            return 3
-        case 2:
-            return 2
-        default:
-            break
-        }
-        return 0
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            return akuSiapa.count
+            return pastItemActivities.count
         case 1:
-            return akuDimana.count
+            return 1
         case 2:
-            return akuKenapa.count
+            return 2
         default:
-            break
+            return 0
         }
-        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ActivitiesTableViewCell", for: indexPath) as! ActivitiesTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CardItemCell", for: indexPath) as! CardItemCell
+            let activity = pastItemActivities[indexPath.row]
+            cell.configure(itemActivity: activity)
+            
             return cell
             
         case 1:
-            switch indexPath.section {
-            case 0:
-                let cell = tableView.dequeueReusableCell(withIdentifier: "AboutTableViewCell", for: indexPath) as! AboutTableViewCell
-                return cell
-            case 1:
-                let cell1 = tableView.dequeueReusableCell(withIdentifier: "ThrophyTableViewCell", for: indexPath) as! ThrophyTableViewCell
-                return cell1
-            case 2:
-                let cell2 = tableView.dequeueReusableCell(withIdentifier: "ThropiesTableViewCell", for: indexPath) as! ThropiesTableViewCell
-                return cell2
-                
-            default:
-                let cell = UITableViewCell()
-                return cell
-            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityPointCell", for: indexPath) as! ActivityPointCell
+            cell.configure(point: activitiesPoint)
+            
+            return cell
             
         case 2:
-            switch indexPath.section {
+            switch indexPath.row {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "AddNewFamilyTFC", for: indexPath) as! AddNewFamilyTFC
                 return cell
@@ -140,7 +154,7 @@ extension ProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch segmentedControl.selectedSegmentIndex {
         case 2:
-            switch indexPath.section {
+            switch indexPath.row {
             case 0:
                 let category = akuKenapa[indexPath.row]
                 goToSourceViewController(category: category)
@@ -150,7 +164,7 @@ extension ProfileViewController: UITableViewDelegate {
                 break
             }
         default:
-            0
+            break
         }
         
     }

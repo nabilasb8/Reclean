@@ -9,9 +9,13 @@ import UIKit
 
 class ActiveTagTVC: UITableViewCell {
 
+    @IBOutlet weak var bgView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        bgView.backgroundColor = .blueLinear.withAlphaComponent(0.2)
+        selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
