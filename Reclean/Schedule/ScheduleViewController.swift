@@ -17,6 +17,8 @@ class ScheduleViewController: UIViewController {
     
     var dataSource: [ScheduleCellType] = []
     var viewModel = ScheduleViewModel()
+    var activities: [ItemActivity] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +38,8 @@ class ScheduleViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         getDataSource()
+        getAllSchedules()
     }
     
     func getDataSource() {
@@ -46,6 +48,23 @@ class ScheduleViewController: UIViewController {
             self.dataSource = result
             self.tableView.reloadData()
         }
+    }
+    
+    func getAllSchedules() {
+        viewModel.getAllSchedules { result in
+            self.activities = result
+            self.tableView.reloadData()
+        }
+    }
+    
+    func goToActivityDetailsVC(activity: ItemActivity) {
+        let destination = ActivityDetails()
+        destination.setActivity(activity: activity)
+        destination.didDeleteActivity = {
+            self.getAllSchedules()
+        }
+        let nav = UINavigationController(rootViewController: destination)
+        present(nav, animated: true)
     }
     
     @IBAction func addAreaa(_ sender: Any) {
@@ -144,11 +163,12 @@ extension ScheduleViewController: UITableViewDelegate {
         switch cellType {
         case let .areaItem(area):
             goToListItemVC(area: area)
+        case let .activityItem(activities):
+            goToActivityDetailsVC(activity: activities)
         default:
             break
         }
     }
-    
 }
 
 extension ScheduleViewController: ScheduleDelegate {
