@@ -9,6 +9,11 @@ import Foundation
 
 class ScheduleViewModel {
     
+    func getAllSchedules(didGetAllSchedules: @escaping (([ItemActivity]) -> Void)) {
+        let result = ItemRepository.shared.getItemActivities()
+        didGetAllSchedules(result)
+    }
+    
     func getDataSource(didGetDataSource: @escaping (([ScheduleCellType]) -> Void)) {
         var dataSource: [ScheduleCellType] = []
         
@@ -53,7 +58,7 @@ class ScheduleViewModel {
             dataSource.append(.header(
                 title: "Schedules",
                 action: .allSchedule,
-                isBtnDetailsHidden: newestItems.count <= 3
+                isBtnDetailsHidden: newestItems.count <= 1
             ))
             newestItems
                 .prefix(3)

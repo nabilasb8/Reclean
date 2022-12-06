@@ -42,6 +42,13 @@ class MasterPlaceRepository {
         )
         places.append(place3)
         
+        let place4: MasterPlace = MasterPlace(
+            id: "bath-room",
+            name: "Bathroom",
+            iconName: "kitchen"
+        )
+        places.append(place4)
+        
         return places
     }
 }
